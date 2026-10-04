@@ -1,0 +1,60 @@
+{
+  "rows": 48204,
+  "columns": 9,
+  "first_timestamp": "2012-10-02 09:00:00",
+  "last_timestamp": "2018-09-30 23:00:00",
+  "unique_timestamps": 40575,
+  "expected_hourly_slots": 52551,
+  "missing_hourly_slots": 11976,
+  "timestamps_with_multiple_rows": 5445,
+  "extra_rows_beyond_one_per_timestamp": 7629,
+  "exact_duplicate_rows": 17,
+  "timestamps_with_conflicting_traffic": 0,
+  "blank_cells_by_column": {
+    "holiday": 0,
+    "temp": 0,
+    "rain_1h": 0,
+    "snow_1h": 0,
+    "clouds_all": 0,
+    "weather_main": 0,
+    "weather_description": 0,
+    "date_time": 0,
+    "traffic_volume": 0
+  },
+  "range_flags": {
+    "negative_traffic_rows": 0,
+    "nonpositive_kelvin_rows": 10,
+    "negative_rain_rows": 0,
+    "negative_snow_rows": 0,
+    "clouds_outside_0_100_rows": 0
+  },
+  "largest_gaps": [
+    {
+      "first_missing": "2014-08-08 02:00:00",
+      "last_missing": "2015-06-11 19:00:00",
+      "missing_hours": 7386
+    },
+    {
+      "first_missing": "2013-10-27 02:00:00",
+      "last_missing": "2013-11-06 03:00:00",
+      "missing_hours": 242
+    },
+    {
+      "first_missing": "2015-06-14 21:00:00",
+      "last_missing": "2015-06-19 17:00:00",
+      "missing_hours": 117
+    },
+    {
+      "first_missing": "2014-04-29 09:00:00",
+      "last_missing": "2014-05-04 04:00:00",
+      "missing_hours": 116
+    },
+    {
+      "first_missing": "2015-10-23 12:00:00",
+      "last_missing": "2015-10-27 07:00:00",
+      "missing_hours": 92
+    }
+  ],
+  "time_assumption": "Naive source clock; UCI labels it local CST. DST interpretation is unresolved.",
+  "scope": "Structural audit only; no cleaning, target-distribution exploration or modeling."
+}

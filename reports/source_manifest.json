@@ -1,0 +1,10 @@
+{
+  "source_url": "https://archive.ics.uci.edu/static/public/492/metro%2Binterstate%2Btraffic%2Bvolume.zip",
+  "dataset_doi": "https://doi.org/10.24432/C5X60B",
+  "citation": "Hogue, J. (2019). Metro Interstate Traffic Volume. UCI Machine Learning Repository.",
+  "license": "CC BY 4.0",
+  "archive_sha256": "b99aeabcbd6cc86f642da3a79d90883425798f58abd3b3302da2fa19dda73768",
+  "archive_bytes": 405547,
+  "audit_run_at_utc": "2026-10-04T13:15:29.557313+00:00",
+  "archive_member": "Metro_Interstate_Traffic_Volume.csv.gz"
+}
