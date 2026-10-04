@@ -4,6 +4,8 @@
 
 Status: **Part 1 complete — source ingestion and structural audit.** No model has been trained. No performance or operational impact is claimed.
 
+[![Data contract tests](https://github.com/Kisara00555/trafficpulse/actions/workflows/tests.yml/badge.svg)](https://github.com/Kisara00555/trafficpulse/actions/workflows/tests.yml)
+
 ## The question
 
 Can we forecast the next hour's reported westbound I-94 traffic volume more reliably than simple historical baselines, using only information available before that hour starts?
@@ -63,7 +65,7 @@ The download is about 396 KB. Repeated runs reuse the local archive and verify i
 - `docs/DATA_CARD.md`: field meanings, source, license, and limits.
 - `docs/ROADMAP.md`: one learning milestone per session.
 - `docs/daily/2026-10-04.md`: today's plain-language explanation and interview practice.
-- `.github/workflows/tests.yml`: test workflow ready for GitHub; remote execution is not yet verified.
+- `.github/workflows/tests.yml`: automated tests on each push and pull request. [Initial GitHub verification passed](https://github.com/Kisara00555/trafficpulse/actions/runs/37206079243).
 
 ## Source and license
 
