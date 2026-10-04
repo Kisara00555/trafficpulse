@@ -1,5 +1,11 @@
 # Project working agreement
 
+## Standing GitHub quality preference (2026-10-04)
+
+The user requests double-checking before every commit and verification after publication, and authorizes useful improvements to their GitHub profile as well as this project. Before each commit, inspect the exact diff, check factual claims, run relevant tests or document checks, and check for secrets, generated clutter, unrelated changes, and broken internal links. After publication, verify remote content and commit identity, inspect relevant CI, and confirm the local worktree is clean or clearly report preserved pending changes. Do not call all checks passed if any check is pending or unavailable.
+
+Maintain the public profile repository Kisara00555/Kisara00555 with small, evidence-backed README improvements as projects evolve. Preserve personal details, existing style, and other authors' work. Inspect other repositories before proposing or making targeted documentation improvements; never infer capabilities or metrics from repository names. Do not delete or archive repositories, change visibility/access, rewrite history, rename projects, or make broad code changes as routine cleanup. Keep profile maintenance separate from scientific milestones.
+
 Build TrafficPulse one guided milestone per user session. The learner explicitly wants understanding and incremental work, not an unattended finished repository. Read README.md, docs/PROJECT_BRIEF.md, docs/ROADMAP.md, and the latest daily note before continuing.
 
 Keep the current forecasting contract unless evidence motivates a documented change. Never use final holdout outcomes to choose features or models. Preserve source provenance, timestamp-based lags, and information availability. Never claim measured real-world impact from hypothetical simulations.
