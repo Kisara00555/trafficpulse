@@ -9,7 +9,8 @@ The user authorized daily commits of completed project work on 4 October 2026.
 - Complete owner-filtered listing returned nine repositories; the subsequent page was empty.
 - One listed repository is private, confirming that the listing is not limited to public profile content.
 - The metadata reports the account's admin and push permissions on all nine repositories. These permissions do not by themselves prove that every app write operation is permitted.
-- No successful remote write has been performed yet. TrafficPulse has no verified remote repository yet.
+- The dedicated public repository is [Kisara00555/trafficpulse](https://github.com/Kisara00555/trafficpulse).
+- Initial publication succeeded on 4 October 2026. Both local commits were pushed, preserving their history; `main` tracks `origin/main`.
 
 ## Daily process
 
@@ -21,6 +22,8 @@ The user authorized daily commits of completed project work on 4 October 2026.
 
 The scheduled check-in can publish already-completed, reviewed work once the remote exists. It must not independently build further milestones. No force-push, history rewriting, profile edits, or changes to unrelated repositories are authorized by this routine.
 
-## Current setup blocker
+## Publishing setup
 
-The connected GitHub tools support writes within existing repositories but expose no repository-creation action. The browser opened at GitHub's new-repository page requires a separate sign-in. Once signed in, create the dedicated `trafficpulse` repository, publish Part 1, and verify its contents before marking setup complete.
+The repository was created through the signed-in GitHub browser session and published with Git. Future work should use the existing dedicated remote; do not create another repository. The connector can inspect repository contents and commits.
+
+In this desktop environment, outbound Git network operations may require execution approval. If Git reports that the sandbox-created project is owned by a different user, use a per-command `safe.directory` override for this exact project path only; do not disable ownership checks globally. Authentication remains in the existing Git credential manager and must never be copied into repository files or logs.
