@@ -14,13 +14,13 @@ The user authorized daily commits of completed project work on 4 October 2026.
 
 ## Daily process
 
-1. Complete one guided learning milestone and save the plain-language explanation.
+1. Independently complete at most one next unfinished roadmap part per Asia/Colombo calendar day and save the plain-language explanation. This autonomous daily work was authorized on 6 October 2026. Resume unfinished work first; a repeated run must not advance an extra part that day.
 2. Double-check the exact diff, verify claims and links, run relevant checks, and exclude credentials, raw downloads, and unrelated changes before committing.
 3. Commit with a descriptive message and push only to the verified dedicated project repository.
 4. Verify the remote commit and published content, inspect relevant CI, and confirm the local worktree is clean or explain any preserved changes. Report the commit link and any unresolved check.
 5. If no work was completed, make no commit. Preserve actual dates and authorship.
 
-The scheduled check-in can publish already-completed, reviewed work. It must not independently build further milestones. The user's expanded instruction on 4 October 2026 authorizes small, evidence-backed profile and repository documentation improvements too, with the same before-and-after checks. Do not make empty activity commits. Routine maintenance excludes force-pushes, history rewriting, deletion, archival, visibility/access changes, repository renaming, and broad changes to other projects' code.
+The scheduled run may now independently implement, validate, commit, and publish one project part per day without waiting for a learner reply. This supersedes the original reminder-only restriction. The user's expanded instruction on 4 October 2026 also authorizes small, evidence-backed profile and repository documentation improvements, with the same before-and-after checks. Do not make empty activity commits. Routine maintenance excludes force-pushes, history rewriting, deletion, archival, visibility/access changes, repository renaming, and broad changes to other projects' code. Report material blockers and failed or unavailable checks instead of declaring a part complete prematurely.
 
 ## Publishing setup
 

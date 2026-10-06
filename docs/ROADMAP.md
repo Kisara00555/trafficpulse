@@ -1,6 +1,6 @@
 # Guided project roadmap
 
-One part per session. Advance after the learner can explain the previous part; do not generate the full project unattended. Each completed session gets a short daily note, a reproducible artifact, checks, and one meaningful commit. Dates after Part 1 are not promises or scheduled work.
+Autonomous daily development was authorized on 6 October 2026. Complete at most one next unfinished part per Asia/Colombo calendar day at the existing 19:00 scheduled run, without requiring a learner reply. Each part gets a short daily note, a reproducible artifact, checks, and a meaningful commit. Resume incomplete parts before advancing; duplicate runs must not start additional parts on the same day. The optional exercises help the learner prepare for interviews but do not block the next day's work. Dates of completion depend on validation and access; never mark unfinished work complete to meet a daily target.
 
 | Part | Deliverable | Main interview question | Status |
 |---|---|---|---|
