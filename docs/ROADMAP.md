@@ -5,8 +5,8 @@ Autonomous daily development was authorized on 6 October 2026. Complete at most 
 | Part | Deliverable | Main interview question | Status |
 |---|---|---|---|
 | 1 | Problem contract, source pipeline, structural audit | Why can data with no nulls still be incomplete? | Complete, 2026-10-04 |
-| 2 | Clean hourly table, split manifests, quality notebook | What does one row represent? | Next |
-| 3 | Training-only exploration and simple baselines | What must your model beat? | Planned |
+| 2 | Clean hourly table, split manifests, quality notebook | What does one row represent? | Complete, 2026-10-07 |
+| 3 | Training-only exploration and simple baselines | What must your model beat? | Next |
 | 4 | Leakage-tested lag/calendar features | What information exists at prediction time? | Planned |
 | 5 | Regularized and tree-based models | Why this model and how was it tuned? | Planned |
 | 6 | Temporal backtesting and error analysis | Does it work across seasons? | Planned |

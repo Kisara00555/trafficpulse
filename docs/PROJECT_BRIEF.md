@@ -37,4 +37,6 @@ A hypothetical traffic-operations analyst needs an hourly demand forecast and un
 
 ## Current decisions and open questions
 
+Part 2 implemented the proposed split boundaries without alteration on 7 October 2026. The cleaned output is target-only: one agreed count per source-clock hour, blanks for absent hours, and no interpolation. Weather/holiday fields remain raw and excluded pending later feature decisions. See `CLEANING_POLICY.md` for the frozen rules and structural coverage; timezone interpretation and zero-count meaning remain open.
+
 Part 1 chooses the problem and preserves raw evidence. It does not deduplicate, impute, train, or score a model. We must resolve repeated weather records, missing-hour policy, DST/source-time ambiguity, zero-volume interpretation, temperature faults, and holiday encoding. Long gaps will stay missing. Suitability of the eventual staffing proxy must be evaluated, not assumed.

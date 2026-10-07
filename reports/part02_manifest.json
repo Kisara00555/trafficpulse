@@ -1,0 +1,56 @@
+{
+  "source_sha256": "b99aeabcbd6cc86f642da3a79d90883425798f58abd3b3302da2fa19dda73768",
+  "source_rows": 48204,
+  "hourly_slots": 52551,
+  "observed_hours": 40575,
+  "missing_hours": 11976,
+  "train_end_exclusive": "2017-01-01 00:00:00",
+  "validation_end_exclusive": "2018-01-01 00:00:00",
+  "timezone": "Naive source clock, labeled local CST by UCI; DST unresolved",
+  "target_missing_encoding": "Empty CSV cell; never zero-filled or interpolated",
+  "available_features": "None yet: quality flags and source row counts are audit metadata, not model inputs",
+  "partitions": {
+    "train": {
+      "first": "2012-10-02 09:00:00",
+      "last": "2016-12-31 23:00:00",
+      "hourly_slots": 37239,
+      "observed_hours": 25329,
+      "missing_hours": 11910,
+      "coverage": 0.680174011117377
+    },
+    "validation": {
+      "first": "2017-01-01 00:00:00",
+      "last": "2017-12-31 23:00:00",
+      "hourly_slots": 8760,
+      "observed_hours": 8713,
+      "missing_hours": 47,
+      "coverage": 0.9946347031963471
+    },
+    "test": {
+      "first": "2018-01-01 00:00:00",
+      "last": "2018-09-30 23:00:00",
+      "hourly_slots": 6552,
+      "observed_hours": 6533,
+      "missing_hours": 19,
+      "coverage": 0.9971001221001221
+    }
+  },
+  "outputs": {
+    "hourly": {
+      "path": "data/processed/hourly.csv",
+      "sha256": "bbe2dc9dbc993969d3755c9614a4432f71b595a27e7aa11c8e7a23a9321369ca"
+    },
+    "train": {
+      "path": "data/processed/train.csv",
+      "sha256": "6e2ad85a84d6b9f6eb1a0c5ed54bf1fc6d789748c897d5f57be2b2453a82f817"
+    },
+    "validation": {
+      "path": "data/processed/validation.csv",
+      "sha256": "836c7aac6c9b300ef2aea0cef52f6011e3593580545f4b7da0fbfa3b84cd012e"
+    },
+    "test": {
+      "path": "data/processed/test.csv",
+      "sha256": "4f95aa88707284f6a84ad85b011a75b91e6618ff76379c93879258f11e44bb0c"
+    }
+  }
+}

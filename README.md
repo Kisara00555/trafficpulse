@@ -2,7 +2,7 @@
 
 **Hourly traffic forecasting with honest evaluation and uncertainty.**
 
-Status: **Part 1 complete — source ingestion and structural audit.** No model has been trained. No performance or operational impact is claimed.
+Status: **Part 2 complete — hourly target table and chronological splits.** No model has been trained. No performance or operational impact is claimed.
 
 [![Data contract tests](https://github.com/Kisara00555/trafficpulse/actions/workflows/tests.yml/badge.svg)](https://github.com/Kisara00555/trafficpulse/actions/workflows/tests.yml)
 
@@ -58,6 +58,8 @@ An installation-free alternative is to set `PYTHONPATH` to `src`, then run the l
 The download is about 396 KB. Repeated runs reuse the local archive and verify it against the recorded SHA-256 checksum. The archive is excluded from Git. Delete or move the local archive yourself only if intentionally requesting a fresh download. If UCI changes the archive, the pipeline stops for review instead of silently accepting changed inputs.
 
 ## Repository guide
+
+Part 2: run `python -m trafficpulse.prepare` after Part 1. This creates ignored local CSVs in `data/processed/` and a reproducible [manifest](reports/part02_manifest.json). Read the [cleaning policy](docs/CLEANING_POLICY.md) and [executed quality notebook](notebooks/02_hourly_quality.ipynb). For notebook execution use Python 3.12+ with `nbformat nbclient ipykernel nbconvert`; the standard-library pipeline supports Python 3.10+. Missing targets remain blank; weather is retained only in the raw source. See the [latest learning note](docs/daily/2026-10-07.md).
 
 - `src/trafficpulse/data.py`: download, source verification, structural audit.
 - `tests/test_data.py`: small examples that test consequential data failure modes.
