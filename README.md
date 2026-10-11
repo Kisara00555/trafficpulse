@@ -2,7 +2,7 @@
 
 **Hourly traffic forecasting with honest evaluation and uncertainty.**
 
-Status: **Part 2 complete — hourly target table and chronological splits.** No model has been trained. No performance or operational impact is claimed.
+Status: **Part 3 complete — training-only exploration and simple validation baselines.** No complex forecasting model or operational impact is claimed.
 
 [![Data contract tests](https://github.com/Kisara00555/trafficpulse/actions/workflows/tests.yml/badge.svg)](https://github.com/Kisara00555/trafficpulse/actions/workflows/tests.yml)
 
@@ -20,9 +20,9 @@ This is a historical research prototype for a hypothetical traffic-operations an
 - Prediction intervals, calibration checks, and transparent operational scenarios.
 - Reproducible code, meaningful tests, documented decisions, and incremental Git history.
 
-These are planned capabilities. See [the roadmap](docs/ROADMAP.md) for completion status.
+Some capabilities are still planned. See [the roadmap](docs/ROADMAP.md) for completion status.
 
-## Today's verified findings
+## Part 1 source audit
 
 | Structural check | Result |
 |---|---:|
@@ -38,6 +38,18 @@ These are planned capabilities. See [the roadmap](docs/ROADMAP.md) for completio
 No blank cells were found. Missing hours and duplicate observations still require explicit treatment. Counts use a naive hourly grid because the source labels times as local CST without resolving daylight-saving interpretation. The largest gap spans 7,386 missing hourly slots. We will not interpolate traffic through that gap.
 
 The full evidence is in [day01_audit.json](reports/day01_audit.json); the input fingerprint and attribution are in [source_manifest.json](reports/source_manifest.json).
+
+## Part 3 baseline results
+
+We calculated training summaries without opening the final test partition, then compared three reference forecasts on the same 8,667 eligible hours in the 2017 validation period. Lower MAE means a smaller typical absolute error.
+
+| Baseline | MAE (vehicles/hour) | RMSE (vehicles/hour) |
+|---|---:|---:|
+| Training global mean | 1,742.8 | 1,985.1 |
+| Training weekday + hour mean | **279.1** | **461.7** |
+| Same hour last week | 302.6 | 564.2 |
+
+The weekday-and-hour average beat repeating last week's exact count on this validation population. The same-week-lag was available for 8,667 of 8,713 observed validation targets (99.5%); the comparison excludes the 46 targets without that lag. These are historical results for one station and one validation year, not a guarantee of future performance. Full details are in the [training-only summary and validation report](reports/part03_baselines.json), the [error comparison chart](reports/part03_baselines.svg), and the [executed analysis notebook](notebooks/03_training_baselines.ipynb).
 
 ## Run Part 1
 
@@ -59,14 +71,16 @@ The download is about 396 KB. Repeated runs reuse the local archive and verify i
 
 ## Repository guide
 
-Part 2: run `python -m trafficpulse.prepare` after Part 1. This creates ignored local CSVs in `data/processed/` and a reproducible [manifest](reports/part02_manifest.json). Read the [cleaning policy](docs/CLEANING_POLICY.md) and [executed quality notebook](notebooks/02_hourly_quality.ipynb). For notebook execution use Python 3.12+ with `nbformat nbclient ipykernel nbconvert`; the standard-library pipeline supports Python 3.10+. Missing targets remain blank; weather is retained only in the raw source. See the [latest learning note](docs/daily/2026-10-07.md).
+Part 2: run `python -m trafficpulse.prepare` after Part 1. This creates ignored local CSVs in `data/processed/` and a reproducible [manifest](reports/part02_manifest.json). Part 3: run `python -m trafficpulse.baselines`; this reads only the training and validation CSVs and writes the [baseline report](reports/part03_baselines.json) and charts in `reports/`. The executed notebook is [03_training_baselines.ipynb](notebooks/03_training_baselines.ipynb). For notebook execution use Python 3.12+ with `nbformat nbclient ipykernel nbconvert`; from the repository root set `PYTHONPATH` to `src` (PowerShell: `$env:PYTHONPATH='src'`; macOS/Linux: `export PYTHONPATH=src`), then run `python -m nbconvert --execute --to notebook --inplace notebooks/03_training_baselines.ipynb`. The standard-library pipeline supports Python 3.10+. Missing targets remain blank; weather is retained only in the raw source. See the [latest learning note](docs/daily/2026-10-12.md).
 
 - `src/trafficpulse/data.py`: download, source verification, structural audit.
+- `src/trafficpulse/baselines.py`: training-only summaries and identical-population validation scores.
 - `tests/test_data.py`: small examples that test consequential data failure modes.
+- `tests/test_baselines.py`: partition, missing-lag, and no-test-input checks.
 - `docs/PROJECT_BRIEF.md`: forecasting contract and evaluation plan.
 - `docs/DATA_CARD.md`: field meanings, source, license, and limits.
 - `docs/ROADMAP.md`: one learning milestone per session.
-- `docs/daily/2026-10-04.md`: today's plain-language explanation and interview practice.
+- `docs/daily/2026-10-12.md`: latest plain-language explanation and interview practice.
 - `.github/workflows/tests.yml`: automated tests on each push and pull request. [Initial GitHub verification passed](https://github.com/Kisara00555/trafficpulse/actions/runs/37206079243).
 
 ## Source and license

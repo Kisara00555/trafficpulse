@@ -1,0 +1,1191 @@
+{
+  "methodology": {
+    "training_end_exclusive": "2017-01-01 00:00:00",
+    "validation_end_exclusive": "2018-01-01 00:00:00",
+    "forecast_issue_time": "start of target hour t",
+    "latest_permitted_source_time": "t-2 hours",
+    "validation_only_for_scoring": true,
+    "final_test_read": false,
+    "comparison_population": "Observed 2017 validation targets whose exact t-168 hourly target is also observed; identical rows for every baseline.",
+    "hour_week_fallback": "Training global mean if a weekday-hour group is absent.",
+    "seasonal_fallback": "None; report shared-cohort eligibility explicitly."
+  },
+  "training": {
+    "hourly_slots": 37239,
+    "observed_hours": 25329,
+    "coverage": 0.680174011117377,
+    "traffic_volume_distribution": {
+      "count": 25329,
+      "mean": 3252.5119428323264,
+      "median": 3339,
+      "standard_deviation": 1987.1026248656829,
+      "p10": 426.0,
+      "p90": 5822.0,
+      "min": 0,
+      "max": 7260
+    },
+    "global_mean_vehicles_per_hour": 3252.5119428323264,
+    "hour_of_week_groups": 168,
+    "hourly_profile": [
+      {
+        "hour": 0,
+        "mean_vehicles_per_hour": 823.2154696132596,
+        "training_observations": 1086
+      },
+      {
+        "hour": 1,
+        "mean_vehicles_per_hour": 514.0279850746268,
+        "training_observations": 1072
+      },
+      {
+        "hour": 2,
+        "mean_vehicles_per_hour": 390.2932960893855,
+        "training_observations": 1074
+      },
+      {
+        "hour": 3,
+        "mean_vehicles_per_hour": 369.22297297297297,
+        "training_observations": 1036
+      },
+      {
+        "hour": 4,
+        "mean_vehicles_per_hour": 683.5603367633303,
+        "training_observations": 1069
+      },
+      {
+        "hour": 5,
+        "mean_vehicles_per_hour": 2055.7944814462417,
+        "training_observations": 1051
+      },
+      {
+        "hour": 6,
+        "mean_vehicles_per_hour": 4156.102001906577,
+        "training_observations": 1049
+      },
+      {
+        "hour": 7,
+        "mean_vehicles_per_hour": 4741.178055822907,
+        "training_observations": 1039
+      },
+      {
+        "hour": 8,
+        "mean_vehicles_per_hour": 4553.54071969697,
+        "training_observations": 1056
+      },
+      {
+        "hour": 9,
+        "mean_vehicles_per_hour": 4355.096421471173,
+        "training_observations": 1006
+      },
+      {
+        "hour": 10,
+        "mean_vehicles_per_hour": 4172.345182413471,
+        "training_observations": 1069
+      },
+      {
+        "hour": 11,
+        "mean_vehicles_per_hour": 4469.588349514564,
+        "training_observations": 1030
+      },
+      {
+        "hour": 12,
+        "mean_vehicles_per_hour": 4713.84644549763,
+        "training_observations": 1055
+      },
+      {
+        "hour": 13,
+        "mean_vehicles_per_hour": 4722.385135135135,
+        "training_observations": 1036
+      },
+      {
+        "hour": 14,
+        "mean_vehicles_per_hour": 4955.078375826251,
+        "training_observations": 1059
+      },
+      {
+        "hour": 15,
+        "mean_vehicles_per_hour": 5245.820837390457,
+        "training_observations": 1027
+      },
+      {
+        "hour": 16,
+        "mean_vehicles_per_hour": 5644.273576097105,
+        "training_observations": 1071
+      },
+      {
+        "hour": 17,
+        "mean_vehicles_per_hour": 5309.344357976654,
+        "training_observations": 1028
+      },
+      {
+        "hour": 18,
+        "mean_vehicles_per_hour": 4273.62009569378,
+        "training_observations": 1045
+      },
+      {
+        "hour": 19,
+        "mean_vehicles_per_hour": 3263.495219885277,
+        "training_observations": 1046
+      },
+      {
+        "hour": 20,
+        "mean_vehicles_per_hour": 2816.285447761194,
+        "training_observations": 1072
+      },
+      {
+        "hour": 21,
+        "mean_vehicles_per_hour": 2657.6457357075915,
+        "training_observations": 1067
+      },
+      {
+        "hour": 22,
+        "mean_vehicles_per_hour": 2180.3114602587802,
+        "training_observations": 1082
+      },
+      {
+        "hour": 23,
+        "mean_vehicles_per_hour": 1456.9157608695652,
+        "training_observations": 1104
+      }
+    ],
+    "hour_of_week_profile": [
+      {
+        "weekday": 0,
+        "hour": 0,
+        "mean_vehicles_per_hour": 616.8924050632911,
+        "training_observations": 158
+      },
+      {
+        "weekday": 0,
+        "hour": 1,
+        "mean_vehicles_per_hour": 375.255033557047,
+        "training_observations": 149
+      },
+      {
+        "weekday": 0,
+        "hour": 2,
+        "mean_vehicles_per_hour": 286.40645161290325,
+        "training_observations": 155
+      },
+      {
+        "weekday": 0,
+        "hour": 3,
+        "mean_vehicles_per_hour": 332.18120805369125,
+        "training_observations": 149
+      },
+      {
+        "weekday": 0,
+        "hour": 4,
+        "mean_vehicles_per_hour": 790.0728476821192,
+        "training_observations": 151
+      },
+      {
+        "weekday": 0,
+        "hour": 5,
+        "mean_vehicles_per_hour": 2548.346153846154,
+        "training_observations": 156
+      },
+      {
+        "weekday": 0,
+        "hour": 6,
+        "mean_vehicles_per_hour": 5158.0526315789475,
+        "training_observations": 152
+      },
+      {
+        "weekday": 0,
+        "hour": 7,
+        "mean_vehicles_per_hour": 5857.597402597403,
+        "training_observations": 154
+      },
+      {
+        "weekday": 0,
+        "hour": 8,
+        "mean_vehicles_per_hour": 5228.726027397261,
+        "training_observations": 146
+      },
+      {
+        "weekday": 0,
+        "hour": 9,
+        "mean_vehicles_per_hour": 4560.924657534247,
+        "training_observations": 146
+      },
+      {
+        "weekday": 0,
+        "hour": 10,
+        "mean_vehicles_per_hour": 4106.2733333333335,
+        "training_observations": 150
+      },
+      {
+        "weekday": 0,
+        "hour": 11,
+        "mean_vehicles_per_hour": 4323.398648648648,
+        "training_observations": 148
+      },
+      {
+        "weekday": 0,
+        "hour": 12,
+        "mean_vehicles_per_hour": 4572.833333333333,
+        "training_observations": 150
+      },
+      {
+        "weekday": 0,
+        "hour": 13,
+        "mean_vehicles_per_hour": 4616.939189189189,
+        "training_observations": 148
+      },
+      {
+        "weekday": 0,
+        "hour": 14,
+        "mean_vehicles_per_hour": 4938.469387755102,
+        "training_observations": 147
+      },
+      {
+        "weekday": 0,
+        "hour": 15,
+        "mean_vehicles_per_hour": 5344.758389261745,
+        "training_observations": 149
+      },
+      {
+        "weekday": 0,
+        "hour": 16,
+        "mean_vehicles_per_hour": 5944.054054054054,
+        "training_observations": 148
+      },
+      {
+        "weekday": 0,
+        "hour": 17,
+        "mean_vehicles_per_hour": 5624.391891891892,
+        "training_observations": 148
+      },
+      {
+        "weekday": 0,
+        "hour": 18,
+        "mean_vehicles_per_hour": 4131.346666666666,
+        "training_observations": 150
+      },
+      {
+        "weekday": 0,
+        "hour": 19,
+        "mean_vehicles_per_hour": 3022.1677419354837,
+        "training_observations": 155
+      },
+      {
+        "weekday": 0,
+        "hour": 20,
+        "mean_vehicles_per_hour": 2563.0333333333333,
+        "training_observations": 150
+      },
+      {
+        "weekday": 0,
+        "hour": 21,
+        "mean_vehicles_per_hour": 2268.943396226415,
+        "training_observations": 159
+      },
+      {
+        "weekday": 0,
+        "hour": 22,
+        "mean_vehicles_per_hour": 1672.7189542483661,
+        "training_observations": 153
+      },
+      {
+        "weekday": 0,
+        "hour": 23,
+        "mean_vehicles_per_hour": 1101.7870967741935,
+        "training_observations": 155
+      },
+      {
+        "weekday": 1,
+        "hour": 0,
+        "mean_vehicles_per_hour": 589.8774193548387,
+        "training_observations": 155
+      },
+      {
+        "weekday": 1,
+        "hour": 1,
+        "mean_vehicles_per_hour": 372.43624161073825,
+        "training_observations": 149
+      },
+      {
+        "weekday": 1,
+        "hour": 2,
+        "mean_vehicles_per_hour": 281.0536912751678,
+        "training_observations": 149
+      },
+      {
+        "weekday": 1,
+        "hour": 3,
+        "mean_vehicles_per_hour": 352.9864864864865,
+        "training_observations": 148
+      },
+      {
+        "weekday": 1,
+        "hour": 4,
+        "mean_vehicles_per_hour": 828.5686274509804,
+        "training_observations": 153
+      },
+      {
+        "weekday": 1,
+        "hour": 5,
+        "mean_vehicles_per_hour": 2722.387323943662,
+        "training_observations": 142
+      },
+      {
+        "weekday": 1,
+        "hour": 6,
+        "mean_vehicles_per_hour": 5503.48322147651,
+        "training_observations": 149
+      },
+      {
+        "weekday": 1,
+        "hour": 7,
+        "mean_vehicles_per_hour": 6132.311594202899,
+        "training_observations": 138
+      },
+      {
+        "weekday": 1,
+        "hour": 8,
+        "mean_vehicles_per_hour": 5580.571428571428,
+        "training_observations": 147
+      },
+      {
+        "weekday": 1,
+        "hour": 9,
+        "mean_vehicles_per_hour": 4984.615384615385,
+        "training_observations": 143
+      },
+      {
+        "weekday": 1,
+        "hour": 10,
+        "mean_vehicles_per_hour": 4343.602649006622,
+        "training_observations": 151
+      },
+      {
+        "weekday": 1,
+        "hour": 11,
+        "mean_vehicles_per_hour": 4564.356643356643,
+        "training_observations": 143
+      },
+      {
+        "weekday": 1,
+        "hour": 12,
+        "mean_vehicles_per_hour": 4778.493333333333,
+        "training_observations": 150
+      },
+      {
+        "weekday": 1,
+        "hour": 13,
+        "mean_vehicles_per_hour": 4806.633802816901,
+        "training_observations": 142
+      },
+      {
+        "weekday": 1,
+        "hour": 14,
+        "mean_vehicles_per_hour": 5140.8175675675675,
+        "training_observations": 148
+      },
+      {
+        "weekday": 1,
+        "hour": 15,
+        "mean_vehicles_per_hour": 5628.458333333333,
+        "training_observations": 144
+      },
+      {
+        "weekday": 1,
+        "hour": 16,
+        "mean_vehicles_per_hour": 6331.86577181208,
+        "training_observations": 149
+      },
+      {
+        "weekday": 1,
+        "hour": 17,
+        "mean_vehicles_per_hour": 5966.098591549296,
+        "training_observations": 142
+      },
+      {
+        "weekday": 1,
+        "hour": 18,
+        "mean_vehicles_per_hour": 4455.237762237763,
+        "training_observations": 143
+      },
+      {
+        "weekday": 1,
+        "hour": 19,
+        "mean_vehicles_per_hour": 3189.3706293706296,
+        "training_observations": 143
+      },
+      {
+        "weekday": 1,
+        "hour": 20,
+        "mean_vehicles_per_hour": 2792.16,
+        "training_observations": 150
+      },
+      {
+        "weekday": 1,
+        "hour": 21,
+        "mean_vehicles_per_hour": 2618.6666666666665,
+        "training_observations": 150
+      },
+      {
+        "weekday": 1,
+        "hour": 22,
+        "mean_vehicles_per_hour": 1977.0592105263158,
+        "training_observations": 152
+      },
+      {
+        "weekday": 1,
+        "hour": 23,
+        "mean_vehicles_per_hour": 1266.9477124183006,
+        "training_observations": 153
+      },
+      {
+        "weekday": 2,
+        "hour": 0,
+        "mean_vehicles_per_hour": 614.7884615384615,
+        "training_observations": 156
+      },
+      {
+        "weekday": 2,
+        "hour": 1,
+        "mean_vehicles_per_hour": 389.18918918918916,
+        "training_observations": 148
+      },
+      {
+        "weekday": 2,
+        "hour": 2,
+        "mean_vehicles_per_hour": 303.28025477707007,
+        "training_observations": 157
+      },
+      {
+        "weekday": 2,
+        "hour": 3,
+        "mean_vehicles_per_hour": 370.32394366197184,
+        "training_observations": 142
+      },
+      {
+        "weekday": 2,
+        "hour": 4,
+        "mean_vehicles_per_hour": 846.3006535947712,
+        "training_observations": 153
+      },
+      {
+        "weekday": 2,
+        "hour": 5,
+        "mean_vehicles_per_hour": 2755.2397260273974,
+        "training_observations": 146
+      },
+      {
+        "weekday": 2,
+        "hour": 6,
+        "mean_vehicles_per_hour": 5569.666666666667,
+        "training_observations": 153
+      },
+      {
+        "weekday": 2,
+        "hour": 7,
+        "mean_vehicles_per_hour": 6182.007042253521,
+        "training_observations": 142
+      },
+      {
+        "weekday": 2,
+        "hour": 8,
+        "mean_vehicles_per_hour": 5767.274509803921,
+        "training_observations": 153
+      },
+      {
+        "weekday": 2,
+        "hour": 9,
+        "mean_vehicles_per_hour": 5022.065217391304,
+        "training_observations": 138
+      },
+      {
+        "weekday": 2,
+        "hour": 10,
+        "mean_vehicles_per_hour": 4479.603773584906,
+        "training_observations": 159
+      },
+      {
+        "weekday": 2,
+        "hour": 11,
+        "mean_vehicles_per_hour": 4673.684931506849,
+        "training_observations": 146
+      },
+      {
+        "weekday": 2,
+        "hour": 12,
+        "mean_vehicles_per_hour": 4863.337748344371,
+        "training_observations": 151
+      },
+      {
+        "weekday": 2,
+        "hour": 13,
+        "mean_vehicles_per_hour": 4887.204225352113,
+        "training_observations": 142
+      },
+      {
+        "weekday": 2,
+        "hour": 14,
+        "mean_vehicles_per_hour": 5222.834394904458,
+        "training_observations": 157
+      },
+      {
+        "weekday": 2,
+        "hour": 15,
+        "mean_vehicles_per_hour": 5663.845637583892,
+        "training_observations": 149
+      },
+      {
+        "weekday": 2,
+        "hour": 16,
+        "mean_vehicles_per_hour": 6342.968944099379,
+        "training_observations": 161
+      },
+      {
+        "weekday": 2,
+        "hour": 17,
+        "mean_vehicles_per_hour": 6026.567375886525,
+        "training_observations": 141
+      },
+      {
+        "weekday": 2,
+        "hour": 18,
+        "mean_vehicles_per_hour": 4548.467948717948,
+        "training_observations": 156
+      },
+      {
+        "weekday": 2,
+        "hour": 19,
+        "mean_vehicles_per_hour": 3286.472972972973,
+        "training_observations": 148
+      },
+      {
+        "weekday": 2,
+        "hour": 20,
+        "mean_vehicles_per_hour": 2867.6540880503144,
+        "training_observations": 159
+      },
+      {
+        "weekday": 2,
+        "hour": 21,
+        "mean_vehicles_per_hour": 2611.7248322147652,
+        "training_observations": 149
+      },
+      {
+        "weekday": 2,
+        "hour": 22,
+        "mean_vehicles_per_hour": 1882.1069182389938,
+        "training_observations": 159
+      },
+      {
+        "weekday": 2,
+        "hour": 23,
+        "mean_vehicles_per_hour": 1229.8875,
+        "training_observations": 160
+      },
+      {
+        "weekday": 3,
+        "hour": 0,
+        "mean_vehicles_per_hour": 641.2582781456954,
+        "training_observations": 151
+      },
+      {
+        "weekday": 3,
+        "hour": 1,
+        "mean_vehicles_per_hour": 389.04487179487177,
+        "training_observations": 156
+      },
+      {
+        "weekday": 3,
+        "hour": 2,
+        "mean_vehicles_per_hour": 295.4025974025974,
+        "training_observations": 154
+      },
+      {
+        "weekday": 3,
+        "hour": 3,
+        "mean_vehicles_per_hour": 359.5234899328859,
+        "training_observations": 149
+      },
+      {
+        "weekday": 3,
+        "hour": 4,
+        "mean_vehicles_per_hour": 819.0326797385621,
+        "training_observations": 153
+      },
+      {
+        "weekday": 3,
+        "hour": 5,
+        "mean_vehicles_per_hour": 2724.9523809523807,
+        "training_observations": 147
+      },
+      {
+        "weekday": 3,
+        "hour": 6,
+        "mean_vehicles_per_hour": 5397.42,
+        "training_observations": 150
+      },
+      {
+        "weekday": 3,
+        "hour": 7,
+        "mean_vehicles_per_hour": 6118.52027027027,
+        "training_observations": 148
+      },
+      {
+        "weekday": 3,
+        "hour": 8,
+        "mean_vehicles_per_hour": 5511.76821192053,
+        "training_observations": 151
+      },
+      {
+        "weekday": 3,
+        "hour": 9,
+        "mean_vehicles_per_hour": 4994.541666666667,
+        "training_observations": 144
+      },
+      {
+        "weekday": 3,
+        "hour": 10,
+        "mean_vehicles_per_hour": 4451.635135135135,
+        "training_observations": 148
+      },
+      {
+        "weekday": 3,
+        "hour": 11,
+        "mean_vehicles_per_hour": 4761.4295302013425,
+        "training_observations": 149
+      },
+      {
+        "weekday": 3,
+        "hour": 12,
+        "mean_vehicles_per_hour": 4939.2171052631575,
+        "training_observations": 152
+      },
+      {
+        "weekday": 3,
+        "hour": 13,
+        "mean_vehicles_per_hour": 4945.418918918919,
+        "training_observations": 148
+      },
+      {
+        "weekday": 3,
+        "hour": 14,
+        "mean_vehicles_per_hour": 5298.411764705882,
+        "training_observations": 153
+      },
+      {
+        "weekday": 3,
+        "hour": 15,
+        "mean_vehicles_per_hour": 5697.716216216216,
+        "training_observations": 148
+      },
+      {
+        "weekday": 3,
+        "hour": 16,
+        "mean_vehicles_per_hour": 6236.4807692307695,
+        "training_observations": 156
+      },
+      {
+        "weekday": 3,
+        "hour": 17,
+        "mean_vehicles_per_hour": 5889.232876712329,
+        "training_observations": 146
+      },
+      {
+        "weekday": 3,
+        "hour": 18,
+        "mean_vehicles_per_hour": 4545.477124183007,
+        "training_observations": 153
+      },
+      {
+        "weekday": 3,
+        "hour": 19,
+        "mean_vehicles_per_hour": 3358.0331125827815,
+        "training_observations": 151
+      },
+      {
+        "weekday": 3,
+        "hour": 20,
+        "mean_vehicles_per_hour": 2962.6602564102564,
+        "training_observations": 156
+      },
+      {
+        "weekday": 3,
+        "hour": 21,
+        "mean_vehicles_per_hour": 2896.220779220779,
+        "training_observations": 154
+      },
+      {
+        "weekday": 3,
+        "hour": 22,
+        "mean_vehicles_per_hour": 2328.823529411765,
+        "training_observations": 153
+      },
+      {
+        "weekday": 3,
+        "hour": 23,
+        "mean_vehicles_per_hour": 1395.1761006289307,
+        "training_observations": 159
+      },
+      {
+        "weekday": 4,
+        "hour": 0,
+        "mean_vehicles_per_hour": 759.125,
+        "training_observations": 160
+      },
+      {
+        "weekday": 4,
+        "hour": 1,
+        "mean_vehicles_per_hour": 456.7579617834395,
+        "training_observations": 157
+      },
+      {
+        "weekday": 4,
+        "hour": 2,
+        "mean_vehicles_per_hour": 345.43225806451613,
+        "training_observations": 155
+      },
+      {
+        "weekday": 4,
+        "hour": 3,
+        "mean_vehicles_per_hour": 387.0379746835443,
+        "training_observations": 158
+      },
+      {
+        "weekday": 4,
+        "hour": 4,
+        "mean_vehicles_per_hour": 769.6052631578947,
+        "training_observations": 152
+      },
+      {
+        "weekday": 4,
+        "hour": 5,
+        "mean_vehicles_per_hour": 2469.8039215686276,
+        "training_observations": 153
+      },
+      {
+        "weekday": 4,
+        "hour": 6,
+        "mean_vehicles_per_hour": 5118.7828947368425,
+        "training_observations": 152
+      },
+      {
+        "weekday": 4,
+        "hour": 7,
+        "mean_vehicles_per_hour": 5938.149350649351,
+        "training_observations": 154
+      },
+      {
+        "weekday": 4,
+        "hour": 8,
+        "mean_vehicles_per_hour": 5284.94701986755,
+        "training_observations": 151
+      },
+      {
+        "weekday": 4,
+        "hour": 9,
+        "mean_vehicles_per_hour": 4785.208053691275,
+        "training_observations": 149
+      },
+      {
+        "weekday": 4,
+        "hour": 10,
+        "mean_vehicles_per_hour": 4528.245161290322,
+        "training_observations": 155
+      },
+      {
+        "weekday": 4,
+        "hour": 11,
+        "mean_vehicles_per_hour": 4951.974025974026,
+        "training_observations": 154
+      },
+      {
+        "weekday": 4,
+        "hour": 12,
+        "mean_vehicles_per_hour": 5195.066225165563,
+        "training_observations": 151
+      },
+      {
+        "weekday": 4,
+        "hour": 13,
+        "mean_vehicles_per_hour": 5158.033333333334,
+        "training_observations": 150
+      },
+      {
+        "weekday": 4,
+        "hour": 14,
+        "mean_vehicles_per_hour": 5435.705882352941,
+        "training_observations": 153
+      },
+      {
+        "weekday": 4,
+        "hour": 15,
+        "mean_vehicles_per_hour": 5731.693877551021,
+        "training_observations": 147
+      },
+      {
+        "weekday": 4,
+        "hour": 16,
+        "mean_vehicles_per_hour": 5991.431372549019,
+        "training_observations": 153
+      },
+      {
+        "weekday": 4,
+        "hour": 17,
+        "mean_vehicles_per_hour": 5510.961038961039,
+        "training_observations": 154
+      },
+      {
+        "weekday": 4,
+        "hour": 18,
+        "mean_vehicles_per_hour": 4621.152317880795,
+        "training_observations": 151
+      },
+      {
+        "weekday": 4,
+        "hour": 19,
+        "mean_vehicles_per_hour": 3586.269230769231,
+        "training_observations": 156
+      },
+      {
+        "weekday": 4,
+        "hour": 20,
+        "mean_vehicles_per_hour": 2975.720779220779,
+        "training_observations": 154
+      },
+      {
+        "weekday": 4,
+        "hour": 21,
+        "mean_vehicles_per_hour": 2934.4423076923076,
+        "training_observations": 156
+      },
+      {
+        "weekday": 4,
+        "hour": 22,
+        "mean_vehicles_per_hour": 2655.032258064516,
+        "training_observations": 155
+      },
+      {
+        "weekday": 4,
+        "hour": 23,
+        "mean_vehicles_per_hour": 1880.6545454545455,
+        "training_observations": 165
+      },
+      {
+        "weekday": 5,
+        "hour": 0,
+        "mean_vehicles_per_hour": 1222.224358974359,
+        "training_observations": 156
+      },
+      {
+        "weekday": 5,
+        "hour": 1,
+        "mean_vehicles_per_hour": 761.375,
+        "training_observations": 160
+      },
+      {
+        "weekday": 5,
+        "hour": 2,
+        "mean_vehicles_per_hour": 596.7741935483871,
+        "training_observations": 155
+      },
+      {
+        "weekday": 5,
+        "hour": 3,
+        "mean_vehicles_per_hour": 407.2027027027027,
+        "training_observations": 148
+      },
+      {
+        "weekday": 5,
+        "hour": 4,
+        "mean_vehicles_per_hour": 412.0326797385621,
+        "training_observations": 153
+      },
+      {
+        "weekday": 5,
+        "hour": 5,
+        "mean_vehicles_per_hour": 758.3246753246754,
+        "training_observations": 154
+      },
+      {
+        "weekday": 5,
+        "hour": 6,
+        "mean_vehicles_per_hour": 1302.7464788732395,
+        "training_observations": 142
+      },
+      {
+        "weekday": 5,
+        "hour": 7,
+        "mean_vehicles_per_hour": 1949.6709677419356,
+        "training_observations": 155
+      },
+      {
+        "weekday": 5,
+        "hour": 8,
+        "mean_vehicles_per_hour": 2778.559210526316,
+        "training_observations": 152
+      },
+      {
+        "weekday": 5,
+        "hour": 9,
+        "mean_vehicles_per_hour": 3477.4791666666665,
+        "training_observations": 144
+      },
+      {
+        "weekday": 5,
+        "hour": 10,
+        "mean_vehicles_per_hour": 3898.3486842105262,
+        "training_observations": 152
+      },
+      {
+        "weekday": 5,
+        "hour": 11,
+        "mean_vehicles_per_hour": 4269.5625,
+        "training_observations": 144
+      },
+      {
+        "weekday": 5,
+        "hour": 12,
+        "mean_vehicles_per_hour": 4561.3223684210525,
+        "training_observations": 152
+      },
+      {
+        "weekday": 5,
+        "hour": 13,
+        "mean_vehicles_per_hour": 4500.901960784314,
+        "training_observations": 153
+      },
+      {
+        "weekday": 5,
+        "hour": 14,
+        "mean_vehicles_per_hour": 4486.693333333334,
+        "training_observations": 150
+      },
+      {
+        "weekday": 5,
+        "hour": 15,
+        "mean_vehicles_per_hour": 4455.328671328672,
+        "training_observations": 143
+      },
+      {
+        "weekday": 5,
+        "hour": 16,
+        "mean_vehicles_per_hour": 4445.74,
+        "training_observations": 150
+      },
+      {
+        "weekday": 5,
+        "hour": 17,
+        "mean_vehicles_per_hour": 4271.04794520548,
+        "training_observations": 146
+      },
+      {
+        "weekday": 5,
+        "hour": 18,
+        "mean_vehicles_per_hour": 3960.973154362416,
+        "training_observations": 149
+      },
+      {
+        "weekday": 5,
+        "hour": 19,
+        "mean_vehicles_per_hour": 3293.6027397260273,
+        "training_observations": 146
+      },
+      {
+        "weekday": 5,
+        "hour": 20,
+        "mean_vehicles_per_hour": 2860.261744966443,
+        "training_observations": 149
+      },
+      {
+        "weekday": 5,
+        "hour": 21,
+        "mean_vehicles_per_hour": 2938.8639455782313,
+        "training_observations": 147
+      },
+      {
+        "weekday": 5,
+        "hour": 22,
+        "mean_vehicles_per_hour": 2955.9225806451614,
+        "training_observations": 155
+      },
+      {
+        "weekday": 5,
+        "hour": 23,
+        "mean_vehicles_per_hour": 2103.448717948718,
+        "training_observations": 156
+      },
+      {
+        "weekday": 6,
+        "hour": 0,
+        "mean_vehicles_per_hour": 1334.9866666666667,
+        "training_observations": 150
+      },
+      {
+        "weekday": 6,
+        "hour": 1,
+        "mean_vehicles_per_hour": 835.3594771241831,
+        "training_observations": 153
+      },
+      {
+        "weekday": 6,
+        "hour": 2,
+        "mean_vehicles_per_hour": 629.2348993288591,
+        "training_observations": 149
+      },
+      {
+        "weekday": 6,
+        "hour": 3,
+        "mean_vehicles_per_hour": 374.6830985915493,
+        "training_observations": 142
+      },
+      {
+        "weekday": 6,
+        "hour": 4,
+        "mean_vehicles_per_hour": 323.6168831168831,
+        "training_observations": 154
+      },
+      {
+        "weekday": 6,
+        "hour": 5,
+        "mean_vehicles_per_hour": 516.4967320261438,
+        "training_observations": 153
+      },
+      {
+        "weekday": 6,
+        "hour": 6,
+        "mean_vehicles_per_hour": 866.8278145695364,
+        "training_observations": 151
+      },
+      {
+        "weekday": 6,
+        "hour": 7,
+        "mean_vehicles_per_hour": 1200.6418918918919,
+        "training_observations": 148
+      },
+      {
+        "weekday": 6,
+        "hour": 8,
+        "mean_vehicles_per_hour": 1857.4551282051282,
+        "training_observations": 156
+      },
+      {
+        "weekday": 6,
+        "hour": 9,
+        "mean_vehicles_per_hour": 2651.549295774648,
+        "training_observations": 142
+      },
+      {
+        "weekday": 6,
+        "hour": 10,
+        "mean_vehicles_per_hour": 3395.3636363636365,
+        "training_observations": 154
+      },
+      {
+        "weekday": 6,
+        "hour": 11,
+        "mean_vehicles_per_hour": 3711.4931506849316,
+        "training_observations": 146
+      },
+      {
+        "weekday": 6,
+        "hour": 12,
+        "mean_vehicles_per_hour": 4077.2348993288592,
+        "training_observations": 149
+      },
+      {
+        "weekday": 6,
+        "hour": 13,
+        "mean_vehicles_per_hour": 4171.856209150327,
+        "training_observations": 153
+      },
+      {
+        "weekday": 6,
+        "hour": 14,
+        "mean_vehicles_per_hour": 4141.211920529801,
+        "training_observations": 151
+      },
+      {
+        "weekday": 6,
+        "hour": 15,
+        "mean_vehicles_per_hour": 4175.136054421769,
+        "training_observations": 147
+      },
+      {
+        "weekday": 6,
+        "hour": 16,
+        "mean_vehicles_per_hour": 4183.051948051948,
+        "training_observations": 154
+      },
+      {
+        "weekday": 6,
+        "hour": 17,
+        "mean_vehicles_per_hour": 3950.8278145695363,
+        "training_observations": 151
+      },
+      {
+        "weekday": 6,
+        "hour": 18,
+        "mean_vehicles_per_hour": 3609.328671328671,
+        "training_observations": 143
+      },
+      {
+        "weekday": 6,
+        "hour": 19,
+        "mean_vehicles_per_hour": 3097.3809523809523,
+        "training_observations": 147
+      },
+      {
+        "weekday": 6,
+        "hour": 20,
+        "mean_vehicles_per_hour": 2683.1623376623374,
+        "training_observations": 154
+      },
+      {
+        "weekday": 6,
+        "hour": 21,
+        "mean_vehicles_per_hour": 2349.967105263158,
+        "training_observations": 152
+      },
+      {
+        "weekday": 6,
+        "hour": 22,
+        "mean_vehicles_per_hour": 1789.6451612903227,
+        "training_observations": 155
+      },
+      {
+        "weekday": 6,
+        "hour": 23,
+        "mean_vehicles_per_hour": 1197.1410256410256,
+        "training_observations": 156
+      }
+    ]
+  },
+  "validation": {
+    "hourly_slots": 8760,
+    "observed_targets": 8713,
+    "seasonal_lag_eligible_targets": 8667,
+    "seasonal_lag_coverage_of_observed_targets": 0.9947205325375875,
+    "shared_cohort_start": "2017-01-01 00:00:00",
+    "shared_cohort_end": "2017-12-31 23:00:00",
+    "shared_cohort_n": 8667,
+    "baselines": {
+      "training_global_mean": {
+        "n": 8667,
+        "mae_vehicles_per_hour": 1742.7751852928259,
+        "rmse_vehicles_per_hour": 1985.1397839469057,
+        "mean_error_vehicles_per_hour": -124.46567341320258
+      },
+      "training_hour_of_week_mean": {
+        "n": 8667,
+        "mae_vehicles_per_hour": 279.12189746680974,
+        "rmse_vehicles_per_hour": 461.73939335215135,
+        "mean_error_vehicles_per_hour": -106.0602811524308
+      },
+      "same_hour_last_week": {
+        "n": 8667,
+        "mae_vehicles_per_hour": 302.59478481596864,
+        "rmse_vehicles_per_hour": 564.198652647491,
+        "mean_error_vehicles_per_hour": 3.1296873197184722
+      }
+    }
+  }
+}
