@@ -20,7 +20,7 @@ This is a historical research prototype for a hypothetical traffic-operations an
 - Prediction intervals, calibration checks, and transparent operational scenarios.
 - Reproducible code, meaningful tests, documented decisions, and incremental Git history.
 
-Some capabilities are still planned. See [the roadmap](docs/ROADMAP.md) for completion status.
+Some capabilities are still planned. See [the roadmap](docs/ROADMAP.md) for completion status and the delivery timeline targeting **26 October 2026**.
 
 ## Part 1 source audit
 
@@ -42,6 +42,8 @@ The full evidence is in [day01_audit.json](reports/day01_audit.json); the input 
 ## Part 3 baseline results
 
 We calculated training summaries without opening the final test partition, then compared three reference forecasts on the same 8,667 eligible hours in the 2017 validation period. Lower MAE means a smaller typical absolute error.
+
+The fitted means use only training counts available by the first validation forecast: source timestamps through 2016-12-31 22:00 inclusive (25,328 observed hours). Descriptive training profiles use all 25,329 observed training hours; they are not used as fitted forecast parameters. A review on 12 October corrected this one-hour boundary and regenerated the results below.
 
 | Baseline | MAE (vehicles/hour) | RMSE (vehicles/hour) |
 |---|---:|---:|

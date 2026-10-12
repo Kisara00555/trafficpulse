@@ -87,6 +87,20 @@ def analyze(hourly_rows):
             hour_day_values[stamp.hour].append(value)
     hour_week_means = {key: statistics.fmean(values) for key, values in hour_week_values.items()}
 
+    # Fit once using only labels available at the first validation issue time.
+    # The last training hour is t-1 there, so it is not yet available.
+    fit_cutoff = TRAINING_END - ISSUE_DELAY
+    fit_rows = [row for row in train
+                if row["date_time"] <= fit_cutoff and row["traffic_volume"] is not None]
+    if not fit_rows:
+        raise ValueError("No training targets available at the first validation issue time")
+    fit_mean = statistics.fmean(row["traffic_volume"] for row in fit_rows)
+    fit_groups = defaultdict(list)
+    for row in fit_rows:
+        stamp = row["date_time"]
+        fit_groups[(stamp.weekday(), stamp.hour)].append(row["traffic_volume"])
+    fit_hour_week = {key: statistics.fmean(values) for key, values in fit_groups.items()}
+
     by_stamp = {row["date_time"]: row["traffic_volume"] for row in hourly_rows}
     eligible = []
     for row in validation:
@@ -105,9 +119,9 @@ def analyze(hourly_rows):
         raise ValueError("No validation hours have an observed same-hour-last-week value")
 
     actual = [row[1] for row in eligible]
-    global_predictions = [global_mean] * len(eligible)
+    global_predictions = [fit_mean] * len(eligible)
     hour_week_predictions = [
-        hour_week_means.get((stamp.weekday(), stamp.hour), global_mean)
+        fit_hour_week.get((stamp.weekday(), stamp.hour), fit_mean)
         for stamp, _, _ in eligible
     ]
     seasonal_predictions = [row[2] for row in eligible]
@@ -130,6 +144,8 @@ def analyze(hourly_rows):
             "validation_end_exclusive": str(VALIDATION_END),
             "forecast_issue_time": "start of target hour t",
             "latest_permitted_source_time": "t-2 hours",
+            "fit_source_cutoff_inclusive": str(fit_cutoff),
+            "fit_policy": "Fit once before validation; exclude labels unavailable at its first issue time. Descriptive training profiles use the whole training partition and are not forecast parameters.",
             "validation_only_for_scoring": True,
             "final_test_read": False,
             "comparison_population": "Observed 2017 validation targets whose exact t-168 hourly target is also observed; identical rows for every baseline.",
@@ -145,6 +161,12 @@ def analyze(hourly_rows):
             "hour_of_week_groups": len(hour_week_means),
             "hourly_profile": hourly_profile,
             "hour_of_week_profile": hour_week_profile,
+        },
+        "fit": {
+            "observed_hours": len(fit_rows),
+            "latest_source_time": str(max(row["date_time"] for row in fit_rows)),
+            "global_mean_vehicles_per_hour": fit_mean,
+            "hour_of_week_groups": len(fit_hour_week),
         },
         "validation": {
             "hourly_slots": len(validation),

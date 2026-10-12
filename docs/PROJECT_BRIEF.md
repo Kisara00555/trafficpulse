@@ -37,6 +37,8 @@ A hypothetical traffic-operations analyst needs an hourly demand forecast and un
 
 ## Current decisions and open questions
 
+The 12 October review corrected Part 3 fitting to stop at 2016-12-31 22:00 inclusive, respecting the two-hour delay at the first validation forecast. The fixed models use 25,328 observed training labels; descriptive profiles retain all 25,329. A regression test changes the unavailable last training label and confirms it cannot change the first forecast. Rounded scores below are unchanged. The delivery deadline is 26 October 2026; see the dated roadmap.
+
 Part 2 implemented the proposed split boundaries without alteration on 7 October 2026. The cleaned output is target-only: one agreed count per source-clock hour, blanks for absent hours, and no interpolation. Weather/holiday fields remain raw and excluded pending later feature decisions. See `CLEANING_POLICY.md` for the frozen rules and structural coverage; timezone interpretation and zero-count meaning remain open.
 
 Part 3, completed on 12 October 2026, summarizes observed training targets and compares three simple baselines on 8,667 common eligible hours in 2017 validation. The training weekday-hour mean achieved MAE 279.1 and RMSE 461.7 vehicles/hour; same-hour-last-week achieved 302.6 and 564.2; the training global mean achieved 1,742.8 and 1,985.1. The exact one-week lag was present for 99.5% of observed validation targets. The analysis loads only the training and validation partitions; the final holdout remains unused. See `reports/part03_baselines.json` and `notebooks/03_training_baselines.ipynb`. These scores are a baseline reference for one station/year, not operational performance.

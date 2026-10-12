@@ -30,6 +30,23 @@ class BaselineTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "final test is excluded"):
             analyze(train + test)
 
+    def test_unavailable_last_training_label_cannot_change_first_forecast(self):
+        start = datetime(2016, 12, 25)
+        rows = [dict(date_time=start + timedelta(hours=hour), traffic_volume=100,
+                     split="train") for hour in range(168)]
+        rows.append(dict(date_time=datetime(2017, 1, 1), traffic_volume=100,
+                         split="validation"))
+        before = analyze(rows)
+        rows[-2]["traffic_volume"] = 999_999  # t-1: unavailable at first forecast
+        after = analyze(rows)
+        self.assertEqual(before["validation"]["baselines"], after["validation"]["baselines"])
+        self.assertEqual(after["fit"]["observed_hours"], 167)
+        self.assertEqual(after["fit"]["latest_source_time"], "2016-12-31 22:00:00")
+        self.assertEqual(after["training"]["observed_hours"], 168)
+        rows[-3]["traffic_volume"] = 200  # t-2: available, must be included
+        at_cutoff = analyze(rows)
+        self.assertGreater(at_cutoff["fit"]["global_mean_vehicles_per_hour"], 100)
+
     def test_missing_seasonal_history_is_not_filled(self):
         start = datetime(2016, 12, 25)
         rows = []

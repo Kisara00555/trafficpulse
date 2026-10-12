@@ -4,6 +4,8 @@
     "validation_end_exclusive": "2018-01-01 00:00:00",
     "forecast_issue_time": "start of target hour t",
     "latest_permitted_source_time": "t-2 hours",
+    "fit_source_cutoff_inclusive": "2016-12-31 22:00:00",
+    "fit_policy": "Fit once before validation; exclude labels unavailable at its first issue time. Descriptive training profiles use the whole training partition and are not forecast parameters.",
     "validation_only_for_scoring": true,
     "final_test_read": false,
     "comparison_population": "Observed 2017 validation targets whose exact t-168 hourly target is also observed; identical rows for every baseline.",
@@ -1159,6 +1161,12 @@
       }
     ]
   },
+  "fit": {
+    "observed_hours": 25328,
+    "latest_source_time": "2016-12-31 22:00:00",
+    "global_mean_vehicles_per_hour": 3252.5670404295643,
+    "hour_of_week_groups": 168
+  },
   "validation": {
     "hourly_slots": 8760,
     "observed_targets": 8713,
@@ -1170,15 +1178,15 @@
     "baselines": {
       "training_global_mean": {
         "n": 8667,
-        "mae_vehicles_per_hour": 1742.7751852928259,
-        "rmse_vehicles_per_hour": 1985.1397839469057,
-        "mean_error_vehicles_per_hour": -124.46567341320258
+        "mae_vehicles_per_hour": 1742.770411057736,
+        "rmse_vehicles_per_hour": 1985.1363301610863,
+        "mean_error_vehicles_per_hour": -124.41057581596476
       },
       "training_hour_of_week_mean": {
         "n": 8667,
-        "mae_vehicles_per_hour": 279.12189746680974,
-        "rmse_vehicles_per_hour": 461.73939335215135,
-        "mean_error_vehicles_per_hour": -106.0602811524308
+        "mae_vehicles_per_hour": 279.11822839624625,
+        "rmse_vehicles_per_hour": 461.7323218505378,
+        "mean_error_vehicles_per_hour": -106.05074156896566
       },
       "same_hour_last_week": {
         "n": 8667,

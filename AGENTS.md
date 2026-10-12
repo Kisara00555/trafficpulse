@@ -1,5 +1,9 @@
 # Project working agreement
 
+## Delivery deadline agreed 2026-10-12
+
+Complete the planned project by 26 October 2026 (Asia/Colombo). Follow the dated targets and review buffer in docs/ROADMAP.md at the existing 19:00 daily schedule. Keep at most one new part per local day; repairs to a completed part are allowed. Resume incomplete work before advancing and report deadline risks promptly. Never mark work complete or use final holdout results for tuning to meet the deadline. Parts 1–3 are complete; Part 4 is next as of this review.
+
 ## Standing GitHub quality preference (2026-10-04)
 
 The user requests double-checking before every commit and verification after publication, and authorizes useful improvements to their GitHub profile as well as this project. Before each commit, inspect the exact diff, check factual claims, run relevant tests or document checks, and check for secrets, generated clutter, unrelated changes, and broken internal links. After publication, verify remote content and commit identity, inspect relevant CI, and confirm the local worktree is clean or clearly report preserved pending changes. Do not call all checks passed if any check is pending or unavailable.
