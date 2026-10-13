@@ -37,6 +37,8 @@ A hypothetical traffic-operations analyst needs an hourly demand forecast and un
 
 ## Current decisions and open questions
 
+Part 4 completed on 14 October 2026: 15 calendar, exact-timestamp lag and rolling-history predictors with no learned preprocessing. All observed inputs are at t-2 or older. Missing inputs are preserved; 8,148 of 8,713 observed validation targets have complete inputs. The final holdout remains sealed. See [FEATURE_CONTRACT.md](FEATURE_CONTRACT.md) for the allowlist, coverage and rules for Part 5 fitting.
+
 The 12 October review corrected Part 3 fitting to stop at 2016-12-31 22:00 inclusive, respecting the two-hour delay at the first validation forecast. The fixed models use 25,328 observed training labels; descriptive profiles retain all 25,329. A regression test changes the unavailable last training label and confirms it cannot change the first forecast. Rounded scores below are unchanged. The delivery deadline is 26 October 2026; see the dated roadmap.
 
 Part 2 implemented the proposed split boundaries without alteration on 7 October 2026. The cleaned output is target-only: one agreed count per source-clock hour, blanks for absent hours, and no interpolation. Weather/holiday fields remain raw and excluded pending later feature decisions. See `CLEANING_POLICY.md` for the frozen rules and structural coverage; timezone interpretation and zero-count meaning remain open.

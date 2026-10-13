@@ -2,7 +2,7 @@
 
 **Hourly traffic forecasting with honest evaluation and uncertainty.**
 
-Status: **Part 3 complete — training-only exploration and simple validation baselines.** No complex forecasting model or operational impact is claimed.
+Status: **Part 4 complete - calendar and historical inputs with leakage tests.** No complex forecasting model or operational impact is claimed.
 
 [![Data contract tests](https://github.com/Kisara00555/trafficpulse/actions/workflows/tests.yml/badge.svg)](https://github.com/Kisara00555/trafficpulse/actions/workflows/tests.yml)
 
@@ -53,6 +53,12 @@ The fitted means use only training counts available by the first validation fore
 
 The weekday-and-hour average beat repeating last week's exact count on this validation population. The same-week-lag was available for 8,667 of 8,713 observed validation targets (99.5%); the comparison excludes the 46 targets without that lag. These are historical results for one station and one validation year, not a guarantee of future performance. Full details are in the [training-only summary and validation report](reports/part03_baselines.json), the [error comparison chart](reports/part03_baselines.svg), and the [executed analysis notebook](notebooks/03_training_baselines.ipynb).
 
+## Part 4 forecasting inputs
+
+Run `python -m trafficpulse.features` after Part 2. This verifies the training/validation fingerprints and creates 15 calendar, exact-time lag and rolling-history inputs in ignored local CSVs. Missing readings remain missing. All observed inputs stop at least two hours before the forecast target; the final holdout is not loaded.
+
+Of 8,713 observed validation targets, 8,148 have every feature (93.5%). Missing-input handling and model comparison come next. See the [feature contract](docs/FEATURE_CONTRACT.md), [coverage report](reports/part04_features.json), and [daily explanation](docs/daily/2026-10-14.md).
+
 ## Run Part 1
 
 Python 3.10 or later; the data pipeline and tests use only the standard library.
@@ -73,7 +79,7 @@ The download is about 396 KB. Repeated runs reuse the local archive and verify i
 
 ## Repository guide
 
-Part 2: run `python -m trafficpulse.prepare` after Part 1. This creates ignored local CSVs in `data/processed/` and a reproducible [manifest](reports/part02_manifest.json). Part 3: run `python -m trafficpulse.baselines`; this reads only the training and validation CSVs and writes the [baseline report](reports/part03_baselines.json) and charts in `reports/`. The executed notebook is [03_training_baselines.ipynb](notebooks/03_training_baselines.ipynb). For notebook execution use Python 3.12+ with `nbformat nbclient ipykernel nbconvert`; from the repository root set `PYTHONPATH` to `src` (PowerShell: `$env:PYTHONPATH='src'`; macOS/Linux: `export PYTHONPATH=src`), then run `python -m nbconvert --execute --to notebook --inplace notebooks/03_training_baselines.ipynb`. The standard-library pipeline supports Python 3.10+. Missing targets remain blank; weather is retained only in the raw source. See the [latest learning note](docs/daily/2026-10-12.md).
+Part 2: run `python -m trafficpulse.prepare` after Part 1. This creates ignored local CSVs in `data/processed/` and a reproducible [manifest](reports/part02_manifest.json). Part 3: run `python -m trafficpulse.baselines`; this reads only the training and validation CSVs and writes the [baseline report](reports/part03_baselines.json) and charts in `reports/`. The executed notebook is [03_training_baselines.ipynb](notebooks/03_training_baselines.ipynb). For notebook execution use Python 3.12+ with `nbformat nbclient ipykernel nbconvert`; from the repository root set `PYTHONPATH` to `src` (PowerShell: `$env:PYTHONPATH='src'`; macOS/Linux: `export PYTHONPATH=src`), then run `python -m nbconvert --execute --to notebook --inplace notebooks/03_training_baselines.ipynb`. The standard-library pipeline supports Python 3.10+. Missing targets remain blank; weather is retained only in the raw source. See the [latest learning note](docs/daily/2026-10-14.md).
 
 - `src/trafficpulse/data.py`: download, source verification, structural audit.
 - `src/trafficpulse/baselines.py`: training-only summaries and identical-population validation scores.
@@ -82,7 +88,7 @@ Part 2: run `python -m trafficpulse.prepare` after Part 1. This creates ignored 
 - `docs/PROJECT_BRIEF.md`: forecasting contract and evaluation plan.
 - `docs/DATA_CARD.md`: field meanings, source, license, and limits.
 - `docs/ROADMAP.md`: one learning milestone per session.
-- `docs/daily/2026-10-12.md`: latest plain-language explanation and interview practice.
+- `docs/daily/2026-10-14.md`: latest plain-language explanation and interview practice.
 - `.github/workflows/tests.yml`: automated tests on each push and pull request. [Initial GitHub verification passed](https://github.com/Kisara00555/trafficpulse/actions/runs/37206079243).
 
 ## Source and license

@@ -1,0 +1,121 @@
+{
+  "specification_version": "1.0",
+  "final_holdout_read": false,
+  "input_sha256": {
+    "train": "6e2ad85a84d6b9f6eb1a0c5ed54bf1fc6d789748c897d5f57be2b2453a82f817",
+    "validation": "836c7aac6c9b300ef2aea0cef52f6011e3593580545f4b7da0fbfa3b84cd012e"
+  },
+  "feature_columns": [
+    "hour",
+    "weekday",
+    "month",
+    "is_weekend",
+    "hour_sin",
+    "hour_cos",
+    "weekday_sin",
+    "weekday_cos",
+    "lag_2h",
+    "lag_3h",
+    "lag_24h",
+    "lag_48h",
+    "lag_168h",
+    "rolling_mean_24h",
+    "rolling_count_24h"
+  ],
+  "lag_hours": [
+    2,
+    3,
+    24,
+    48,
+    168
+  ],
+  "rolling_window_offsets_hours": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "rolling_mean_minimum_observations": 24,
+  "fitted_transformations": "None; no imputation or scaling in Part 4",
+  "missing_policy": "Preserve missing values; rolling count uses past observations only",
+  "model_fit_issue_time": "2017-01-01 00:00:00",
+  "model_fit_label_cutoff_inclusive": "2016-12-31 22:00:00",
+  "available_training_labels": 25328,
+  "available_training_labels_with_complete_features": 13328,
+  "partitions": {
+    "train": {
+      "hourly_slots": 37239,
+      "observed_targets": 25329,
+      "complete_feature_rows_with_target": 13329,
+      "missing_by_feature": {
+        "hour": 0,
+        "weekday": 0,
+        "month": 0,
+        "is_weekend": 0,
+        "hour_sin": 0,
+        "hour_cos": 0,
+        "weekday_sin": 0,
+        "weekday_cos": 0,
+        "lag_2h": 11912,
+        "lag_3h": 11913,
+        "lag_24h": 11934,
+        "lag_48h": 11958,
+        "lag_168h": 12078,
+        "rolling_mean_24h": 22703,
+        "rolling_count_24h": 0
+      }
+    },
+    "validation": {
+      "hourly_slots": 8760,
+      "observed_targets": 8713,
+      "complete_feature_rows_with_target": 8148,
+      "missing_by_feature": {
+        "hour": 0,
+        "weekday": 0,
+        "month": 0,
+        "is_weekend": 0,
+        "hour_sin": 0,
+        "hour_cos": 0,
+        "weekday_sin": 0,
+        "weekday_cos": 0,
+        "lag_2h": 47,
+        "lag_3h": 47,
+        "lag_24h": 47,
+        "lag_48h": 47,
+        "lag_168h": 47,
+        "rolling_mean_24h": 506,
+        "rolling_count_24h": 0
+      }
+    }
+  },
+  "outputs": {
+    "train": {
+      "path": "data/processed/train_features.csv",
+      "sha256": "7fdb1afcb9b771cc25f527a971789ce32148eb2411c64ac226eef53d709adcd1"
+    },
+    "validation": {
+      "path": "data/processed/validation_features.csv",
+      "sha256": "34ffc32a1a35c211cd422532e23970d6426f78ef9407cce7408d1d93676a4cdf"
+    }
+  }
+}
