@@ -1,0 +1,202 @@
+{
+  "protocol": {
+    "tune_start": "2016-07-01 00:00:00",
+    "tune_end_inclusive": "2016-12-31 22:00:00",
+    "inner_fit_label_cutoff": "2016-06-30 22:00:00",
+    "final_fit_label_cutoff": "2016-12-31 22:00:00",
+    "selection_metric": "2016 tuning MAE; fixed order for exact ties",
+    "validation_used_for_selection": false,
+    "final_holdout_read": false,
+    "negative_prediction_policy": "Clip learned forecasts to zero",
+    "validation_refitting": false
+  },
+  "inner_fit_n": 20966,
+  "tuning_n": 4361,
+  "final_fit_n": 25328,
+  "tuning_scores": {
+    "global_mean": {
+      "n": 4361,
+      "mae_vehicles_per_hour": 1637.8577125765669,
+      "rmse_vehicles_per_hour": 1873.2784775939022,
+      "mean_error_vehicles_per_hour": 206.16867550246724
+    },
+    "weekday_hour_mean": {
+      "n": 4361,
+      "mae_vehicles_per_hour": 355.38898520263126,
+      "rmse_vehicles_per_hour": 606.4115772214033,
+      "mean_error_vehicles_per_hour": 219.49100078342371
+    },
+    "weekly_with_fallback": {
+      "n": 4361,
+      "mae_vehicles_per_hour": 380.52870299464814,
+      "rmse_vehicles_per_hour": 706.3611267308746,
+      "mean_error_vehicles_per_hour": 19.79514234526616
+    },
+    "ridge_alpha_1": {
+      "n": 4361,
+      "mae_vehicles_per_hour": 431.54297188092994,
+      "rmse_vehicles_per_hour": 620.5219203457901,
+      "mean_error_vehicles_per_hour": 26.25467562052417
+    },
+    "ridge_alpha_10": {
+      "n": 4361,
+      "mae_vehicles_per_hour": 431.56602567909727,
+      "rmse_vehicles_per_hour": 620.5560519028005,
+      "mean_error_vehicles_per_hour": 26.258908085691978
+    },
+    "ridge_alpha_100": {
+      "n": 4361,
+      "mae_vehicles_per_hour": 431.80508724768845,
+      "rmse_vehicles_per_hour": 620.9140932243482,
+      "mean_error_vehicles_per_hour": 26.30870379829742
+    },
+    "hist_leaves_15": {
+      "n": 4361,
+      "mae_vehicles_per_hour": 253.50417138190465,
+      "rmse_vehicles_per_hour": 388.1316303500213,
+      "mean_error_vehicles_per_hour": 50.06302230899658
+    },
+    "hist_leaves_31": {
+      "n": 4361,
+      "mae_vehicles_per_hour": 253.3304233654741,
+      "rmse_vehicles_per_hour": 387.25945909892846,
+      "mean_error_vehicles_per_hour": 49.43950280429601
+    }
+  },
+  "selected_by_family": {
+    "ridge": "ridge_alpha_1",
+    "hist": "hist_leaves_31"
+  },
+  "provisional_champion": "hist_leaves_31",
+  "validation": {
+    "observed_targets": 8713,
+    "predicted_targets": 8713,
+    "weekly_fallback_count": 46,
+    "incomplete_feature_targets": 565,
+    "all_observed": {
+      "global_mean": {
+        "n": 8713,
+        "mae_vehicles_per_hour": 1744.453018780833,
+        "rmse_vehicles_per_hour": 1986.3459989364267,
+        "mean_error_vehicles_per_hour": -124.02207927662191
+      },
+      "weekday_hour_mean": {
+        "n": 8713,
+        "mae_vehicles_per_hour": 278.65935824331905,
+        "rmse_vehicles_per_hour": 460.9943739297771,
+        "mean_error_vehicles_per_hour": -105.80358154424621
+      },
+      "weekly_with_fallback": {
+        "n": 8713,
+        "mae_vehicles_per_hour": 302.01197094729406,
+        "rmse_vehicles_per_hour": 563.1022996975296,
+        "mean_error_vehicles_per_hour": 2.800432822587869
+      },
+      "ridge_alpha_1": {
+        "n": 8713,
+        "mae_vehicles_per_hour": 381.08539889011405,
+        "rmse_vehicles_per_hour": 556.8241707219258,
+        "mean_error_vehicles_per_hour": -13.844825417984453
+      },
+      "hist_leaves_31": {
+        "n": 8713,
+        "mae_vehicles_per_hour": 190.1608088200647,
+        "rmse_vehicles_per_hour": 298.7543246737755,
+        "mean_error_vehicles_per_hour": -24.627415433183888
+      }
+    },
+    "shared_weekly_cohort": {
+      "global_mean": {
+        "n": 8667,
+        "mae_vehicles_per_hour": 1742.770411057736,
+        "rmse_vehicles_per_hour": 1985.1363301610863,
+        "mean_error_vehicles_per_hour": -124.41057581596476
+      },
+      "weekday_hour_mean": {
+        "n": 8667,
+        "mae_vehicles_per_hour": 279.11822839624625,
+        "rmse_vehicles_per_hour": 461.7323218505378,
+        "mean_error_vehicles_per_hour": -106.05074156896566
+      },
+      "weekly_with_fallback": {
+        "n": 8667,
+        "mae_vehicles_per_hour": 302.59478481596864,
+        "rmse_vehicles_per_hour": 564.198652647491,
+        "mean_error_vehicles_per_hour": 3.1296873197184722
+      },
+      "ridge_alpha_1": {
+        "n": 8667,
+        "mae_vehicles_per_hour": 378.11218145313086,
+        "rmse_vehicles_per_hour": 552.7703845883264,
+        "mean_error_vehicles_per_hour": -14.518926450939505
+      },
+      "hist_leaves_31": {
+        "n": 8667,
+        "mae_vehicles_per_hour": 190.2603512825225,
+        "rmse_vehicles_per_hour": 299.02805197226405,
+        "mean_error_vehicles_per_hour": -24.790847768937827
+      }
+    },
+    "incomplete_features": {
+      "global_mean": {
+        "n": 565,
+        "mae_vehicles_per_hour": 1829.3035100542825,
+        "rmse_vehicles_per_hour": 2066.1586896208605,
+        "mean_error_vehicles_per_hour": -165.7019861191083
+      },
+      "weekday_hour_mean": {
+        "n": 565,
+        "mae_vehicles_per_hour": 271.26657476440073,
+        "rmse_vehicles_per_hour": 499.3800080312908,
+        "mean_error_vehicles_per_hour": -62.3499894863923
+      },
+      "weekly_with_fallback": {
+        "n": 565,
+        "mae_vehicles_per_hour": 364.64124400667805,
+        "rmse_vehicles_per_hour": 727.7624186181911,
+        "mean_error_vehicles_per_hour": 19.529506518952395
+      },
+      "ridge_alpha_1": {
+        "n": 565,
+        "mae_vehicles_per_hour": 454.7066485645683,
+        "rmse_vehicles_per_hour": 655.1832244792932,
+        "mean_error_vehicles_per_hour": 24.44280643816516
+      },
+      "hist_leaves_31": {
+        "n": 565,
+        "mae_vehicles_per_hour": 211.279641861366,
+        "rmse_vehicles_per_hour": 341.25569089148667,
+        "mean_error_vehicles_per_hour": -9.206082494759414
+      }
+    }
+  },
+  "input_sha256": {
+    "train": "6e2ad85a84d6b9f6eb1a0c5ed54bf1fc6d789748c897d5f57be2b2453a82f817",
+    "validation": "836c7aac6c9b300ef2aea0cef52f6011e3593580545f4b7da0fbfa3b84cd012e"
+  },
+  "feature_columns": [
+    "hour",
+    "weekday",
+    "month",
+    "is_weekend",
+    "hour_sin",
+    "hour_cos",
+    "weekday_sin",
+    "weekday_cos",
+    "lag_2h",
+    "lag_3h",
+    "lag_24h",
+    "lag_48h",
+    "lag_168h",
+    "rolling_mean_24h",
+    "rolling_count_24h"
+  ],
+  "modeling_plan_sha256": "aac9d3ae35a64d4ad4dc77422731253755809b0ff571cd0691a6581113109769",
+  "prediction_csv_sha256": "41dbd18c39ddc48e63986c0d5e011de871666ee45d97fe0ed1d3a79653406d96",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "sklearn": "1.7.2"
+  }
+}

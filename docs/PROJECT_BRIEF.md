@@ -37,6 +37,8 @@ A hypothetical traffic-operations analyst needs an hourly demand forecast and un
 
 ## Current decisions and open questions
 
+Part 5 completed on 15 October 2026. Settings were selected on a 2016 chronological tuning window, then refitted on available training labels before scoring 2017. Histogram boosting (31 leaves) is the provisional champion: MAE 190.2 versus 278.7 for the weekday/hour baseline on all 8,713 observed validation targets. Ridge scored 381.1. Missing inputs are handled explicitly and final holdout outcomes remain unused. See [MODEL_RESULTS.md](MODEL_RESULTS.md) for populations, tuning evidence and limitations.
+
 Part 4 completed on 14 October 2026: 15 calendar, exact-timestamp lag and rolling-history predictors with no learned preprocessing. All observed inputs are at t-2 or older. Missing inputs are preserved; 8,148 of 8,713 observed validation targets have complete inputs. The final holdout remains sealed. See [FEATURE_CONTRACT.md](FEATURE_CONTRACT.md) for the allowlist, coverage and rules for Part 5 fitting.
 
 The 12 October review corrected Part 3 fitting to stop at 2016-12-31 22:00 inclusive, respecting the two-hour delay at the first validation forecast. The fixed models use 25,328 observed training labels; descriptive profiles retain all 25,329. A regression test changes the unavailable last training label and confirms it cannot change the first forecast. Rounded scores below are unchanged. The delivery deadline is 26 October 2026; see the dated roadmap.

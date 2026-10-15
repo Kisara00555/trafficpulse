@@ -8,8 +8,8 @@ Autonomous daily development was authorized on 6 October 2026. Complete at most 
 | 2 | Clean hourly table, split manifests, quality notebook | What does one row represent? | Complete, 2026-10-07 |
 | 3 | Training-only exploration and simple baselines | What must your model beat? | Complete, 2026-10-12 |
 | 4 | Leakage-tested lag/calendar features | What information exists at prediction time? | Complete, 2026-10-14 |
-| 5 | Regularized and tree-based models | Why this model and how was it tuned? | Next |
-| 6 | Temporal backtesting and error analysis | Does it work across seasons? | Planned |
+| 5 | Regularized and tree-based models | Why this model and how was it tuned? | Complete, 2026-10-15 |
+| 6 | Temporal backtesting and error analysis | Does it work across seasons? | Next |
 | 7 | Uncertainty and interval evaluation | How do you communicate unreliable forecasts? | Planned |
 | 8 | Simulated operational decision study | How does predictive accuracy affect a decision? | Planned |
 | 9 | Final holdout evaluation and small demo | What happens on unseen data? | Planned |
