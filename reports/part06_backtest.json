@@ -1,0 +1,2149 @@
+{
+  "protocol": {
+    "final_holdout_read": false,
+    "model_retuning": false,
+    "validation_previously_inspected": true,
+    "quarterly_refit": "Expanding history through origin minus two hours",
+    "fixed_origin": "2017-01-01 model, unchanged throughout validation",
+    "policy_adoption": "Diagnostic comparison only; fixed-origin reference retained"
+  },
+  "fixed_models": {
+    "ridge": "ridge_alpha_1",
+    "hist": "hist_leaves_31"
+  },
+  "folds": [
+    {
+      "origin": "2017-01-01 00:00:00",
+      "end_exclusive": "2017-04-01 00:00:00",
+      "fit_label_cutoff_inclusive": "2016-12-31 22:00:00",
+      "fit_n": 25328,
+      "fit_latest_label": "2016-12-31 22:00:00",
+      "expected_slots": 2160,
+      "missing_targets": 19,
+      "quarterly_refit": {
+        "n": 2141,
+        "incomplete_inputs": 181,
+        "weekly_fallback_count": 19,
+        "scores": {
+          "global_mean": {
+            "n": 2141,
+            "mae_vehicles_per_hour": 1762.387503529591,
+            "rmse_vehicles_per_hour": 1996.0866862612038,
+            "mean_error_vehicles_per_hour": -83.28770034577437
+          },
+          "weekday_hour_mean": {
+            "n": 2141,
+            "mae_vehicles_per_hour": 281.0541394408776,
+            "rmse_vehicles_per_hour": 433.9623721228259,
+            "mean_error_vehicles_per_hour": -58.04725315299936
+          },
+          "weekly_with_fallback": {
+            "n": 2141,
+            "mae_vehicles_per_hour": 307.3881368211618,
+            "rmse_vehicles_per_hour": 500.5692956824995,
+            "mean_error_vehicles_per_hour": -55.32252713895983
+          },
+          "ridge_alpha_1": {
+            "n": 2141,
+            "mae_vehicles_per_hour": 381.53561734013624,
+            "rmse_vehicles_per_hour": 543.0859062120809,
+            "mean_error_vehicles_per_hour": -2.145493906473665
+          },
+          "hist_leaves_31": {
+            "n": 2141,
+            "mae_vehicles_per_hour": 206.41960144376716,
+            "rmse_vehicles_per_hour": 323.13627932238984,
+            "mean_error_vehicles_per_hour": -30.062523192099462
+          }
+        }
+      },
+      "fixed_origin": {
+        "n": 2141,
+        "incomplete_inputs": 181,
+        "weekly_fallback_count": 19,
+        "scores": {
+          "global_mean": {
+            "n": 2141,
+            "mae_vehicles_per_hour": 1762.387503529591,
+            "rmse_vehicles_per_hour": 1996.0866862612038,
+            "mean_error_vehicles_per_hour": -83.28770034577437
+          },
+          "weekday_hour_mean": {
+            "n": 2141,
+            "mae_vehicles_per_hour": 281.0541394408776,
+            "rmse_vehicles_per_hour": 433.9623721228259,
+            "mean_error_vehicles_per_hour": -58.04725315299936
+          },
+          "weekly_with_fallback": {
+            "n": 2141,
+            "mae_vehicles_per_hour": 307.3881368211618,
+            "rmse_vehicles_per_hour": 500.5692956824995,
+            "mean_error_vehicles_per_hour": -55.32252713895983
+          },
+          "ridge_alpha_1": {
+            "n": 2141,
+            "mae_vehicles_per_hour": 381.53561734013624,
+            "rmse_vehicles_per_hour": 543.0859062120809,
+            "mean_error_vehicles_per_hour": -2.145493906473665
+          },
+          "hist_leaves_31": {
+            "n": 2141,
+            "mae_vehicles_per_hour": 206.41960144376716,
+            "rmse_vehicles_per_hour": 323.13627932238984,
+            "mean_error_vehicles_per_hour": -30.062523192099462
+          }
+        }
+      }
+    },
+    {
+      "origin": "2017-04-01 00:00:00",
+      "end_exclusive": "2017-07-01 00:00:00",
+      "fit_label_cutoff_inclusive": "2017-03-31 22:00:00",
+      "fit_n": 27469,
+      "fit_latest_label": "2017-03-31 22:00:00",
+      "expected_slots": 2184,
+      "missing_targets": 9,
+      "quarterly_refit": {
+        "n": 2175,
+        "incomplete_inputs": 83,
+        "weekly_fallback_count": 9,
+        "scores": {
+          "global_mean": {
+            "n": 2175,
+            "mae_vehicles_per_hour": 1733.1815303437145,
+            "rmse_vehicles_per_hour": 1975.1284539318553,
+            "mean_error_vehicles_per_hour": -165.2528699813331
+          },
+          "weekday_hour_mean": {
+            "n": 2175,
+            "mae_vehicles_per_hour": 241.66484141613705,
+            "rmse_vehicles_per_hour": 383.79478776114144,
+            "mean_error_vehicles_per_hour": -150.17921241139695
+          },
+          "weekly_with_fallback": {
+            "n": 2175,
+            "mae_vehicles_per_hour": 256.68392425752256,
+            "rmse_vehicles_per_hour": 470.22561617386475,
+            "mean_error_vehicles_per_hour": 8.594311321014576
+          },
+          "ridge_alpha_1": {
+            "n": 2175,
+            "mae_vehicles_per_hour": 359.42626255638334,
+            "rmse_vehicles_per_hour": 516.3044161154352,
+            "mean_error_vehicles_per_hour": -9.762053716159148
+          },
+          "hist_leaves_31": {
+            "n": 2175,
+            "mae_vehicles_per_hour": 175.3492282020713,
+            "rmse_vehicles_per_hour": 268.5791155927293,
+            "mean_error_vehicles_per_hour": -12.093088398663726
+          }
+        }
+      },
+      "fixed_origin": {
+        "n": 2175,
+        "incomplete_inputs": 83,
+        "weekly_fallback_count": 9,
+        "scores": {
+          "global_mean": {
+            "n": 2175,
+            "mae_vehicles_per_hour": 1733.9540857603415,
+            "rmse_vehicles_per_hour": 1975.6818351035345,
+            "mean_error_vehicles_per_hour": -171.7405457773323
+          },
+          "weekday_hour_mean": {
+            "n": 2175,
+            "mae_vehicles_per_hour": 244.2926143145672,
+            "rmse_vehicles_per_hour": 386.6592804825545,
+            "mean_error_vehicles_per_hour": -154.63624205563974
+          },
+          "weekly_with_fallback": {
+            "n": 2175,
+            "mae_vehicles_per_hour": 256.7226304106841,
+            "rmse_vehicles_per_hour": 470.254628725817,
+            "mean_error_vehicles_per_hour": 8.519137764720812
+          },
+          "ridge_alpha_1": {
+            "n": 2175,
+            "mae_vehicles_per_hour": 366.3015170978377,
+            "rmse_vehicles_per_hour": 523.969150487012,
+            "mean_error_vehicles_per_hour": -9.94331251018779
+          },
+          "hist_leaves_31": {
+            "n": 2175,
+            "mae_vehicles_per_hour": 174.58198493042946,
+            "rmse_vehicles_per_hour": 269.1167946252593,
+            "mean_error_vehicles_per_hour": -15.186634606865193
+          }
+        }
+      }
+    },
+    {
+      "origin": "2017-07-01 00:00:00",
+      "end_exclusive": "2017-10-01 00:00:00",
+      "fit_label_cutoff_inclusive": "2017-06-30 22:00:00",
+      "fit_n": 29644,
+      "fit_latest_label": "2017-06-30 22:00:00",
+      "expected_slots": 2208,
+      "missing_targets": 11,
+      "quarterly_refit": {
+        "n": 2197,
+        "incomplete_inputs": 144,
+        "weekly_fallback_count": 10,
+        "scores": {
+          "global_mean": {
+            "n": 2197,
+            "mae_vehicles_per_hour": 1730.6958454712503,
+            "rmse_vehicles_per_hour": 1984.8230052500119,
+            "mean_error_vehicles_per_hour": -152.8372793655704
+          },
+          "weekday_hour_mean": {
+            "n": 2197,
+            "mae_vehicles_per_hour": 263.8854805936843,
+            "rmse_vehicles_per_hour": 446.69970206037453,
+            "mean_error_vehicles_per_hour": -138.30114792404353
+          },
+          "weekly_with_fallback": {
+            "n": 2197,
+            "mae_vehicles_per_hour": 287.1631260230521,
+            "rmse_vehicles_per_hour": 566.3028970591357,
+            "mean_error_vehicles_per_hour": -14.47400449369385
+          },
+          "ridge_alpha_1": {
+            "n": 2197,
+            "mae_vehicles_per_hour": 361.58810882206393,
+            "rmse_vehicles_per_hour": 545.1903292223882,
+            "mean_error_vehicles_per_hour": -40.182514632327454
+          },
+          "hist_leaves_31": {
+            "n": 2197,
+            "mae_vehicles_per_hour": 177.48424390613718,
+            "rmse_vehicles_per_hour": 274.35883381375646,
+            "mean_error_vehicles_per_hour": -21.9532494712048
+          }
+        }
+      },
+      "fixed_origin": {
+        "n": 2197,
+        "incomplete_inputs": 144,
+        "weekly_fallback_count": 10,
+        "scores": {
+          "global_mean": {
+            "n": 2197,
+            "mae_vehicles_per_hour": 1732.869701541268,
+            "rmse_vehicles_per_hour": 1986.3425187086254,
+            "mean_error_vehicles_per_hour": -171.44524905609802
+          },
+          "weekday_hour_mean": {
+            "n": 2197,
+            "mae_vehicles_per_hour": 272.3547193879368,
+            "rmse_vehicles_per_hour": 454.4285156168201,
+            "mean_error_vehicles_per_hour": -153.98936152657942
+          },
+          "weekly_with_fallback": {
+            "n": 2197,
+            "mae_vehicles_per_hour": 287.1953791853899,
+            "rmse_vehicles_per_hour": 566.3093816059181,
+            "mean_error_vehicles_per_hour": -14.52114896973956
+          },
+          "ridge_alpha_1": {
+            "n": 2197,
+            "mae_vehicles_per_hour": 374.5141920071733,
+            "rmse_vehicles_per_hour": 556.7530734767565,
+            "mean_error_vehicles_per_hour": -40.068061371101656
+          },
+          "hist_leaves_31": {
+            "n": 2197,
+            "mae_vehicles_per_hour": 179.94259623495137,
+            "rmse_vehicles_per_hour": 279.049979673329,
+            "mean_error_vehicles_per_hour": -28.215804071036313
+          }
+        }
+      }
+    },
+    {
+      "origin": "2017-10-01 00:00:00",
+      "end_exclusive": "2018-01-01 00:00:00",
+      "fit_label_cutoff_inclusive": "2017-09-30 22:00:00",
+      "fit_n": 31841,
+      "fit_latest_label": "2017-09-30 22:00:00",
+      "expected_slots": 2208,
+      "missing_targets": 8,
+      "quarterly_refit": {
+        "n": 2200,
+        "incomplete_inputs": 157,
+        "weekly_fallback_count": 8,
+        "scores": {
+          "global_mean": {
+            "n": 2200,
+            "mae_vehicles_per_hour": 1747.977601377298,
+            "rmse_vehicles_per_hour": 1986.5610371802743,
+            "mean_error_vehicles_per_hour": -39.988910980982105
+          },
+          "weekday_hour_mean": {
+            "n": 2200,
+            "mae_vehicles_per_hour": 309.8878021401265,
+            "rmse_vehicles_per_hour": 548.8440107054406,
+            "mean_error_vehicles_per_hour": -30.643946827057007
+          },
+          "weekly_with_fallback": {
+            "n": 2200,
+            "mae_vehicles_per_hour": 356.3671520388293,
+            "rmse_vehicles_per_hour": 687.7913611454704,
+            "mean_error_vehicles_per_hour": 71.04568166411127
+          },
+          "ridge_alpha_1": {
+            "n": 2200,
+            "mae_vehicles_per_hour": 389.202542712093,
+            "rmse_vehicles_per_hour": 591.4963468975127,
+            "mean_error_vehicles_per_hour": 4.194002102975241
+          },
+          "hist_leaves_31": {
+            "n": 2200,
+            "mae_vehicles_per_hour": 200.92480478797626,
+            "rmse_vehicles_per_hour": 321.5314441411565,
+            "mean_error_vehicles_per_hour": -15.230062683783613
+          }
+        }
+      },
+      "fixed_origin": {
+        "n": 2200,
+        "incomplete_inputs": 157,
+        "weekly_fallback_count": 8,
+        "scores": {
+          "global_mean": {
+            "n": 2200,
+            "mae_vehicles_per_hour": 1748.9466530752884,
+            "rmse_vehicles_per_hour": 1987.3611913208813,
+            "mean_error_vehicles_per_hour": -69.12932320679937
+          },
+          "weekday_hour_mean": {
+            "n": 2200,
+            "mae_vehicles_per_hour": 316.60105509165425,
+            "rmse_vehicles_per_hour": 551.6848865386241,
+            "mean_error_vehicles_per_hour": -55.88135602251553
+          },
+          "weekly_with_fallback": {
+            "n": 2200,
+            "mae_vehicles_per_hour": 356.3510603255119,
+            "rmse_vehicles_per_hour": 687.7879803348789,
+            "mean_error_vehicles_per_hour": 71.00888247089598
+          },
+          "ridge_alpha_1": {
+            "n": 2200,
+            "mae_vehicles_per_hour": 401.8253837621706,
+            "rmse_vehicles_per_hour": 599.9531655561157,
+            "mean_error_vehicles_per_hour": -2.900102668713475
+          },
+          "hist_leaves_31": {
+            "n": 2200,
+            "mae_vehicles_per_hour": 199.94411791193002,
+            "rmse_vehicles_per_hour": 320.1666029359711,
+            "mean_error_vehicles_per_hour": -25.088071227748948
+          }
+        }
+      }
+    }
+  ],
+  "pooled": {
+    "quarterly_refit": {
+      "n": 8713,
+      "incomplete_inputs": 565,
+      "weekly_fallback_count": 46,
+      "scores": {
+        "global_mean": {
+          "n": 8713,
+          "mae_vehicles_per_hour": 1743.4673440932888,
+          "rmse_vehicles_per_hour": 1985.6233899216038,
+          "mean_error_vehicles_per_hour": -110.35269890669359
+        },
+        "weekday_hour_mean": {
+          "n": 8713,
+          "mae_vehicles_per_hour": 274.1727887289819,
+          "rmse_vehicles_per_hour": 457.623561860162,
+          "mean_error_vehicles_per_hour": -94.3628211871926
+        },
+        "weekly_with_fallback": {
+          "n": 8713,
+          "mae_vehicles_per_hour": 301.99823924621705,
+          "rmse_vehicles_per_hour": 563.0956499543001,
+          "mean_error_vehicles_per_hour": 2.840377402397926
+        },
+        "ridge_alpha_1": {
+          "n": 8713,
+          "mae_vehicles_per_hour": 372.9225923142482,
+          "rmse_vehicles_per_hour": 549.8234846790491,
+          "mean_error_vehicles_per_hour": -12.037202950428572
+        },
+        "hist_leaves_31": {
+          "n": 8713,
+          "mae_vehicles_per_hour": 189.9800748795985,
+          "rmse_vehicles_per_hour": 297.9068655563392,
+          "mean_error_vehicles_per_hour": -19.786957008371335
+        }
+      }
+    },
+    "fixed_origin": {
+      "n": 8713,
+      "incomplete_inputs": 565,
+      "weekly_fallback_count": 46,
+      "scores": {
+        "global_mean": {
+          "n": 8713,
+          "mae_vehicles_per_hour": 1744.453018780833,
+          "rmse_vehicles_per_hour": 1986.3459989364267,
+          "mean_error_vehicles_per_hour": -124.02207927662191
+        },
+        "weekday_hour_mean": {
+          "n": 8713,
+          "mae_vehicles_per_hour": 278.65935824331905,
+          "rmse_vehicles_per_hour": 460.9943739297771,
+          "mean_error_vehicles_per_hour": -105.80358154424621
+        },
+        "weekly_with_fallback": {
+          "n": 8713,
+          "mae_vehicles_per_hour": 302.01197094729406,
+          "rmse_vehicles_per_hour": 563.1022996975296,
+          "mean_error_vehicles_per_hour": 2.800432822587869
+        },
+        "ridge_alpha_1": {
+          "n": 8713,
+          "mae_vehicles_per_hour": 381.08539889011405,
+          "rmse_vehicles_per_hour": 556.8241707219258,
+          "mean_error_vehicles_per_hour": -13.844825417984453
+        },
+        "hist_leaves_31": {
+          "n": 8713,
+          "mae_vehicles_per_hour": 190.1608088200647,
+          "rmse_vehicles_per_hour": 298.7543246737755,
+          "mean_error_vehicles_per_hour": -24.627415433183888
+        }
+      }
+    }
+  },
+  "quarterly_refit_diagnostics": {
+    "month": {
+      "1": {
+        "n": 744,
+        "incomplete_inputs": 0,
+        "weekly_fallback_count": 0,
+        "scores": {
+          "global_mean": {
+            "n": 744,
+            "mae_vehicles_per_hour": 1650.2555565602945,
+            "rmse_vehicles_per_hour": 1883.6594655132037,
+            "mean_error_vehicles_per_hour": 132.30225548332768
+          },
+          "weekday_hour_mean": {
+            "n": 744,
+            "mae_vehicles_per_hour": 307.03284889212523,
+            "rmse_vehicles_per_hour": 507.87516773410056,
+            "mean_error_vehicles_per_hour": 134.58321681159842
+          },
+          "weekly_with_fallback": {
+            "n": 744,
+            "mae_vehicles_per_hour": 375.7997311827957,
+            "rmse_vehicles_per_hour": 600.4836637048039,
+            "mean_error_vehicles_per_hour": -114.14650537634408
+          },
+          "ridge_alpha_1": {
+            "n": 744,
+            "mae_vehicles_per_hour": 385.44018006175605,
+            "rmse_vehicles_per_hour": 558.0586856937473,
+            "mean_error_vehicles_per_hour": 7.51670602306307
+          },
+          "hist_leaves_31": {
+            "n": 744,
+            "mae_vehicles_per_hour": 215.33025199345946,
+            "rmse_vehicles_per_hour": 328.4697812806457,
+            "mean_error_vehicles_per_hour": -15.344739665450627
+          }
+        }
+      },
+      "2": {
+        "n": 657,
+        "incomplete_inputs": 80,
+        "weekly_fallback_count": 15,
+        "scores": {
+          "global_mean": {
+            "n": 657,
+            "mae_vehicles_per_hour": 1783.5396417270254,
+            "rmse_vehicles_per_hour": 2010.613963337793,
+            "mean_error_vehicles_per_hour": -136.3872974699791
+          },
+          "weekday_hour_mean": {
+            "n": 657,
+            "mae_vehicles_per_hour": 251.1344259718656,
+            "rmse_vehicles_per_hour": 365.7988563416027,
+            "mean_error_vehicles_per_hour": -114.59969411158163
+          },
+          "weekly_with_fallback": {
+            "n": 657,
+            "mae_vehicles_per_hour": 286.7075206894631,
+            "rmse_vehicles_per_hour": 446.09326643506296,
+            "mean_error_vehicles_per_hour": -30.782908315651127
+          },
+          "ridge_alpha_1": {
+            "n": 657,
+            "mae_vehicles_per_hour": 385.60853743330154,
+            "rmse_vehicles_per_hour": 551.7233131679366,
+            "mean_error_vehicles_per_hour": 2.506049045716306
+          },
+          "hist_leaves_31": {
+            "n": 657,
+            "mae_vehicles_per_hour": 211.12369004274896,
+            "rmse_vehicles_per_hour": 322.3006503597136,
+            "mean_error_vehicles_per_hour": -44.98752006042154
+          }
+        }
+      },
+      "3": {
+        "n": 740,
+        "incomplete_inputs": 101,
+        "weekly_fallback_count": 4,
+        "scores": {
+          "global_mean": {
+            "n": 740,
+            "mae_vehicles_per_hour": 1856.3459004882961,
+            "rmse_vehicles_per_hour": 2090.748915043604,
+            "mean_error_vehicles_per_hour": -252.89917578665194
+          },
+          "weekday_hour_mean": {
+            "n": 740,
+            "mae_vehicles_per_hour": 281.49885824819205,
+            "rmse_vehicles_per_hour": 408.329857522148,
+            "mean_error_vehicles_per_hour": -201.50957199606992
+          },
+          "weekly_with_fallback": {
+            "n": 740,
+            "mae_vehicles_per_hour": 256.9677835690949,
+            "rmse_vehicles_per_hour": 430.9873814536284,
+            "mean_error_vehicles_per_hour": -17.967783569094873
+          },
+          "ridge_alpha_1": {
+            "n": 740,
+            "mae_vehicles_per_hour": 373.9938563048732,
+            "rmse_vehicles_per_hour": 519.5866762336825,
+            "mean_error_vehicles_per_hour": -15.989737781019802
+          },
+          "hist_leaves_31": {
+            "n": 740,
+            "mae_vehicles_per_hour": 193.2843173647103,
+            "rmse_vehicles_per_hour": 318.43645956831296,
+            "mean_error_vehicles_per_hour": -31.608885356071262
+          }
+        }
+      },
+      "4": {
+        "n": 711,
+        "incomplete_inputs": 83,
+        "weekly_fallback_count": 9,
+        "scores": {
+          "global_mean": {
+            "n": 711,
+            "mae_vehicles_per_hour": 1775.8145079437202,
+            "rmse_vehicles_per_hour": 2016.4270857150264,
+            "mean_error_vehicles_per_hour": -156.48255522310043
+          },
+          "weekday_hour_mean": {
+            "n": 711,
+            "mae_vehicles_per_hour": 242.3142328833757,
+            "rmse_vehicles_per_hour": 363.85746879218675,
+            "mean_error_vehicles_per_hour": -194.31794809491143
+          },
+          "weekly_with_fallback": {
+            "n": 711,
+            "mae_vehicles_per_hour": 232.83619586513583,
+            "rmse_vehicles_per_hour": 371.7325497996063,
+            "mean_error_vehicles_per_hour": 4.407351790726726
+          },
+          "ridge_alpha_1": {
+            "n": 711,
+            "mae_vehicles_per_hour": 354.6572437231826,
+            "rmse_vehicles_per_hour": 498.5595255093469,
+            "mean_error_vehicles_per_hour": -17.885647689070975
+          },
+          "hist_leaves_31": {
+            "n": 711,
+            "mae_vehicles_per_hour": 182.15734720275466,
+            "rmse_vehicles_per_hour": 280.8667835060978,
+            "mean_error_vehicles_per_hour": -13.018084970927228
+          }
+        }
+      },
+      "5": {
+        "n": 744,
+        "incomplete_inputs": 0,
+        "weekly_fallback_count": 0,
+        "scores": {
+          "global_mean": {
+            "n": 744,
+            "mae_vehicles_per_hour": 1748.0147190850919,
+            "rmse_vehicles_per_hour": 1993.115743467216,
+            "mean_error_vehicles_per_hour": -151.75845581744733
+          },
+          "weekday_hour_mean": {
+            "n": 744,
+            "mae_vehicles_per_hour": 261.4306509964903,
+            "rmse_vehicles_per_hour": 453.9276262345602,
+            "mean_error_vehicles_per_hour": -112.88716634770157
+          },
+          "weekly_with_fallback": {
+            "n": 744,
+            "mae_vehicles_per_hour": 251.48387096774192,
+            "rmse_vehicles_per_hour": 483.9175149654356,
+            "mean_error_vehicles_per_hour": 80.65860215053763
+          },
+          "ridge_alpha_1": {
+            "n": 744,
+            "mae_vehicles_per_hour": 367.0776310019694,
+            "rmse_vehicles_per_hour": 526.038939816828,
+            "mean_error_vehicles_per_hour": 30.802053560330663
+          },
+          "hist_leaves_31": {
+            "n": 744,
+            "mae_vehicles_per_hour": 161.34548688938546,
+            "rmse_vehicles_per_hour": 241.11615957212598,
+            "mean_error_vehicles_per_hour": -10.327133476316147
+          }
+        }
+      },
+      "6": {
+        "n": 720,
+        "incomplete_inputs": 0,
+        "weekly_fallback_count": 0,
+        "scores": {
+          "global_mean": {
+            "n": 720,
+            "mae_vehicles_per_hour": 1675.753836597619,
+            "rmse_vehicles_per_hour": 1914.311880746811,
+            "mean_error_vehicles_per_hour": -187.85778377443654
+          },
+          "weekday_hour_mean": {
+            "n": 720,
+            "mae_vehicles_per_hour": 220.59889744254056,
+            "rmse_vehicles_per_hour": 318.2892514509751,
+            "mean_error_vehicles_per_hour": -145.127325189745
+          },
+          "weekly_with_fallback": {
+            "n": 720,
+            "mae_vehicles_per_hour": 285.6069444444444,
+            "rmse_vehicles_per_hour": 538.0549086498721,
+            "mean_error_vehicles_per_hour": -61.7375
+          },
+          "ridge_alpha_1": {
+            "n": 720,
+            "mae_vehicles_per_hour": 356.2292545937301,
+            "rmse_vehicles_per_hour": 523.324805097915,
+            "mean_error_vehicles_per_hour": -43.65624885361486
+          },
+          "hist_leaves_31": {
+            "n": 720,
+            "mae_vehicles_per_hour": 183.09674337867182,
+            "rmse_vehicles_per_hour": 282.72257677921186,
+            "mean_error_vehicles_per_hour": -13.004474369979352
+          }
+        }
+      },
+      "7": {
+        "n": 738,
+        "incomplete_inputs": 65,
+        "weekly_fallback_count": 6,
+        "scores": {
+          "global_mean": {
+            "n": 738,
+            "mae_vehicles_per_hour": 1600.7752701525128,
+            "rmse_vehicles_per_hour": 1870.5856597165598,
+            "mean_error_vehicles_per_hour": -28.276209392103237
+          },
+          "weekday_hour_mean": {
+            "n": 738,
+            "mae_vehicles_per_hour": 272.1277742410007,
+            "rmse_vehicles_per_hour": 518.8657976880517,
+            "mean_error_vehicles_per_hour": -46.36052096278302
+          },
+          "weekly_with_fallback": {
+            "n": 738,
+            "mae_vehicles_per_hour": 355.0382238845836,
+            "rmse_vehicles_per_hour": 699.9467676621623,
+            "mean_error_vehicles_per_hour": -28.71844068675165
+          },
+          "ridge_alpha_1": {
+            "n": 738,
+            "mae_vehicles_per_hour": 404.99792702068754,
+            "rmse_vehicles_per_hour": 618.4877739545933,
+            "mean_error_vehicles_per_hour": -25.0723037501383
+          },
+          "hist_leaves_31": {
+            "n": 738,
+            "mae_vehicles_per_hour": 180.66904056562572,
+            "rmse_vehicles_per_hour": 295.5054715681327,
+            "mean_error_vehicles_per_hour": -18.100802855262828
+          }
+        }
+      },
+      "8": {
+        "n": 743,
+        "incomplete_inputs": 26,
+        "weekly_fallback_count": 1,
+        "scores": {
+          "global_mean": {
+            "n": 743,
+            "mae_vehicles_per_hour": 1782.6984170887079,
+            "rmse_vehicles_per_hour": 2026.2123145288845,
+            "mean_error_vehicles_per_hour": -245.89228463091754
+          },
+          "weekday_hour_mean": {
+            "n": 743,
+            "mae_vehicles_per_hour": 229.9511075234342,
+            "rmse_vehicles_per_hour": 336.2293957487876,
+            "mean_error_vehicles_per_hour": -195.01309802962143
+          },
+          "weekly_with_fallback": {
+            "n": 743,
+            "mae_vehicles_per_hour": 209.03363233757153,
+            "rmse_vehicles_per_hour": 328.7482863711274,
+            "mean_error_vehicles_per_hour": -16.581411610788212
+          },
+          "ridge_alpha_1": {
+            "n": 743,
+            "mae_vehicles_per_hour": 313.41797850412655,
+            "rmse_vehicles_per_hour": 442.1730206513793,
+            "mean_error_vehicles_per_hour": -46.60758852909979
+          },
+          "hist_leaves_31": {
+            "n": 743,
+            "mae_vehicles_per_hour": 163.85682707846144,
+            "rmse_vehicles_per_hour": 248.78648955902776,
+            "mean_error_vehicles_per_hour": -24.78952566822049
+          }
+        }
+      },
+      "9": {
+        "n": 716,
+        "incomplete_inputs": 53,
+        "weekly_fallback_count": 3,
+        "scores": {
+          "global_mean": {
+            "n": 716,
+            "mae_vehicles_per_hour": 1810.644831328035,
+            "rmse_vehicles_per_hour": 2054.558966049407,
+            "mean_error_vehicles_per_hour": -184.66158205867907
+          },
+          "weekday_hour_mean": {
+            "n": 716,
+            "mae_vehicles_per_hour": 290.60395333038304,
+            "rmse_vehicles_per_hour": 466.3372383681476,
+            "mean_error_vehicles_per_hour": -174.21623698684502
+          },
+          "weekly_with_fallback": {
+            "n": 716,
+            "mae_vehicles_per_hour": 298.2781980712389,
+            "rmse_vehicles_per_hour": 605.7344548504607,
+            "mean_error_vehicles_per_hour": 2.3949862863030313
+          },
+          "ridge_alpha_1": {
+            "n": 716,
+            "mae_vehicles_per_hour": 366.83107110648206,
+            "rmse_vehicles_per_hour": 561.1312098508663,
+            "mean_error_vehicles_per_hour": -49.089645534218164
+          },
+          "hist_leaves_31": {
+            "n": 716,
+            "mae_vehicles_per_hour": 188.34289023052338,
+            "rmse_vehicles_per_hour": 277.00959234449095,
+            "mean_error_vehicles_per_hour": -22.98083660553793
+          }
+        }
+      },
+      "10": {
+        "n": 744,
+        "incomplete_inputs": 1,
+        "weekly_fallback_count": 1,
+        "scores": {
+          "global_mean": {
+            "n": 744,
+            "mae_vehicles_per_hour": 1824.7885060530937,
+            "rmse_vehicles_per_hour": 2049.881179892688,
+            "mean_error_vehicles_per_hour": -190.3476548715002
+          },
+          "weekday_hour_mean": {
+            "n": 744,
+            "mae_vehicles_per_hour": 255.41227164669567,
+            "rmse_vehicles_per_hour": 367.7099318172232,
+            "mean_error_vehicles_per_hour": -192.8701910382366
+          },
+          "weekly_with_fallback": {
+            "n": 744,
+            "mae_vehicles_per_hour": 230.2675342130987,
+            "rmse_vehicles_per_hour": 371.1477577948828,
+            "mean_error_vehicles_per_hour": 21.616996578690127
+          },
+          "ridge_alpha_1": {
+            "n": 744,
+            "mae_vehicles_per_hour": 352.83707367999176,
+            "rmse_vehicles_per_hour": 488.67980860498716,
+            "mean_error_vehicles_per_hour": -39.79279380543959
+          },
+          "hist_leaves_31": {
+            "n": 744,
+            "mae_vehicles_per_hour": 178.59928742688757,
+            "rmse_vehicles_per_hour": 281.6601465759252,
+            "mean_error_vehicles_per_hour": -17.46759893950197
+          }
+        }
+      },
+      "11": {
+        "n": 716,
+        "incomplete_inputs": 99,
+        "weekly_fallback_count": 3,
+        "scores": {
+          "global_mean": {
+            "n": 716,
+            "mae_vehicles_per_hour": 1782.693925903481,
+            "rmse_vehicles_per_hour": 2021.8887873790102,
+            "mean_error_vehicles_per_hour": -86.77997751221623
+          },
+          "weekday_hour_mean": {
+            "n": 716,
+            "mae_vehicles_per_hour": 301.10447087632303,
+            "rmse_vehicles_per_hour": 574.7304166971916,
+            "mean_error_vehicles_per_hour": -31.685751080559967
+          },
+          "weekly_with_fallback": {
+            "n": 716,
+            "mae_vehicles_per_hour": 373.3783856628972,
+            "rmse_vehicles_per_hour": 777.6793068879031,
+            "mean_error_vehicles_per_hour": 43.61188241355271
+          },
+          "ridge_alpha_1": {
+            "n": 716,
+            "mae_vehicles_per_hour": 407.05067936678677,
+            "rmse_vehicles_per_hour": 643.9607412562592,
+            "mean_error_vehicles_per_hour": -1.110018141006393
+          },
+          "hist_leaves_31": {
+            "n": 716,
+            "mae_vehicles_per_hour": 195.88472094773434,
+            "rmse_vehicles_per_hour": 300.3456626386542,
+            "mean_error_vehicles_per_hour": -26.5468953101069
+          }
+        }
+      },
+      "12": {
+        "n": 740,
+        "incomplete_inputs": 57,
+        "weekly_fallback_count": 4,
+        "scores": {
+          "global_mean": {
+            "n": 740,
+            "mae_vehicles_per_hour": 1637.1611129454884,
+            "rmse_vehicles_per_hour": 1884.791321827468,
+            "mean_error_vehicles_per_hour": 156.45610130403017
+          },
+          "weekday_hour_mean": {
+            "n": 740,
+            "mae_vehicles_per_hour": 373.1562614266072,
+            "rmse_vehicles_per_hour": 663.3282041424285,
+            "mean_error_vehicles_per_hour": 133.46721200892372
+          },
+          "weekly_with_fallback": {
+            "n": 740,
+            "mae_vehicles_per_hour": 466.68887148141175,
+            "rmse_vehicles_per_hour": 826.2686231818507,
+            "mean_error_vehicles_per_hour": 147.28560324107517
+          },
+          "ridge_alpha_1": {
+            "n": 740,
+            "mae_vehicles_per_hour": 408.49530367847507,
+            "rmse_vehicles_per_hour": 631.5163554377855,
+            "mean_error_vehicles_per_hour": 53.550562441558334
+          },
+          "hist_leaves_31": {
+            "n": 740,
+            "mae_vehicles_per_hour": 228.24762228292656,
+            "rmse_vehicles_per_hour": 374.5799752953585,
+            "mean_error_vehicles_per_hour": -2.0306314206728953
+          }
+        }
+      }
+    },
+    "season": {
+      "DJF": {
+        "n": 2141,
+        "incomplete_inputs": 137,
+        "weekly_fallback_count": 19,
+        "scores": {
+          "global_mean": {
+            "n": 2141,
+            "mae_vehicles_per_hour": 1686.6300337576722,
+            "rmse_vehicles_per_hour": 1923.8919873317839,
+            "mean_error_vehicles_per_hour": 58.19894376777294
+          },
+          "weekday_hour_mean": {
+            "n": 2141,
+            "mae_vehicles_per_hour": 312.7339518425718,
+            "rmse_vehicles_per_hour": 531.7657335469763,
+            "mean_error_vehicles_per_hour": 57.73173804910026
+          },
+          "weekly_with_fallback": {
+            "n": 2141,
+            "mae_vehicles_per_hour": 379.87464081701165,
+            "rmse_vehicles_per_hour": 649.8759069610924,
+            "mean_error_vehicles_per_hour": 1.7944771765590017
+          },
+          "ridge_alpha_1": {
+            "n": 2141,
+            "mae_vehicles_per_hour": 393.4604520232121,
+            "rmse_vehicles_per_hour": 582.6444355437696,
+            "mean_error_vehicles_per_hour": 21.88992046284339
+          },
+          "hist_leaves_31": {
+            "n": 2141,
+            "mae_vehicles_per_hour": 218.50406928098343,
+            "rmse_vehicles_per_hour": 343.31482667288304,
+            "mean_error_vehicles_per_hour": -19.83930604488097
+          }
+        }
+      },
+      "MAM": {
+        "n": 2195,
+        "incomplete_inputs": 184,
+        "weekly_fallback_count": 13,
+        "scores": {
+          "global_mean": {
+            "n": 2195,
+            "mae_vehicles_per_hour": 1793.541244878648,
+            "rmse_vehicles_per_hour": 2034.0125146062362,
+            "mean_error_vehicles_per_hour": -187.38623142320168
+          },
+          "weekday_hour_mean": {
+            "n": 2195,
+            "mae_vehicles_per_hour": 262.00409067204146,
+            "rmse_vehicles_per_hour": 411.01847637518864,
+            "mean_error_vehicles_per_hour": -169.14131942381036
+          },
+          "weekly_with_fallback": {
+            "n": 2195,
+            "mae_vehicles_per_hour": 247.29234400967735,
+            "rmse_vehicles_per_hour": 432.1539804990189,
+            "mean_error_vehicles_per_hour": 22.709552292517767
+          },
+          "ridge_alpha_1": {
+            "n": 2195,
+            "mae_vehicles_per_hour": 365.38610998553725,
+            "rmse_vehicles_per_hour": 515.0945921234676,
+            "mean_error_vehicles_per_hour": -0.7436781849649664
+          },
+          "hist_leaves_31": {
+            "n": 2195,
+            "mae_vehicles_per_hour": 178.85435578895076,
+            "rmse_vehicles_per_hour": 281.85789307401944,
+            "mean_error_vehicles_per_hour": -18.37349470806433
+          }
+        }
+      },
+      "JJA": {
+        "n": 2201,
+        "incomplete_inputs": 91,
+        "weekly_fallback_count": 7,
+        "scores": {
+          "global_mean": {
+            "n": 2201,
+            "mae_vehicles_per_hour": 1686.715054802249,
+            "rmse_vehicles_per_hour": 1938.5431832230752,
+            "mean_error_vehicles_per_hour": -153.94066984540584
+          },
+          "weekday_hour_mean": {
+            "n": 2201,
+            "mae_vehicles_per_hour": 241.03370124416145,
+            "rmse_vehicles_per_hour": 401.9623175766171,
+            "mean_error_vehicles_per_hour": -128.8507362304221
+          },
+          "weekly_with_fallback": {
+            "n": 2201,
+            "mae_vehicles_per_hour": 283.0382544541746,
+            "rmse_vehicles_per_hour": 543.5622454606672,
+            "mean_error_vehicles_per_hour": -35.4226251947471
+          },
+          "ridge_alpha_1": {
+            "n": 2201,
+            "mae_vehicles_per_hour": 358.1295281587092,
+            "rmse_vehicles_per_hour": 532.778248333886,
+            "mean_error_vehicles_per_hour": -38.421307414505186
+          },
+          "hist_leaves_31": {
+            "n": 2201,
+            "mae_vehicles_per_hour": 175.78783720553037,
+            "rmse_vehicles_per_hour": 276.26343194657784,
+            "mean_error_vehicles_per_hour": -18.691609098163074
+          }
+        }
+      },
+      "SON": {
+        "n": 2176,
+        "incomplete_inputs": 153,
+        "weekly_fallback_count": 7,
+        "scores": {
+          "global_mean": {
+            "n": 2176,
+            "mae_vehicles_per_hour": 1806.283639099847,
+            "rmse_vehicles_per_hour": 2042.260124346266,
+            "mean_error_vehicles_per_hour": -154.39835104648768
+          },
+          "weekday_hour_mean": {
+            "n": 2176,
+            "mae_vehicles_per_hour": 282.0266368736871,
+            "rmse_vehicles_per_hour": 475.8946101857209,
+            "mean_error_vehicles_per_hour": -133.69542536245865
+          },
+          "weekly_with_fallback": {
+            "n": 2176,
+            "mae_vehicles_per_hour": 299.7358269339094,
+            "rmse_vehicles_per_hour": 605.6653536657369,
+            "mean_error_vehicles_per_hour": 22.529394964909084
+          },
+          "ridge_alpha_1": {
+            "n": 2176,
+            "mae_vehicles_per_hour": 375.2803842632234,
+            "rmse_vehicles_per_hour": 567.1918488207933,
+            "mean_error_vehicles_per_hour": -30.123528392788526
+          },
+          "hist_leaves_31": {
+            "n": 2176,
+            "mae_vehicles_per_hour": 187.49303283512722,
+            "rmse_vehicles_per_hour": 286.4540478276295,
+            "mean_error_vehicles_per_hour": -22.269186425823143
+          }
+        }
+      }
+    },
+    "hour": {
+      "0": {
+        "n": 364,
+        "incomplete_inputs": 22,
+        "weekly_fallback_count": 1,
+        "scores": {
+          "global_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 2346.1638251376403,
+            "rmse_vehicles_per_hour": 2386.2479118324486,
+            "mean_error_vehicles_per_hour": 2346.1638251376403
+          },
+          "weekday_hour_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 149.38511708031226,
+            "rmse_vehicles_per_hour": 269.8028571010173,
+            "mean_error_vehicles_per_hour": -82.251484161257
+          },
+          "weekly_with_fallback": {
+            "n": 364,
+            "mae_vehicles_per_hour": 186.53055654023393,
+            "rmse_vehicles_per_hour": 336.05607739747643,
+            "mean_error_vehicles_per_hour": 0.4859269762495569
+          },
+          "ridge_alpha_1": {
+            "n": 364,
+            "mae_vehicles_per_hour": 311.1086464648752,
+            "rmse_vehicles_per_hour": 441.8992674148474,
+            "mean_error_vehicles_per_hour": -158.13999196238765
+          },
+          "hist_leaves_31": {
+            "n": 364,
+            "mae_vehicles_per_hour": 151.0668768036408,
+            "rmse_vehicles_per_hour": 257.62833417880927,
+            "mean_error_vehicles_per_hour": -13.341035861492376
+          }
+        }
+      },
+      "1": {
+        "n": 365,
+        "incomplete_inputs": 21,
+        "weekly_fallback_count": 0,
+        "scores": {
+          "global_mean": {
+            "n": 365,
+            "mae_vehicles_per_hour": 2712.0087654535087,
+            "rmse_vehicles_per_hour": 2723.9620945951883,
+            "mean_error_vehicles_per_hour": 2712.0087654535087
+          },
+          "weekday_hour_mean": {
+            "n": 365,
+            "mae_vehicles_per_hour": 82.65685762478812,
+            "rmse_vehicles_per_hour": 134.20978833463414,
+            "mean_error_vehicles_per_hour": -36.25210468440205
+          },
+          "weekly_with_fallback": {
+            "n": 365,
+            "mae_vehicles_per_hour": 100.06027397260274,
+            "rmse_vehicles_per_hour": 165.9202482131801,
+            "mean_error_vehicles_per_hour": 1.2054794520547945
+          },
+          "ridge_alpha_1": {
+            "n": 365,
+            "mae_vehicles_per_hour": 248.87838279250994,
+            "rmse_vehicles_per_hour": 334.02627340576396,
+            "mean_error_vehicles_per_hour": -156.87272543257703
+          },
+          "hist_leaves_31": {
+            "n": 365,
+            "mae_vehicles_per_hour": 85.07689662679444,
+            "rmse_vehicles_per_hour": 133.7148211635719,
+            "mean_error_vehicles_per_hour": 15.721683062568927
+          }
+        }
+      },
+      "2": {
+        "n": 359,
+        "incomplete_inputs": 26,
+        "weekly_fallback_count": 5,
+        "scores": {
+          "global_mean": {
+            "n": 359,
+            "mae_vehicles_per_hour": 2857.331741188925,
+            "rmse_vehicles_per_hour": 2863.1870105255975,
+            "mean_error_vehicles_per_hour": 2857.331741188925
+          },
+          "weekday_hour_mean": {
+            "n": 359,
+            "mae_vehicles_per_hour": 58.245875097195714,
+            "rmse_vehicles_per_hour": 88.91763242491118,
+            "mean_error_vehicles_per_hour": -14.633618895825428
+          },
+          "weekly_with_fallback": {
+            "n": 359,
+            "mae_vehicles_per_hour": 77.70224724534455,
+            "rmse_vehicles_per_hour": 123.32083318131544,
+            "mean_error_vehicles_per_hour": 3.004903156562116
+          },
+          "ridge_alpha_1": {
+            "n": 359,
+            "mae_vehicles_per_hour": 214.34838292844293,
+            "rmse_vehicles_per_hour": 323.9300553345464,
+            "mean_error_vehicles_per_hour": -82.8041024667583
+          },
+          "hist_leaves_31": {
+            "n": 359,
+            "mae_vehicles_per_hour": 66.76305367046024,
+            "rmse_vehicles_per_hour": 97.98406557355692,
+            "mean_error_vehicles_per_hour": 11.389520283654168
+          }
+        }
+      },
+      "3": {
+        "n": 363,
+        "incomplete_inputs": 24,
+        "weekly_fallback_count": 2,
+        "scores": {
+          "global_mean": {
+            "n": 363,
+            "mae_vehicles_per_hour": 2880.469910837123,
+            "rmse_vehicles_per_hour": 2881.3665558541957,
+            "mean_error_vehicles_per_hour": 2880.469910837123
+          },
+          "weekday_hour_mean": {
+            "n": 363,
+            "mae_vehicles_per_hour": 41.353100687623595,
+            "rmse_vehicles_per_hour": 67.0198246354132,
+            "mean_error_vehicles_per_hour": -14.070248176719206
+          },
+          "weekly_with_fallback": {
+            "n": 363,
+            "mae_vehicles_per_hour": 58.62085179761947,
+            "rmse_vehicles_per_hour": 91.8751316078765,
+            "mean_error_vehicles_per_hour": 2.3894468389417884
+          },
+          "ridge_alpha_1": {
+            "n": 363,
+            "mae_vehicles_per_hour": 180.45938847306857,
+            "rmse_vehicles_per_hour": 244.20230500276148,
+            "mean_error_vehicles_per_hour": -7.6304795501517075
+          },
+          "hist_leaves_31": {
+            "n": 363,
+            "mae_vehicles_per_hour": 45.58206046495879,
+            "rmse_vehicles_per_hour": 73.72086210075122,
+            "mean_error_vehicles_per_hour": -9.769923487894506
+          }
+        }
+      },
+      "4": {
+        "n": 362,
+        "incomplete_inputs": 26,
+        "weekly_fallback_count": 3,
+        "scores": {
+          "global_mean": {
+            "n": 362,
+            "mae_vehicles_per_hour": 2538.136471336341,
+            "rmse_vehicles_per_hour": 2547.80188900103,
+            "mean_error_vehicles_per_hour": 2538.136471336341
+          },
+          "weekday_hour_mean": {
+            "n": 362,
+            "mae_vehicles_per_hour": 71.7534181136781,
+            "rmse_vehicles_per_hour": 108.07278429083328,
+            "mean_error_vehicles_per_hour": -40.37571596808012
+          },
+          "weekly_with_fallback": {
+            "n": 362,
+            "mae_vehicles_per_hour": 83.92927100270475,
+            "rmse_vehicles_per_hour": 140.3034837431757,
+            "mean_error_vehicles_per_hour": 2.485093638179227
+          },
+          "ridge_alpha_1": {
+            "n": 362,
+            "mae_vehicles_per_hour": 130.0445143910971,
+            "rmse_vehicles_per_hour": 213.91311087997548,
+            "mean_error_vehicles_per_hour": 43.054203927457074
+          },
+          "hist_leaves_31": {
+            "n": 362,
+            "mae_vehicles_per_hour": 80.25235587536784,
+            "rmse_vehicles_per_hour": 123.11466893593827,
+            "mean_error_vehicles_per_hour": -32.83731619427121
+          }
+        }
+      },
+      "5": {
+        "n": 362,
+        "incomplete_inputs": 26,
+        "weekly_fallback_count": 3,
+        "scores": {
+          "global_mean": {
+            "n": 362,
+            "mae_vehicles_per_hour": 1104.4845376346834,
+            "rmse_vehicles_per_hour": 1499.245136420103,
+            "mean_error_vehicles_per_hour": 1104.4845376346834
+          },
+          "weekday_hour_mean": {
+            "n": 362,
+            "mae_vehicles_per_hour": 215.35504321572805,
+            "rmse_vehicles_per_hour": 352.668115609982,
+            "mean_error_vehicles_per_hour": -87.60801214747325
+          },
+          "weekly_with_fallback": {
+            "n": 362,
+            "mae_vehicles_per_hour": 196.66573476826576,
+            "rmse_vehicles_per_hour": 452.8047202731617,
+            "mean_error_vehicles_per_hour": 1.9538094306292706
+          },
+          "ridge_alpha_1": {
+            "n": 362,
+            "mae_vehicles_per_hour": 406.6187616618184,
+            "rmse_vehicles_per_hour": 515.1889413374666,
+            "mean_error_vehicles_per_hour": -246.68776804672314
+          },
+          "hist_leaves_31": {
+            "n": 362,
+            "mae_vehicles_per_hour": 165.90198839035864,
+            "rmse_vehicles_per_hour": 305.44792600666943,
+            "mean_error_vehicles_per_hour": -2.9380328374156885
+          }
+        }
+      },
+      "6": {
+        "n": 362,
+        "incomplete_inputs": 26,
+        "weekly_fallback_count": 3,
+        "scores": {
+          "global_mean": {
+            "n": 362,
+            "mae_vehicles_per_hour": 2250.518510458898,
+            "rmse_vehicles_per_hour": 2286.348129388509,
+            "mean_error_vehicles_per_hour": -956.0154623653166
+          },
+          "weekday_hour_mean": {
+            "n": 362,
+            "mae_vehicles_per_hour": 387.80682113343903,
+            "rmse_vehicles_per_hour": 706.4532641440785,
+            "mean_error_vehicles_per_hour": -86.74408644236625
+          },
+          "weekly_with_fallback": {
+            "n": 362,
+            "mae_vehicles_per_hour": 432.6871876648359,
+            "rmse_vehicles_per_hour": 948.210918998906,
+            "mean_error_vehicles_per_hour": 7.053143826876822
+          },
+          "ridge_alpha_1": {
+            "n": 362,
+            "mae_vehicles_per_hour": 982.5786257043641,
+            "rmse_vehicles_per_hour": 1196.4512673966426,
+            "mean_error_vehicles_per_hour": -610.7835163022023
+          },
+          "hist_leaves_31": {
+            "n": 362,
+            "mae_vehicles_per_hour": 237.19313317962903,
+            "rmse_vehicles_per_hour": 358.8086194763724,
+            "mean_error_vehicles_per_hour": -2.418094680989895
+          }
+        }
+      },
+      "7": {
+        "n": 362,
+        "incomplete_inputs": 26,
+        "weekly_fallback_count": 3,
+        "scores": {
+          "global_mean": {
+            "n": 362,
+            "mae_vehicles_per_hour": 2574.64672842937,
+            "rmse_vehicles_per_hour": 2706.2421524287024,
+            "mean_error_vehicles_per_hour": -1553.2723684426646
+          },
+          "weekday_hour_mean": {
+            "n": 362,
+            "mae_vehicles_per_hour": 500.5699181307293,
+            "rmse_vehicles_per_hour": 869.1013532305917,
+            "mean_error_vehicles_per_hour": -46.57560647049135
+          },
+          "weekly_with_fallback": {
+            "n": 362,
+            "mae_vehicles_per_hour": 573.5169206044176,
+            "rmse_vehicles_per_hour": 1130.2927213516732,
+            "mean_error_vehicles_per_hour": 5.567673838692336
+          },
+          "ridge_alpha_1": {
+            "n": 362,
+            "mae_vehicles_per_hour": 820.3248690984357,
+            "rmse_vehicles_per_hour": 1102.233153167137,
+            "mean_error_vehicles_per_hour": -313.2485401246986
+          },
+          "hist_leaves_31": {
+            "n": 362,
+            "mae_vehicles_per_hour": 302.2718412808907,
+            "rmse_vehicles_per_hour": 472.77267881240795,
+            "mean_error_vehicles_per_hour": -5.225467166028143
+          }
+        }
+      },
+      "8": {
+        "n": 361,
+        "incomplete_inputs": 26,
+        "weekly_fallback_count": 4,
+        "scores": {
+          "global_mean": {
+            "n": 361,
+            "mae_vehicles_per_hour": 1986.328512697102,
+            "rmse_vehicles_per_hour": 2177.589343293267,
+            "mean_error_vehicles_per_hour": -1417.2317232478397
+          },
+          "weekday_hour_mean": {
+            "n": 361,
+            "mae_vehicles_per_hour": 508.6645082717991,
+            "rmse_vehicles_per_hour": 784.1167564535962,
+            "mean_error_vehicles_per_hour": -99.8177606564105
+          },
+          "weekly_with_fallback": {
+            "n": 361,
+            "mae_vehicles_per_hour": 561.5170242061162,
+            "rmse_vehicles_per_hour": 1006.3996145978148,
+            "mean_error_vehicles_per_hour": 1.5110144399212708
+          },
+          "ridge_alpha_1": {
+            "n": 361,
+            "mae_vehicles_per_hour": 516.3893818642917,
+            "rmse_vehicles_per_hour": 754.743519124859,
+            "mean_error_vehicles_per_hour": 216.15927838068495
+          },
+          "hist_leaves_31": {
+            "n": 361,
+            "mae_vehicles_per_hour": 255.46742613684373,
+            "rmse_vehicles_per_hour": 357.3736820336612,
+            "mean_error_vehicles_per_hour": 17.176058802543462
+          }
+        }
+      },
+      "9": {
+        "n": 361,
+        "incomplete_inputs": 28,
+        "weekly_fallback_count": 4,
+        "scores": {
+          "global_mean": {
+            "n": 361,
+            "mae_vehicles_per_hour": 1393.084715997311,
+            "rmse_vehicles_per_hour": 1565.7488678045258,
+            "mean_error_vehicles_per_hour": -1209.3284112104811
+          },
+          "weekday_hour_mean": {
+            "n": 361,
+            "mae_vehicles_per_hour": 373.73715952596484,
+            "rmse_vehicles_per_hour": 566.4961930580014,
+            "mean_error_vehicles_per_hour": -119.83565909767471
+          },
+          "weekly_with_fallback": {
+            "n": 361,
+            "mae_vehicles_per_hour": 403.8277603657934,
+            "rmse_vehicles_per_hour": 693.2845299447636,
+            "mean_error_vehicles_per_hour": 3.202710548334014
+          },
+          "ridge_alpha_1": {
+            "n": 361,
+            "mae_vehicles_per_hour": 426.2206357771344,
+            "rmse_vehicles_per_hour": 559.6881356346025,
+            "mean_error_vehicles_per_hour": 283.9478388152762
+          },
+          "hist_leaves_31": {
+            "n": 361,
+            "mae_vehicles_per_hour": 210.69271608208507,
+            "rmse_vehicles_per_hour": 293.1567306024592,
+            "mean_error_vehicles_per_hour": -20.390641637925974
+          }
+        }
+      },
+      "10": {
+        "n": 363,
+        "incomplete_inputs": 23,
+        "weekly_fallback_count": 2,
+        "scores": {
+          "global_mean": {
+            "n": 363,
+            "mae_vehicles_per_hour": 1041.2375464772795,
+            "rmse_vehicles_per_hour": 1126.1894656831594,
+            "mean_error_vehicles_per_hour": -1012.0114342416242
+          },
+          "weekday_hour_mean": {
+            "n": 363,
+            "mae_vehicles_per_hour": 275.73763904321805,
+            "rmse_vehicles_per_hour": 405.3933675244909,
+            "mean_error_vehicles_per_hour": -100.31977824010875
+          },
+          "weekly_with_fallback": {
+            "n": 363,
+            "mae_vehicles_per_hour": 322.03532636855874,
+            "rmse_vehicles_per_hour": 497.50601608339787,
+            "mean_error_vehicles_per_hour": 3.843461510229106
+          },
+          "ridge_alpha_1": {
+            "n": 363,
+            "mae_vehicles_per_hour": 407.2182971133474,
+            "rmse_vehicles_per_hour": 496.41242596406477,
+            "mean_error_vehicles_per_hour": 323.30292681549304
+          },
+          "hist_leaves_31": {
+            "n": 363,
+            "mae_vehicles_per_hour": 183.39240986434754,
+            "rmse_vehicles_per_hour": 271.25390232420494,
+            "mean_error_vehicles_per_hour": -35.74841769966232
+          }
+        }
+      },
+      "11": {
+        "n": 364,
+        "incomplete_inputs": 20,
+        "weekly_fallback_count": 1,
+        "scores": {
+          "global_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 1314.863432778325,
+            "rmse_vehicles_per_hour": 1385.704558765331,
+            "mean_error_vehicles_per_hour": -1308.8296033505205
+          },
+          "weekday_hour_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 270.3019060097562,
+            "rmse_vehicles_per_hour": 373.1744542433826,
+            "mean_error_vehicles_per_hour": -101.94731368724278
+          },
+          "weekly_with_fallback": {
+            "n": 364,
+            "mae_vehicles_per_hour": 287.9596389324961,
+            "rmse_vehicles_per_hour": 421.9402450804725,
+            "mean_error_vehicles_per_hour": 4.364536891679748
+          },
+          "ridge_alpha_1": {
+            "n": 364,
+            "mae_vehicles_per_hour": 320.3070039543308,
+            "rmse_vehicles_per_hour": 410.82511686256544,
+            "mean_error_vehicles_per_hour": 252.74817429649062
+          },
+          "hist_leaves_31": {
+            "n": 364,
+            "mae_vehicles_per_hour": 174.70578406923394,
+            "rmse_vehicles_per_hour": 236.34321237224037,
+            "mean_error_vehicles_per_hour": -53.16915732273387
+          }
+        }
+      },
+      "12": {
+        "n": 364,
+        "incomplete_inputs": 21,
+        "weekly_fallback_count": 1,
+        "scores": {
+          "global_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 1544.305372116624,
+            "rmse_vehicles_per_hour": 1602.7039297915094,
+            "mean_error_vehicles_per_hour": -1540.966965987883
+          },
+          "weekday_hour_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 256.3388246826016,
+            "rmse_vehicles_per_hour": 365.5940282607398,
+            "mean_error_vehicles_per_hour": -86.92247384173604
+          },
+          "weekly_with_fallback": {
+            "n": 364,
+            "mae_vehicles_per_hour": 279.71542783059635,
+            "rmse_vehicles_per_hour": 417.2957616944809,
+            "mean_error_vehicles_per_hour": 2.169187554019015
+          },
+          "ridge_alpha_1": {
+            "n": 364,
+            "mae_vehicles_per_hour": 268.03086351390266,
+            "rmse_vehicles_per_hour": 374.120075360742,
+            "mean_error_vehicles_per_hour": 177.75881491380665
+          },
+          "hist_leaves_31": {
+            "n": 364,
+            "mae_vehicles_per_hour": 161.4519201661605,
+            "rmse_vehicles_per_hour": 221.63297749790513,
+            "mean_error_vehicles_per_hour": -21.650479386079162
+          }
+        }
+      },
+      "13": {
+        "n": 364,
+        "incomplete_inputs": 22,
+        "weekly_fallback_count": 1,
+        "scores": {
+          "global_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 1548.6664399525457,
+            "rmse_vehicles_per_hour": 1602.574096308277,
+            "mean_error_vehicles_per_hour": -1544.4638882574038
+          },
+          "weekday_hour_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 249.08138694103144,
+            "rmse_vehicles_per_hour": 364.6766016902121,
+            "mean_error_vehicles_per_hour": -76.9654411317145
+          },
+          "weekly_with_fallback": {
+            "n": 364,
+            "mae_vehicles_per_hour": 271.9846597501877,
+            "rmse_vehicles_per_hour": 409.8700521621979,
+            "mean_error_vehicles_per_hour": 5.526329260801311
+          },
+          "ridge_alpha_1": {
+            "n": 364,
+            "mae_vehicles_per_hour": 328.7706002798525,
+            "rmse_vehicles_per_hour": 414.65347838728195,
+            "mean_error_vehicles_per_hour": 263.19084484979663
+          },
+          "hist_leaves_31": {
+            "n": 364,
+            "mae_vehicles_per_hour": 162.96733417587967,
+            "rmse_vehicles_per_hour": 222.0328165916786,
+            "mean_error_vehicles_per_hour": 18.507085080813106
+          }
+        }
+      },
+      "14": {
+        "n": 365,
+        "incomplete_inputs": 20,
+        "weekly_fallback_count": 0,
+        "scores": {
+          "global_mean": {
+            "n": 365,
+            "mae_vehicles_per_hour": 1739.0756997810709,
+            "rmse_vehicles_per_hour": 1798.4794147708897,
+            "mean_error_vehicles_per_hour": -1734.8104126286833
+          },
+          "weekday_hour_mean": {
+            "n": 365,
+            "mae_vehicles_per_hour": 246.75919730341184,
+            "rmse_vehicles_per_hour": 368.3320160672215,
+            "mean_error_vehicles_per_hour": -44.59365120133557
+          },
+          "weekly_with_fallback": {
+            "n": 365,
+            "mae_vehicles_per_hour": 279.5342465753425,
+            "rmse_vehicles_per_hour": 423.1677927511944,
+            "mean_error_vehicles_per_hour": 7.221917808219178
+          },
+          "ridge_alpha_1": {
+            "n": 365,
+            "mae_vehicles_per_hour": 262.0739044783404,
+            "rmse_vehicles_per_hour": 363.3975623405283,
+            "mean_error_vehicles_per_hour": 186.967905942401
+          },
+          "hist_leaves_31": {
+            "n": 365,
+            "mae_vehicles_per_hour": 168.4858702171255,
+            "rmse_vehicles_per_hour": 215.31867278564863,
+            "mean_error_vehicles_per_hour": 28.140494420020644
+          }
+        }
+      },
+      "15": {
+        "n": 363,
+        "incomplete_inputs": 24,
+        "weekly_fallback_count": 2,
+        "scores": {
+          "global_mean": {
+            "n": 363,
+            "mae_vehicles_per_hour": 2070.2383275010093,
+            "rmse_vehicles_per_hour": 2171.4935225801946,
+            "mean_error_vehicles_per_hour": -2067.189209565413
+          },
+          "weekday_hour_mean": {
+            "n": 363,
+            "mae_vehicles_per_hour": 283.81174243353365,
+            "rmse_vehicles_per_hour": 424.88053910305274,
+            "mean_error_vehicles_per_hour": -85.30866557388195
+          },
+          "weekly_with_fallback": {
+            "n": 363,
+            "mae_vehicles_per_hour": 310.2997065395277,
+            "rmse_vehicles_per_hour": 509.13070651638185,
+            "mean_error_vehicles_per_hour": 7.711312744218855
+          },
+          "ridge_alpha_1": {
+            "n": 363,
+            "mae_vehicles_per_hour": 250.2716679760429,
+            "rmse_vehicles_per_hour": 387.7672348909257,
+            "mean_error_vehicles_per_hour": -22.03365947675145
+          },
+          "hist_leaves_31": {
+            "n": 363,
+            "mae_vehicles_per_hour": 171.75524457832734,
+            "rmse_vehicles_per_hour": 238.11109580814855,
+            "mean_error_vehicles_per_hour": -5.129153887168777
+          }
+        }
+      },
+      "16": {
+        "n": 363,
+        "incomplete_inputs": 25,
+        "weekly_fallback_count": 2,
+        "scores": {
+          "global_mean": {
+            "n": 363,
+            "mae_vehicles_per_hour": 2569.8427132594375,
+            "rmse_vehicles_per_hour": 2754.645206112693,
+            "mean_error_vehicles_per_hour": -2568.154476866541
+          },
+          "weekday_hour_mean": {
+            "n": 363,
+            "mae_vehicles_per_hour": 415.60612095199326,
+            "rmse_vehicles_per_hour": 570.9127644121063,
+            "mean_error_vehicles_per_hour": -180.04675151273798
+          },
+          "weekly_with_fallback": {
+            "n": 363,
+            "mae_vehicles_per_hour": 397.33607587717836,
+            "rmse_vehicles_per_hour": 660.559553458923,
+            "mean_error_vehicles_per_hour": 3.341907891714468
+          },
+          "ridge_alpha_1": {
+            "n": 363,
+            "mae_vehicles_per_hour": 420.8407051823826,
+            "rmse_vehicles_per_hour": 561.0991944578756,
+            "mean_error_vehicles_per_hour": -219.75885788775028
+          },
+          "hist_leaves_31": {
+            "n": 363,
+            "mae_vehicles_per_hour": 249.9217578468753,
+            "rmse_vehicles_per_hour": 338.0417644181226,
+            "mean_error_vehicles_per_hour": -67.58272723760828
+          }
+        }
+      },
+      "17": {
+        "n": 363,
+        "incomplete_inputs": 24,
+        "weekly_fallback_count": 2,
+        "scores": {
+          "global_mean": {
+            "n": 363,
+            "mae_vehicles_per_hour": 2223.154746762794,
+            "rmse_vehicles_per_hour": 2385.256429136053,
+            "mean_error_vehicles_per_hour": -2218.198554001527
+          },
+          "weekday_hour_mean": {
+            "n": 363,
+            "mae_vehicles_per_hour": 387.85728560931096,
+            "rmse_vehicles_per_hour": 543.0162510415054,
+            "mean_error_vehicles_per_hour": -150.94797266462498
+          },
+          "weekly_with_fallback": {
+            "n": 363,
+            "mae_vehicles_per_hour": 392.1805234529996,
+            "rmse_vehicles_per_hour": 620.2703393848759,
+            "mean_error_vehicles_per_hour": 3.4697796513467014
+          },
+          "ridge_alpha_1": {
+            "n": 363,
+            "mae_vehicles_per_hour": 352.94807492798395,
+            "rmse_vehicles_per_hour": 490.57442673195726,
+            "mean_error_vehicles_per_hour": -167.6132511681448
+          },
+          "hist_leaves_31": {
+            "n": 363,
+            "mae_vehicles_per_hour": 237.97478365248102,
+            "rmse_vehicles_per_hour": 334.82201972947803,
+            "mean_error_vehicles_per_hour": -45.431186900374826
+          }
+        }
+      },
+      "18": {
+        "n": 364,
+        "incomplete_inputs": 23,
+        "weekly_fallback_count": 1,
+        "scores": {
+          "global_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 1166.323467645105,
+            "rmse_vehicles_per_hour": 1253.335567367135,
+            "mean_error_vehicles_per_hour": -1150.0147462909313
+          },
+          "weekday_hour_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 305.4357693160641,
+            "rmse_vehicles_per_hour": 413.8940384818968,
+            "mean_error_vehicles_per_hour": -135.37978611919988
+          },
+          "weekly_with_fallback": {
+            "n": 364,
+            "mae_vehicles_per_hour": 332.5174358974359,
+            "rmse_vehicles_per_hour": 458.9423943762439,
+            "mean_error_vehicles_per_hour": -1.6913553113553121
+          },
+          "ridge_alpha_1": {
+            "n": 364,
+            "mae_vehicles_per_hour": 319.51008836355356,
+            "rmse_vehicles_per_hour": 409.2274645096089,
+            "mean_error_vehicles_per_hour": 125.35164592577013
+          },
+          "hist_leaves_31": {
+            "n": 364,
+            "mae_vehicles_per_hour": 206.22099993849358,
+            "rmse_vehicles_per_hour": 291.589239712305,
+            "mean_error_vehicles_per_hour": -26.972927406339185
+          }
+        }
+      },
+      "19": {
+        "n": 364,
+        "incomplete_inputs": 22,
+        "weekly_fallback_count": 1,
+        "scores": {
+          "global_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 321.52365359305384,
+            "rmse_vehicles_per_hour": 404.6932054788223,
+            "mean_error_vehicles_per_hour": -155.22628475246964
+          },
+          "weekday_hour_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 267.7430034934073,
+            "rmse_vehicles_per_hour": 338.81266986466295,
+            "mean_error_vehicles_per_hour": -144.51815340745404
+          },
+          "weekly_with_fallback": {
+            "n": 364,
+            "mae_vehicles_per_hour": 249.5279333569656,
+            "rmse_vehicles_per_hour": 342.0394921434842,
+            "mean_error_vehicles_per_hour": 2.3960652250974825
+          },
+          "ridge_alpha_1": {
+            "n": 364,
+            "mae_vehicles_per_hour": 318.13051118551914,
+            "rmse_vehicles_per_hour": 390.19901320132095,
+            "mean_error_vehicles_per_hour": 150.13704623506462
+          },
+          "hist_leaves_31": {
+            "n": 364,
+            "mae_vehicles_per_hour": 174.19512724032734,
+            "rmse_vehicles_per_hour": 231.14415919903792,
+            "mean_error_vehicles_per_hour": -61.95113436766297
+          }
+        }
+      },
+      "20": {
+        "n": 364,
+        "incomplete_inputs": 22,
+        "weekly_fallback_count": 1,
+        "scores": {
+          "global_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 384.6327662837546,
+            "rmse_vehicles_per_hour": 478.38524925888703,
+            "mean_error_vehicles_per_hour": 291.3066822804974
+          },
+          "weekday_hour_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 270.5748086059309,
+            "rmse_vehicles_per_hour": 364.0834053137325,
+            "mean_error_vehicles_per_hour": -144.3359302764601
+          },
+          "weekly_with_fallback": {
+            "n": 364,
+            "mae_vehicles_per_hour": 254.0467948717949,
+            "rmse_vehicles_per_hour": 369.51776588830177,
+            "mean_error_vehicles_per_hour": 4.359981684981685
+          },
+          "ridge_alpha_1": {
+            "n": 364,
+            "mae_vehicles_per_hour": 239.18146827944588,
+            "rmse_vehicles_per_hour": 341.4603375513642,
+            "mean_error_vehicles_per_hour": -56.084764309730744
+          },
+          "hist_leaves_31": {
+            "n": 364,
+            "mae_vehicles_per_hour": 177.7579219023111,
+            "rmse_vehicles_per_hour": 258.21365585951753,
+            "mean_error_vehicles_per_hour": -38.185798362528665
+          }
+        }
+      },
+      "21": {
+        "n": 364,
+        "incomplete_inputs": 22,
+        "weekly_fallback_count": 1,
+        "scores": {
+          "global_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 588.2211822363839,
+            "rmse_vehicles_per_hour": 699.1778698121886,
+            "mean_error_vehicles_per_hour": 469.69129766511276
+          },
+          "weekday_hour_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 303.4377827725455,
+            "rmse_vehicles_per_hour": 411.2225587768123,
+            "mean_error_vehicles_per_hour": -120.93761097904186
+          },
+          "weekly_with_fallback": {
+            "n": 364,
+            "mae_vehicles_per_hour": 352.4339104291935,
+            "rmse_vehicles_per_hour": 476.712572898967,
+            "mean_error_vehicles_per_hour": 2.1427016379846573
+          },
+          "ridge_alpha_1": {
+            "n": 364,
+            "mae_vehicles_per_hour": 345.68247821122077,
+            "rmse_vehicles_per_hour": 477.3374495382817,
+            "mean_error_vehicles_per_hour": -217.3470052067952
+          },
+          "hist_leaves_31": {
+            "n": 364,
+            "mae_vehicles_per_hour": 255.08844456293403,
+            "rmse_vehicles_per_hour": 364.1450388356728,
+            "mean_error_vehicles_per_hour": -38.48153362014374
+          }
+        }
+      },
+      "22": {
+        "n": 364,
+        "incomplete_inputs": 22,
+        "weekly_fallback_count": 1,
+        "scores": {
+          "global_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 1007.7736905155942,
+            "rmse_vehicles_per_hour": 1156.8270051908953,
+            "mean_error_vehicles_per_hour": 917.6995394233544
+          },
+          "weekday_hour_mean": {
+            "n": 364,
+            "mae_vehicles_per_hour": 371.83821107252896,
+            "rmse_vehicles_per_hour": 526.9730662604404,
+            "mean_error_vehicles_per_hour": -148.31713959171285
+          },
+          "weekly_with_fallback": {
+            "n": 364,
+            "mae_vehicles_per_hour": 454.05022265316387,
+            "rmse_vehicles_per_hour": 661.8116251903069,
+            "mean_error_vehicles_per_hour": -1.8524204553616315
+          },
+          "ridge_alpha_1": {
+            "n": 364,
+            "mae_vehicles_per_hour": 448.064754408538,
+            "rmse_vehicles_per_hour": 616.7227473452717,
+            "mean_error_vehicles_per_hour": -135.7508075952567
+          },
+          "hist_leaves_31": {
+            "n": 364,
+            "mae_vehicles_per_hour": 347.7199897755654,
+            "rmse_vehicles_per_hour": 502.42052672236696,
+            "mean_error_vehicles_per_hour": -58.43984361286838
+          }
+        }
+      },
+      "23": {
+        "n": 363,
+        "incomplete_inputs": 24,
+        "weekly_fallback_count": 2,
+        "scores": {
+          "global_mean": {
+            "n": 363,
+            "mae_vehicles_per_hour": 1705.7338149126265,
+            "rmse_vehicles_per_hour": 1810.726470945444,
+            "mean_error_vehicles_per_hour": 1689.0177888153746
+          },
+          "weekday_hour_mean": {
+            "n": 363,
+            "mae_vehicles_per_hour": 287.0444018155485,
+            "rmse_vehicles_per_hour": 478.5613589402512,
+            "mean_error_vehicles_per_hour": -115.03921935624072
+          },
+          "weekly_with_fallback": {
+            "n": 363,
+            "mae_vehicles_per_hour": 390.3863866605269,
+            "rmse_vehicles_per_hour": 635.8517115875435,
+            "mean_error_vehicles_per_hour": -3.67539242060703
+          },
+          "ridge_alpha_1": {
+            "n": 363,
+            "mae_vehicles_per_hour": 436.3672386518541,
+            "rmse_vehicles_per_hour": 585.5144024175144,
+            "mean_error_vehicles_per_hour": 80.67433372170404
+          },
+          "hist_leaves_31": {
+            "n": 363,
+            "mae_vehicles_per_hour": 287.2210175249835,
+            "rmse_vehicles_per_hour": 457.23903870989824,
+            "mean_error_vehicles_per_hour": -25.657881659366726
+          }
+        }
+      }
+    },
+    "day_type": {
+      "weekday": {
+        "n": 6200,
+        "incomplete_inputs": 453,
+        "weekly_fallback_count": 39,
+        "scores": {
+          "global_mean": {
+            "n": 6200,
+            "mae_vehicles_per_hour": 1875.7734295605967,
+            "rmse_vehicles_per_hour": 2104.8464258716913,
+            "mean_error_vehicles_per_hour": -361.258481717548
+          },
+          "weekday_hour_mean": {
+            "n": 6200,
+            "mae_vehicles_per_hour": 270.4542612776379,
+            "rmse_vehicles_per_hour": 478.7659699723024,
+            "mean_error_vehicles_per_hour": -68.92335161926319
+          },
+          "weekly_with_fallback": {
+            "n": 6200,
+            "mae_vehicles_per_hour": 299.10544078098064,
+            "rmse_vehicles_per_hour": 605.2444849536489,
+            "mean_error_vehicles_per_hour": 6.1183006313241
+          },
+          "ridge_alpha_1": {
+            "n": 6200,
+            "mae_vehicles_per_hour": 377.1531007433086,
+            "rmse_vehicles_per_hour": 576.8536119507725,
+            "mean_error_vehicles_per_hour": 9.663816462005633
+          },
+          "hist_leaves_31": {
+            "n": 6200,
+            "mae_vehicles_per_hour": 179.5969852994999,
+            "rmse_vehicles_per_hour": 290.93789482089306,
+            "mean_error_vehicles_per_hour": -11.323210881532406
+          }
+        }
+      },
+      "weekend": {
+        "n": 2513,
+        "incomplete_inputs": 112,
+        "weekly_fallback_count": 7,
+        "scores": {
+          "global_mean": {
+            "n": 2513,
+            "mae_vehicles_per_hour": 1417.0456449698072,
+            "rmse_vehicles_per_hour": 1655.1479694478837,
+            "mean_error_vehicles_per_hour": 508.67469998996273
+          },
+          "weekday_hour_mean": {
+            "n": 2513,
+            "mae_vehicles_per_hour": 283.3470307498068,
+            "rmse_vehicles_per_hour": 400.7186532729869,
+            "mean_error_vehicles_per_hour": -157.12633544153493
+          },
+          "weekly_with_fallback": {
+            "n": 2513,
+            "mae_vehicles_per_hour": 309.13526689622324,
+            "rmse_vehicles_per_hour": 442.2475814310187,
+            "mean_error_vehicles_per_hour": -5.246818785163667
+          },
+          "ridge_alpha_1": {
+            "n": 2513,
+            "mae_vehicles_per_hour": 362.4852058199489,
+            "rmse_vehicles_per_hour": 476.6236372015281,
+            "mean_error_vehicles_per_hour": -65.5773224717545
+          },
+          "hist_leaves_31": {
+            "n": 2513,
+            "mae_vehicles_per_hour": 215.5969293947641,
+            "rmse_vehicles_per_hour": 314.4405916256941,
+            "mean_error_vehicles_per_hour": -40.668463568817565
+          }
+        }
+      }
+    },
+    "input_completeness": {
+      "complete": {
+        "n": 8148,
+        "incomplete_inputs": 0,
+        "weekly_fallback_count": 0,
+        "scores": {
+          "global_mean": {
+            "n": 8148,
+            "mae_vehicles_per_hour": 1737.5916736782126,
+            "rmse_vehicles_per_hour": 1979.983378360193,
+            "mean_error_vehicles_per_hour": -107.47109878039792
+          },
+          "weekday_hour_mean": {
+            "n": 8148,
+            "mae_vehicles_per_hour": 274.5666482945285,
+            "rmse_vehicles_per_hour": 454.672792975836,
+            "mean_error_vehicles_per_hour": -97.41743838139999
+          },
+          "weekly_with_fallback": {
+            "n": 8148,
+            "mae_vehicles_per_hour": 297.66912125675015,
+            "rmse_vehicles_per_hour": 549.8592989574473,
+            "mean_error_vehicles_per_hour": 1.6404025527736867
+          },
+          "ridge_alpha_1": {
+            "n": 8148,
+            "mae_vehicles_per_hour": 367.3586466013503,
+            "rmse_vehicles_per_hour": 541.3530382478926,
+            "mean_error_vehicles_per_hour": -14.646252229503476
+          },
+          "hist_leaves_31": {
+            "n": 8148,
+            "mae_vehicles_per_hour": 188.5150575659391,
+            "rmse_vehicles_per_hour": 294.6270151437521,
+            "mean_error_vehicles_per_hour": -20.439304832165455
+          }
+        }
+      },
+      "incomplete": {
+        "n": 565,
+        "incomplete_inputs": 565,
+        "weekly_fallback_count": 46,
+        "scores": {
+          "global_mean": {
+            "n": 565,
+            "mae_vehicles_per_hour": 1828.201791070353,
+            "rmse_vehicles_per_hour": 2065.2473599162513,
+            "mean_error_vehicles_per_hour": -151.90894285192738
+          },
+          "weekday_hour_mean": {
+            "n": 565,
+            "mae_vehicles_per_hour": 268.49284582619737,
+            "rmse_vehicles_per_hour": 498.23784391933225,
+            "mean_error_vehicles_per_hour": -50.31145676524222
+          },
+          "weekly_with_fallback": {
+            "n": 565,
+            "mae_vehicles_per_hour": 364.4294841633432,
+            "rmse_vehicles_per_hour": 727.6830693491514,
+            "mean_error_vehicles_per_hour": 20.145501428483417
+          },
+          "ridge_alpha_1": {
+            "n": 565,
+            "mae_vehicles_per_hour": 453.16158287830547,
+            "rmse_vehicles_per_hour": 659.9983359395778,
+            "mean_error_vehicles_per_hour": 25.588520104265783
+          },
+          "hist_leaves_31": {
+            "n": 565,
+            "mae_vehicles_per_hour": 211.10743960826562,
+            "rmse_vehicles_per_hour": 341.7236612761602,
+            "mean_error_vehicles_per_hour": -10.3792931707174
+          }
+        }
+      }
+    },
+    "largest_tree_errors": [
+      {
+        "date_time": "2017-12-05 07:00:00",
+        "actual": 2334,
+        "prediction": 6126.793287114468,
+        "error_vehicles_per_hour": 3792.7932871144676,
+        "incomplete_inputs": false
+      },
+      {
+        "date_time": "2017-07-04 07:00:00",
+        "actual": 1091,
+        "prediction": 3714.7647273778275,
+        "error_vehicles_per_hour": 2623.7647273778275,
+        "incomplete_inputs": true
+      },
+      {
+        "date_time": "2017-03-01 07:00:00",
+        "actual": 3683,
+        "prediction": 6089.564066706831,
+        "error_vehicles_per_hour": 2406.564066706831,
+        "incomplete_inputs": false
+      },
+      {
+        "date_time": "2017-04-13 00:00:00",
+        "actual": 3075,
+        "prediction": 702.4613256742239,
+        "error_vehicles_per_hour": -2372.538674325776,
+        "incomplete_inputs": false
+      },
+      {
+        "date_time": "2017-02-08 22:00:00",
+        "actual": 3925,
+        "prediction": 1834.8989094073443,
+        "error_vehicles_per_hour": -2090.101090592656,
+        "incomplete_inputs": false
+      },
+      {
+        "date_time": "2017-12-05 08:00:00",
+        "actual": 2160,
+        "prediction": 4237.79141417937,
+        "error_vehicles_per_hour": 2077.79141417937,
+        "incomplete_inputs": false
+      },
+      {
+        "date_time": "2017-07-03 06:00:00",
+        "actual": 3353,
+        "prediction": 5412.236764235557,
+        "error_vehicles_per_hour": 2059.2367642355566,
+        "incomplete_inputs": true
+      },
+      {
+        "date_time": "2017-07-26 23:00:00",
+        "actual": 3420,
+        "prediction": 1443.7405052193274,
+        "error_vehicles_per_hour": -1976.2594947806726,
+        "incomplete_inputs": false
+      },
+      {
+        "date_time": "2017-03-01 06:00:00",
+        "actual": 3771,
+        "prediction": 5723.265278665244,
+        "error_vehicles_per_hour": 1952.2652786652443,
+        "incomplete_inputs": false
+      },
+      {
+        "date_time": "2017-03-21 22:00:00",
+        "actual": 3887,
+        "prediction": 1963.6418035616334,
+        "error_vehicles_per_hour": -1923.3581964383666,
+        "incomplete_inputs": true
+      }
+    ]
+  },
+  "input_sha256": {
+    "train": "6e2ad85a84d6b9f6eb1a0c5ed54bf1fc6d789748c897d5f57be2b2453a82f817",
+    "validation": "836c7aac6c9b300ef2aea0cef52f6011e3593580545f4b7da0fbfa3b84cd012e"
+  },
+  "part05_report_sha256": "192881d68762e56e190db85a7d9657ce2e5f319de0d779a6b21aa76248ffe2d9",
+  "backtest_plan_sha256": "fc220f6d52e5965769f249febded580d61d61329feedfe9bad15a7fd6febdbac",
+  "prediction_csv_sha256": "2ea127a24806e6899fc695ae857a9eac370911352981fc7adbadfee0ee4d75a7",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "sklearn": "1.7.2"
+  }
+}

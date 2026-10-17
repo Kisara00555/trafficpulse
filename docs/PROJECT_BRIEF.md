@@ -37,6 +37,8 @@ A hypothetical traffic-operations analyst needs an hourly demand forecast and un
 
 ## Current decisions and open questions
 
+Part 6 completed on 17 October 2026. Four expanding-origin quarterly backtests retain the Part 5 settings and availability contract. The tree outperformed the three baselines and Ridge in every quarter under both fitting policies. Quarterly refitting barely changed annual MAE (190.16 to 189.98), so the fixed-origin reference remains provisional. Error slices and large failures are documented in [BACKTEST_RESULTS.md](BACKTEST_RESULTS.md); these are previously inspected validation data, not final holdout evidence. The roadmap now targets Parts 7-10 on 18-21 October and retains the 26 October deadline.
+
 Part 5 completed on 15 October 2026. Settings were selected on a 2016 chronological tuning window, then refitted on available training labels before scoring 2017. Histogram boosting (31 leaves) is the provisional champion: MAE 190.2 versus 278.7 for the weekday/hour baseline on all 8,713 observed validation targets. Ridge scored 381.1. Missing inputs are handled explicitly and final holdout outcomes remain unused. See [MODEL_RESULTS.md](MODEL_RESULTS.md) for populations, tuning evidence and limitations.
 
 Part 4 completed on 14 October 2026: 15 calendar, exact-timestamp lag and rolling-history predictors with no learned preprocessing. All observed inputs are at t-2 or older. Missing inputs are preserved; 8,148 of 8,713 observed validation targets have complete inputs. The final holdout remains sealed. See [FEATURE_CONTRACT.md](FEATURE_CONTRACT.md) for the allowlist, coverage and rules for Part 5 fitting.
