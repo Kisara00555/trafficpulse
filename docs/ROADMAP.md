@@ -10,8 +10,8 @@ Autonomous daily development was authorized on 6 October 2026. Complete at most 
 | 4 | Leakage-tested lag/calendar features | What information exists at prediction time? | Complete, 2026-10-14 |
 | 5 | Regularized and tree-based models | Why this model and how was it tuned? | Complete, 2026-10-15 |
 | 6 | Temporal backtesting and error analysis | Does it work across seasons? | Complete, 2026-10-17 |
-| 7 | Uncertainty and interval evaluation | How do you communicate unreliable forecasts? | Next |
-| 8 | Simulated operational decision study | How does predictive accuracy affect a decision? | Planned |
+| 7 | Uncertainty and interval evaluation | How do you communicate unreliable forecasts? | Complete, 2026-10-18 |
+| 8 | Simulated operational decision study | How does predictive accuracy affect a decision? | Next |
 | 9 | Final holdout evaluation and small demo | What happens on unseen data? | Planned |
 | 10 | GitHub presentation, resume evidence, mock interview | What did you personally decide and learn? | Planned |
 

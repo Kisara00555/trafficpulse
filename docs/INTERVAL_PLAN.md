@@ -1,0 +1,16 @@
+# Part 7 interval specification
+
+Recorded on 18 October 2026 before running interval comparisons. This is a development evaluation: 2017 outcomes were inspected in Parts 3, 5 and 6. No final holdout inputs will be read.
+
+- Keep the Part 5 fixed-origin histogram tree (31 leaves, unchanged settings), fitted on available training labels through 2016-12-31 22:00. Compare with the fixed-origin weekday/hour baseline using the same calibration and evaluation hours. Do not refit either model on calibration labels.
+- Nominal coverage: 90%, fixed before evaluation. Calibrate each method separately using absolute forecast errors on observed targets from 2017-01-01 00:00 through 2017-06-30 22:00 inclusive. Exclude 23:00 because it is unavailable at the first July forecast under the two-hour delay.
+- With n calibration residuals, take sorted residual number ceil((n+1)*0.9), using one-based indexing and no interpolation. Fail explicitly if the sample is too small for a finite quantile. This follows the split-conformal residual construction, but exchangeability and an untouched evaluation are not established here, so no formal 90% guarantee is claimed.
+- Produce [max(0, prediction-q), prediction+q]. Boundaries count as covered. Keep continuous bounds without rounding. Zero is the known lower bound of the target. The global residual radius is constant; this method does not adapt uncertainty to each hour's conditions.
+- Freeze the radii for every observed target from 2017-07-01 through 2017-12-31 23:00. No updates, new candidates, subgroup adjustments or calibration-window changes after seeing coverage. Earlier observed traffic may enter each forecast's features only at t-2 or older.
+- Report observed/missing counts, calibration radius/rank, empirical coverage, mean width, counts below/above bounds, point MAE and mean interval score. At alpha=0.1, interval score = width + 20*(lower-actual) below the range or 20*(actual-upper) above it; lower is better. Compare methods on identical timestamps.
+- Report month, season, issue-hour, weekday/weekend and input-completeness slices, with counts and empty bins explicit. Seasons cover only the available evaluation months, not full annual seasons. List the five largest tree misses beyond a bound. These diagnostics do not select a new policy.
+- Verify the calibration/evaluation boundary and fitted-model cutoff, rank arithmetic/ties/finite values, clipping/coverage endpoints, empty groups, held-out-label isolation, independent metrics and reproducibility. Commit aggregate evidence; keep predictions ignored.
+
+For Part 9, freeze any final calibration period and model-fitting policy before accessing 2018+ outcomes. Do not reuse these radii with a newly refitted model without a documented calibration protocol. Intervals express uncertainty about an individual target, not a confidence interval for average model accuracy or a guarantee for every hour.
+
+Method reference: Angelopoulos and Bates, [A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification](https://arxiv.org/abs/2107.07511), residual-score construction and exchangeability caveat. Time dependence and previously inspected development data limit the interpretation here.

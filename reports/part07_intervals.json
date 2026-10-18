@@ -1,0 +1,1516 @@
+{
+  "protocol": {
+    "nominal_coverage": 0.9,
+    "final_holdout_read": false,
+    "validation_previously_inspected": true,
+    "formal_coverage_guarantee": false,
+    "fit_cutoff": "2016-12-31 22:00:00",
+    "calibration_start": "2017-01-01 00:00:00",
+    "calibration_end_inclusive": "2017-06-30 22:00:00",
+    "evaluation_start": "2017-07-01 00:00:00",
+    "evaluation_end_exclusive": "2018-01-01 00:00:00",
+    "refitting": false,
+    "evaluation_recalibration": false
+  },
+  "fit_n": 25328,
+  "calibration": {
+    "hist_leaves_31": {
+      "n": 4315,
+      "rank": 3885,
+      "radius": 425.23329949818344
+    },
+    "weekday_hour_mean": {
+      "n": 4315,
+      "rank": 3885,
+      "radius": 604.5208333333335
+    }
+  },
+  "evaluation_missing_targets": 19,
+  "evaluation": {
+    "n": 4397,
+    "point_scores": {
+      "hist_leaves_31": {
+        "n": 4397,
+        "mae_vehicles_per_hour": 189.95018042629843,
+        "rmse_vehicles_per_hour": 300.32678429252945,
+        "mean_error_vehicles_per_hour": -26.65087064933238
+      },
+      "weekday_hour_mean": {
+        "n": 4397,
+        "mae_vehicles_per_hour": 294.4929815094238,
+        "rmse_vehicles_per_hour": 505.4345911733911,
+        "mean_error_vehicles_per_hour": -104.90189004399116
+      }
+    },
+    "intervals": {
+      "hist_leaves_31": {
+        "n": 4397,
+        "covered": 3970,
+        "coverage": 0.902888332954287,
+        "below_lower": 164,
+        "above_upper": 263,
+        "mean_width": 843.1323605702684,
+        "mean_interval_score": 1417.6222256093486
+      },
+      "weekday_hour_mean": {
+        "n": 4397,
+        "covered": 3881,
+        "coverage": 0.8826472594951102,
+        "below_lower": 162,
+        "above_upper": 354,
+        "mean_width": 1180.7666520735518,
+        "mean_interval_score": 2319.520934924523
+      }
+    }
+  },
+  "diagnostics": {
+    "month": {
+      "7": {
+        "n": 738,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 738,
+            "mae_vehicles_per_hour": 185.20116270096509,
+            "rmse_vehicles_per_hour": 300.332894375476,
+            "mean_error_vehicles_per_hour": -24.199844274383327
+          },
+          "weekday_hour_mean": {
+            "n": 738,
+            "mae_vehicles_per_hour": 277.77299401237843,
+            "rmse_vehicles_per_hour": 521.7950920472518,
+            "mean_error_vehicles_per_hour": -62.084826967623556
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 738,
+            "covered": 677,
+            "coverage": 0.9173441734417345,
+            "below_lower": 21,
+            "above_upper": 40,
+            "mean_width": 845.5614664925127,
+            "mean_interval_score": 1410.352675700718
+          },
+          "weekday_hour_mean": {
+            "n": 738,
+            "covered": 677,
+            "coverage": 0.9173441734417345,
+            "below_lower": 24,
+            "above_upper": 37,
+            "mean_width": 1180.7789752070225,
+            "mean_interval_score": 2397.159697285589
+          }
+        }
+      },
+      "8": {
+        "n": 743,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 743,
+            "mae_vehicles_per_hour": 165.19222378105258,
+            "rmse_vehicles_per_hour": 253.3304160481713,
+            "mean_error_vehicles_per_hour": -29.530501736943396
+          },
+          "weekday_hour_mean": {
+            "n": 743,
+            "mae_vehicles_per_hour": 239.33873419225108,
+            "rmse_vehicles_per_hour": 347.2645065252591,
+            "mean_error_vehicles_per_hour": -210.1826591296038
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 743,
+            "covered": 696,
+            "coverage": 0.9367429340511441,
+            "below_lower": 15,
+            "above_upper": 32,
+            "mean_width": 843.9463280037526,
+            "mean_interval_score": 1185.2804438795115
+          },
+          "weekday_hour_mean": {
+            "n": 743,
+            "covered": 681,
+            "coverage": 0.9165545087483177,
+            "below_lower": 1,
+            "above_upper": 61,
+            "mean_width": 1180.1426868156304,
+            "mean_interval_score": 1578.0916731873342
+          }
+        }
+      },
+      "9": {
+        "n": 716,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 716,
+            "mae_vehicles_per_hour": 189.8290552870864,
+            "rmse_vehicles_per_hour": 281.7232381888957,
+            "mean_error_vehicles_per_hour": -30.990885026568353
+          },
+          "weekday_hour_mean": {
+            "n": 716,
+            "mae_vehicles_per_hour": 301.0309628621779,
+            "rmse_vehicles_per_hour": 477.35949429174104,
+            "mean_error_vehicles_per_hour": -190.4054598302977
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 716,
+            "covered": 647,
+            "coverage": 0.9036312849162011,
+            "below_lower": 27,
+            "above_upper": 42,
+            "mean_width": 842.8010542468445,
+            "mean_interval_score": 1308.2281989764156
+          },
+          "weekday_hour_mean": {
+            "n": 716,
+            "covered": 616,
+            "coverage": 0.8603351955307262,
+            "below_lower": 10,
+            "above_upper": 90,
+            "mean_width": 1180.8967796401985,
+            "mean_interval_score": 2103.4016667905685
+          }
+        }
+      },
+      "10": {
+        "n": 744,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 744,
+            "mae_vehicles_per_hour": 180.1469300182247,
+            "rmse_vehicles_per_hour": 285.28074476866135,
+            "mean_error_vehicles_per_hour": -29.64727331117838
+          },
+          "weekday_hour_mean": {
+            "n": 744,
+            "mae_vehicles_per_hour": 269.7499585826537,
+            "rmse_vehicles_per_hour": 386.33707766382224,
+            "mean_error_vehicles_per_hour": -217.20710576904676
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 744,
+            "covered": 669,
+            "coverage": 0.8991935483870968,
+            "below_lower": 29,
+            "above_upper": 46,
+            "mean_width": 842.3026822898072,
+            "mean_interval_score": 1404.138809963542
+          },
+          "weekday_hour_mean": {
+            "n": 744,
+            "covered": 659,
+            "coverage": 0.885752688172043,
+            "below_lower": 3,
+            "above_upper": 82,
+            "mean_width": 1180.3184583748384,
+            "mean_interval_score": 1767.9161992843792
+          }
+        }
+      },
+      "11": {
+        "n": 716,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 716,
+            "mae_vehicles_per_hour": 197.00343244467865,
+            "rmse_vehicles_per_hour": 301.0061274499996,
+            "mean_error_vehicles_per_hour": -37.103915214927206
+          },
+          "weekday_hour_mean": {
+            "n": 716,
+            "mae_vehicles_per_hour": 308.0575729291021,
+            "rmse_vehicles_per_hour": 574.328440125427,
+            "mean_error_vehicles_per_hour": -56.818732504454665
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 716,
+            "covered": 643,
+            "coverage": 0.8980446927374302,
+            "below_lower": 26,
+            "above_upper": 47,
+            "mean_width": 842.2045230274792,
+            "mean_interval_score": 1426.035716893475
+          },
+          "weekday_hour_mean": {
+            "n": 716,
+            "covered": 639,
+            "coverage": 0.8924581005586593,
+            "below_lower": 30,
+            "above_upper": 47,
+            "mean_width": 1181.4845905467146,
+            "mean_interval_score": 2641.91413161618
+          }
+        }
+      },
+      "12": {
+        "n": 740,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 740,
+            "mae_vehicles_per_hour": 222.69362951661748,
+            "rmse_vehicles_per_hour": 367.7748355707231,
+            "mean_error_vehicles_per_hour": -8.878083869787957
+          },
+          "weekday_hour_mean": {
+            "n": 740,
+            "mae_vehicles_per_hour": 371.9717970255513,
+            "rmse_vehicles_per_hour": 660.018524729145,
+            "mean_error_vehicles_per_hour": 107.22339988625156
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 740,
+            "covered": 638,
+            "coverage": 0.8621621621621621,
+            "below_lower": 46,
+            "above_upper": 56,
+            "mean_width": 841.9450222934796,
+            "mean_interval_score": 1769.4176258905165
+          },
+          "weekday_hour_mean": {
+            "n": 740,
+            "covered": 609,
+            "coverage": 0.822972972972973,
+            "below_lower": 94,
+            "above_upper": 37,
+            "mean_width": 1181.0109122647318,
+            "mean_interval_score": 3438.2862394072454
+          }
+        }
+      }
+    },
+    "season": {
+      "JJA_partial": {
+        "n": 1481,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 1481,
+            "mae_vehicles_per_hour": 175.16291717936147,
+            "rmse_vehicles_per_hour": 277.74834753025914,
+            "mean_error_vehicles_per_hour": -26.874171414614345
+          },
+          "weekday_hour_mean": {
+            "n": 1481,
+            "mae_vehicles_per_hour": 258.4909852032261,
+            "rmse_vehicles_per_hour": 442.9168531759137,
+            "mean_error_vehicles_per_hour": -136.38373938919773
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 1481,
+            "covered": 1373,
+            "coverage": 0.9270762997974341,
+            "below_lower": 36,
+            "above_upper": 72,
+            "mean_width": 844.7511708158424,
+            "mean_interval_score": 1297.436626920734
+          },
+          "weekday_hour_mean": {
+            "n": 1481,
+            "covered": 1358,
+            "coverage": 0.9169480081026333,
+            "below_lower": 25,
+            "above_upper": 98,
+            "mean_width": 1180.4597569255882,
+            "mean_interval_score": 1986.2430585921363
+          }
+        }
+      },
+      "SON": {
+        "n": 2176,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 2176,
+            "mae_vehicles_per_hour": 188.8793093517936,
+            "rmse_vehicles_per_hour": 289.4046165583919,
+            "mean_error_vehicles_per_hour": -32.54294499835824
+          },
+          "weekday_hour_mean": {
+            "n": 2176,
+            "mae_vehicles_per_hour": 292.6476841967145,
+            "rmse_vehicles_per_hour": 484.30229046778544,
+            "mean_error_vehicles_per_hour": -155.61333106794737
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 2176,
+            "covered": 1959,
+            "coverage": 0.9002757352941176,
+            "below_lower": 82,
+            "above_upper": 135,
+            "mean_width": 842.4343699228091,
+            "mean_interval_score": 1379.7850360182522
+          },
+          "weekday_hour_mean": {
+            "n": 2176,
+            "covered": 1914,
+            "coverage": 0.8795955882352942,
+            "below_lower": 43,
+            "above_upper": 219,
+            "mean_width": 1180.8924605168702,
+            "mean_interval_score": 2165.8895973928356
+          }
+        }
+      },
+      "DJF_partial": {
+        "n": 740,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 740,
+            "mae_vehicles_per_hour": 222.69362951661748,
+            "rmse_vehicles_per_hour": 367.7748355707231,
+            "mean_error_vehicles_per_hour": -8.878083869787957
+          },
+          "weekday_hour_mean": {
+            "n": 740,
+            "mae_vehicles_per_hour": 371.9717970255513,
+            "rmse_vehicles_per_hour": 660.018524729145,
+            "mean_error_vehicles_per_hour": 107.22339988625156
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 740,
+            "covered": 638,
+            "coverage": 0.8621621621621621,
+            "below_lower": 46,
+            "above_upper": 56,
+            "mean_width": 841.9450222934796,
+            "mean_interval_score": 1769.4176258905165
+          },
+          "weekday_hour_mean": {
+            "n": 740,
+            "covered": 609,
+            "coverage": 0.822972972972973,
+            "below_lower": 94,
+            "above_upper": 37,
+            "mean_width": 1181.0109122647318,
+            "mean_interval_score": 3438.2862394072454
+          }
+        }
+      }
+    },
+    "hour": {
+      "0": {
+        "n": 184,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 184,
+            "mae_vehicles_per_hour": 130.50231499374254,
+            "rmse_vehicles_per_hour": 206.4216262695085,
+            "mean_error_vehicles_per_hour": -12.188889793343847
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "mae_vehicles_per_hour": 138.72541135724256,
+            "rmse_vehicles_per_hour": 227.4049628301554,
+            "mean_error_vehicles_per_hour": -84.52620457083073
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 184,
+            "covered": 174,
+            "coverage": 0.9456521739130435,
+            "below_lower": 1,
+            "above_upper": 9,
+            "mean_width": 850.4665989963668,
+            "mean_interval_score": 1103.401935678468
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "covered": 178,
+            "coverage": 0.967391304347826,
+            "below_lower": 0,
+            "above_upper": 6,
+            "mean_width": 1206.9724886044883,
+            "mean_interval_score": 1355.6671452306844
+          }
+        }
+      },
+      "1": {
+        "n": 184,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 184,
+            "mae_vehicles_per_hour": 72.34713118686217,
+            "rmse_vehicles_per_hour": 101.87943988470111,
+            "mean_error_vehicles_per_hour": 29.45267472302531
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "mae_vehicles_per_hour": 74.30774695145615,
+            "rmse_vehicles_per_hour": 109.16490923711417,
+            "mean_error_vehicles_per_hour": -30.214148757226248
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 184,
+            "covered": 184,
+            "coverage": 1.0,
+            "below_lower": 0,
+            "above_upper": 0,
+            "mean_width": 830.0469481607394,
+            "mean_interval_score": 830.0469481607394
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "covered": 184,
+            "coverage": 1.0,
+            "below_lower": 0,
+            "above_upper": 0,
+            "mean_width": 1062.0963265198413,
+            "mean_interval_score": 1062.0963265198413
+          }
+        }
+      },
+      "2": {
+        "n": 179,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 179,
+            "mae_vehicles_per_hour": 55.712614479036155,
+            "rmse_vehicles_per_hour": 80.11493267519265,
+            "mean_error_vehicles_per_hour": 18.39216136850442
+          },
+          "weekday_hour_mean": {
+            "n": 179,
+            "mae_vehicles_per_hour": 52.50267423036556,
+            "rmse_vehicles_per_hour": 75.45622192631934,
+            "mean_error_vehicles_per_hour": -1.7726782398281757
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 179,
+            "covered": 179,
+            "coverage": 1.0,
+            "below_lower": 0,
+            "above_upper": 0,
+            "mean_width": 774.0695541436604,
+            "mean_interval_score": 774.0695541436604
+          },
+          "weekday_hour_mean": {
+            "n": 179,
+            "covered": 179,
+            "coverage": 1.0,
+            "below_lower": 0,
+            "above_upper": 0,
+            "mean_width": 993.5734077087054,
+            "mean_interval_score": 993.5734077087054
+          }
+        }
+      },
+      "3": {
+        "n": 184,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 184,
+            "mae_vehicles_per_hour": 35.70306247484346,
+            "rmse_vehicles_per_hour": 51.60778442763102,
+            "mean_error_vehicles_per_hour": -16.652842677482667
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "mae_vehicles_per_hour": 32.727807335497516,
+            "rmse_vehicles_per_hour": 46.93958613821009,
+            "mean_error_vehicles_per_hour": -9.074471150935436
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 184,
+            "covered": 184,
+            "coverage": 1.0,
+            "below_lower": 0,
+            "above_upper": 0,
+            "mean_width": 784.5586981308567,
+            "mean_interval_score": 784.5586981308567
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "covered": 184,
+            "coverage": 1.0,
+            "below_lower": 0,
+            "above_upper": 0,
+            "mean_width": 973.892014356311,
+            "mean_interval_score": 973.892014356311
+          }
+        }
+      },
+      "4": {
+        "n": 183,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 183,
+            "mae_vehicles_per_hour": 72.25248634592941,
+            "rmse_vehicles_per_hour": 113.6519380482978,
+            "mean_error_vehicles_per_hour": -25.324382454952694
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "mae_vehicles_per_hour": 76.14045890636623,
+            "rmse_vehicles_per_hour": 109.20858275076203,
+            "mean_error_vehicles_per_hour": -38.24962073368978
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 183,
+            "covered": 181,
+            "coverage": 0.9890710382513661,
+            "below_lower": 2,
+            "above_upper": 0,
+            "mean_width": 835.7709387892006,
+            "mean_interval_score": 851.6963882454215
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "covered": 183,
+            "coverage": 1.0,
+            "below_lower": 0,
+            "above_upper": 0,
+            "mean_width": 1139.1969300387818,
+            "mean_interval_score": 1139.1969300387818
+          }
+        }
+      },
+      "5": {
+        "n": 183,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 183,
+            "mae_vehicles_per_hour": 183.81145373621445,
+            "rmse_vehicles_per_hour": 336.48304039577374,
+            "mean_error_vehicles_per_hour": 5.86532303742512
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "mae_vehicles_per_hour": 286.19764263006175,
+            "rmse_vehicles_per_hour": 428.0938575662527,
+            "mean_error_vehicles_per_hour": -134.8161287910397
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 183,
+            "covered": 170,
+            "coverage": 0.9289617486338798,
+            "below_lower": 6,
+            "above_upper": 7,
+            "mean_width": 850.466598996367,
+            "mean_interval_score": 1737.2840015221593
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "covered": 176,
+            "coverage": 0.9617486338797814,
+            "below_lower": 7,
+            "above_upper": 0,
+            "mean_width": 1196.5355101967932,
+            "mean_interval_score": 1979.6965570397942
+          }
+        }
+      },
+      "6": {
+        "n": 183,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 183,
+            "mae_vehicles_per_hour": 222.9668854064716,
+            "rmse_vehicles_per_hour": 360.0242985463088,
+            "mean_error_vehicles_per_hour": -21.472657554005274
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "mae_vehicles_per_hour": 446.14657861241915,
+            "rmse_vehicles_per_hour": 824.8452074409887,
+            "mean_error_vehicles_per_hour": -70.09716456656524
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 183,
+            "covered": 158,
+            "coverage": 0.8633879781420765,
+            "below_lower": 11,
+            "above_upper": 14,
+            "mean_width": 850.466598996367,
+            "mean_interval_score": 1798.8606070707103
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "covered": 157,
+            "coverage": 0.8579234972677595,
+            "below_lower": 12,
+            "above_upper": 14,
+            "mean_width": 1209.0416666666667,
+            "mean_interval_score": 3940.847477120161
+          }
+        }
+      },
+      "7": {
+        "n": 183,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 183,
+            "mae_vehicles_per_hour": 288.3779927779222,
+            "rmse_vehicles_per_hour": 481.4768343366169,
+            "mean_error_vehicles_per_hour": 25.176741655194256
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "mae_vehicles_per_hour": 535.0459719615244,
+            "rmse_vehicles_per_hour": 986.1917277752569,
+            "mean_error_vehicles_per_hour": 15.557554522027198
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 183,
+            "covered": 147,
+            "coverage": 0.8032786885245902,
+            "below_lower": 21,
+            "above_upper": 15,
+            "mean_width": 850.466598996367,
+            "mean_interval_score": 2234.671133064548
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "covered": 142,
+            "coverage": 0.7759562841530054,
+            "below_lower": 17,
+            "above_upper": 24,
+            "mean_width": 1209.0416666666672,
+            "mean_interval_score": 5153.3622088871025
+          }
+        }
+      },
+      "8": {
+        "n": 183,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 183,
+            "mae_vehicles_per_hour": 233.8643253156142,
+            "rmse_vehicles_per_hour": 331.81030752348266,
+            "mean_error_vehicles_per_hour": 12.139547772882858
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "mae_vehicles_per_hour": 548.244683109461,
+            "rmse_vehicles_per_hour": 887.1821896787942,
+            "mean_error_vehicles_per_hour": -66.08525052392453
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 183,
+            "covered": 160,
+            "coverage": 0.8743169398907104,
+            "below_lower": 15,
+            "above_upper": 8,
+            "mean_width": 850.466598996367,
+            "mean_interval_score": 1523.5406211643178
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "covered": 129,
+            "coverage": 0.7049180327868853,
+            "below_lower": 21,
+            "above_upper": 33,
+            "mean_width": 1209.0416666666672,
+            "mean_interval_score": 4777.876219520959
+          }
+        }
+      },
+      "9": {
+        "n": 184,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 184,
+            "mae_vehicles_per_hour": 224.42006077182202,
+            "rmse_vehicles_per_hour": 300.61413187886063,
+            "mean_error_vehicles_per_hour": -39.785777796689274
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "mae_vehicles_per_hour": 462.248816637579,
+            "rmse_vehicles_per_hour": 682.543549682935,
+            "mean_error_vehicles_per_hour": -150.3967501995309
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 184,
+            "covered": 163,
+            "coverage": 0.8858695652173914,
+            "below_lower": 8,
+            "above_upper": 13,
+            "mean_width": 850.4665989963668,
+            "mean_interval_score": 1395.2065756401696
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "covered": 138,
+            "coverage": 0.75,
+            "below_lower": 13,
+            "above_upper": 33,
+            "mean_width": 1209.041666666667,
+            "mean_interval_score": 3625.5710147380646
+          }
+        }
+      },
+      "10": {
+        "n": 182,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 182,
+            "mae_vehicles_per_hour": 202.54743907294392,
+            "rmse_vehicles_per_hour": 311.27750521774124,
+            "mean_error_vehicles_per_hour": -64.82528257204861
+          },
+          "weekday_hour_mean": {
+            "n": 182,
+            "mae_vehicles_per_hour": 317.5020648873226,
+            "rmse_vehicles_per_hour": 473.86368854293374,
+            "mean_error_vehicles_per_hour": -128.216013471746
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 182,
+            "covered": 165,
+            "coverage": 0.9065934065934066,
+            "below_lower": 5,
+            "above_upper": 12,
+            "mean_width": 850.466598996367,
+            "mean_interval_score": 1519.768552817017
+          },
+          "weekday_hour_mean": {
+            "n": 182,
+            "covered": 156,
+            "coverage": 0.8571428571428571,
+            "below_lower": 11,
+            "above_upper": 15,
+            "mean_width": 1209.041666666667,
+            "mean_interval_score": 2409.0161058453423
+          }
+        }
+      },
+      "11": {
+        "n": 183,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 183,
+            "mae_vehicles_per_hour": 169.93715025258757,
+            "rmse_vehicles_per_hour": 227.52186011912482,
+            "mean_error_vehicles_per_hour": -71.49460895754497
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "mae_vehicles_per_hour": 290.3294168129058,
+            "rmse_vehicles_per_hour": 409.2529837187957,
+            "mean_error_vehicles_per_hour": -120.89611305919652
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 183,
+            "covered": 170,
+            "coverage": 0.9289617486338798,
+            "below_lower": 2,
+            "above_upper": 11,
+            "mean_width": 850.466598996367,
+            "mean_interval_score": 1075.221019697458
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "covered": 162,
+            "coverage": 0.8852459016393442,
+            "below_lower": 7,
+            "above_upper": 14,
+            "mean_width": 1209.041666666667,
+            "mean_interval_score": 1969.2301871821642
+          }
+        }
+      },
+      "12": {
+        "n": 183,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 183,
+            "mae_vehicles_per_hour": 156.30596814250262,
+            "rmse_vehicles_per_hour": 223.02529821206414,
+            "mean_error_vehicles_per_hour": -24.72738154004418
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "mae_vehicles_per_hour": 266.51958449892277,
+            "rmse_vehicles_per_hour": 382.9295480319494,
+            "mean_error_vehicles_per_hour": -95.83895898678604
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 183,
+            "covered": 169,
+            "coverage": 0.9234972677595629,
+            "below_lower": 7,
+            "above_upper": 7,
+            "mean_width": 850.466598996367,
+            "mean_interval_score": 1100.8352470670825
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "covered": 162,
+            "coverage": 0.8852459016393442,
+            "below_lower": 9,
+            "above_upper": 12,
+            "mean_width": 1209.0416666666667,
+            "mean_interval_score": 1816.8548139962709
+          }
+        }
+      },
+      "13": {
+        "n": 184,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 184,
+            "mae_vehicles_per_hour": 164.7047400368285,
+            "rmse_vehicles_per_hour": 215.3094416208182,
+            "mean_error_vehicles_per_hour": 27.217257828407515
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "mae_vehicles_per_hour": 256.6529703792441,
+            "rmse_vehicles_per_hour": 383.62037352049595,
+            "mean_error_vehicles_per_hour": -87.7693652276784
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 184,
+            "covered": 176,
+            "coverage": 0.9565217391304348,
+            "below_lower": 3,
+            "above_upper": 5,
+            "mean_width": 850.4665989963668,
+            "mean_interval_score": 1012.9000163486731
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "covered": 165,
+            "coverage": 0.8967391304347826,
+            "below_lower": 9,
+            "above_upper": 10,
+            "mean_width": 1209.0416666666665,
+            "mean_interval_score": 1912.5864377793648
+          }
+        }
+      },
+      "14": {
+        "n": 184,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 184,
+            "mae_vehicles_per_hour": 170.06667492932328,
+            "rmse_vehicles_per_hour": 223.93597028263991,
+            "mean_error_vehicles_per_hour": 11.136555467116587
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "mae_vehicles_per_hour": 255.11629052896143,
+            "rmse_vehicles_per_hour": 406.5442827683291,
+            "mean_error_vehicles_per_hour": -53.81165334924256
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 184,
+            "covered": 171,
+            "coverage": 0.9293478260869565,
+            "below_lower": 6,
+            "above_upper": 7,
+            "mean_width": 850.4665989963668,
+            "mean_interval_score": 1014.6777698802579
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "covered": 165,
+            "coverage": 0.8967391304347826,
+            "below_lower": 9,
+            "above_upper": 10,
+            "mean_width": 1209.0416666666665,
+            "mean_interval_score": 1938.3716108729707
+          }
+        }
+      },
+      "15": {
+        "n": 182,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 182,
+            "mae_vehicles_per_hour": 178.88214026551563,
+            "rmse_vehicles_per_hour": 244.98887656358622,
+            "mean_error_vehicles_per_hour": -19.15106028736003
+          },
+          "weekday_hour_mean": {
+            "n": 182,
+            "mae_vehicles_per_hour": 321.2785070491793,
+            "rmse_vehicles_per_hour": 483.86328505681195,
+            "mean_error_vehicles_per_hour": -106.36475453149349
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 182,
+            "covered": 168,
+            "coverage": 0.9230769230769231,
+            "below_lower": 7,
+            "above_upper": 7,
+            "mean_width": 850.466598996367,
+            "mean_interval_score": 1070.0610717475224
+          },
+          "weekday_hour_mean": {
+            "n": 182,
+            "covered": 161,
+            "coverage": 0.8846153846153846,
+            "below_lower": 8,
+            "above_upper": 13,
+            "mean_width": 1209.0416666666667,
+            "mean_interval_score": 2274.880846425956
+          }
+        }
+      },
+      "16": {
+        "n": 183,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 183,
+            "mae_vehicles_per_hour": 275.30724383580224,
+            "rmse_vehicles_per_hour": 369.68909006324844,
+            "mean_error_vehicles_per_hour": -87.63477866977465
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "mae_vehicles_per_hour": 468.75344256706484,
+            "rmse_vehicles_per_hour": 636.7636371017426,
+            "mean_error_vehicles_per_hour": -206.09103534989967
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 183,
+            "covered": 151,
+            "coverage": 0.825136612021858,
+            "below_lower": 14,
+            "above_upper": 18,
+            "mean_width": 850.466598996367,
+            "mean_interval_score": 1675.7854391076235
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "covered": 141,
+            "coverage": 0.7704918032786885,
+            "below_lower": 14,
+            "above_upper": 28,
+            "mean_width": 1209.0416666666672,
+            "mean_interval_score": 2932.359101120875
+          }
+        }
+      },
+      "17": {
+        "n": 183,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 183,
+            "mae_vehicles_per_hour": 258.6508561163346,
+            "rmse_vehicles_per_hour": 350.36070328550073,
+            "mean_error_vehicles_per_hour": -80.11371553317399
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "mae_vehicles_per_hour": 425.95106858861044,
+            "rmse_vehicles_per_hour": 595.5866902152878,
+            "mean_error_vehicles_per_hour": -168.20167719997696
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 183,
+            "covered": 152,
+            "coverage": 0.8306010928961749,
+            "below_lower": 14,
+            "above_upper": 17,
+            "mean_width": 850.466598996367,
+            "mean_interval_score": 1691.0414369064565
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "covered": 144,
+            "coverage": 0.7868852459016393,
+            "below_lower": 14,
+            "above_upper": 25,
+            "mean_width": 1209.0416666666672,
+            "mean_interval_score": 2984.651334022252
+          }
+        }
+      },
+      "18": {
+        "n": 184,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 184,
+            "mae_vehicles_per_hour": 214.01933043676786,
+            "rmse_vehicles_per_hour": 310.13222554811756,
+            "mean_error_vehicles_per_hour": -38.784438082044915
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "mae_vehicles_per_hour": 333.6861016997288,
+            "rmse_vehicles_per_hour": 451.1090581033685,
+            "mean_error_vehicles_per_hour": -162.91914888315216
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 184,
+            "covered": 162,
+            "coverage": 0.8804347826086957,
+            "below_lower": 8,
+            "above_upper": 14,
+            "mean_width": 850.466598996367,
+            "mean_interval_score": 1468.9008448320874
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "covered": 160,
+            "coverage": 0.8695652173913043,
+            "below_lower": 7,
+            "above_upper": 17,
+            "mean_width": 1209.0416666666672,
+            "mean_interval_score": 2092.173374060817
+          }
+        }
+      },
+      "19": {
+        "n": 184,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 184,
+            "mae_vehicles_per_hour": 179.74527342258304,
+            "rmse_vehicles_per_hour": 230.67843915404032,
+            "mean_error_vehicles_per_hour": -67.44544253930243
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "mae_vehicles_per_hour": 271.8107475585352,
+            "rmse_vehicles_per_hour": 345.67143386320794,
+            "mean_error_vehicles_per_hour": -184.86567627555974
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 184,
+            "covered": 170,
+            "coverage": 0.9239130434782609,
+            "below_lower": 3,
+            "above_upper": 11,
+            "mean_width": 850.466598996367,
+            "mean_interval_score": 985.2171201539514
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "covered": 166,
+            "coverage": 0.9021739130434783,
+            "below_lower": 1,
+            "above_upper": 17,
+            "mean_width": 1209.041666666667,
+            "mean_interval_score": 1467.8835490772642
+          }
+        }
+      },
+      "20": {
+        "n": 184,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 184,
+            "mae_vehicles_per_hour": 178.44557509704836,
+            "rmse_vehicles_per_hour": 259.0674794579125,
+            "mean_error_vehicles_per_hour": -54.27373650984395
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "mae_vehicles_per_hour": 271.2151117704019,
+            "rmse_vehicles_per_hour": 362.2011571252343,
+            "mean_error_vehicles_per_hour": -179.03592329696284
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 184,
+            "covered": 173,
+            "coverage": 0.9402173913043478,
+            "below_lower": 1,
+            "above_upper": 10,
+            "mean_width": 850.4665989963668,
+            "mean_interval_score": 1208.3474956086968
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "covered": 172,
+            "coverage": 0.9347826086956522,
+            "below_lower": 1,
+            "above_upper": 11,
+            "mean_width": 1209.041666666667,
+            "mean_interval_score": 1615.6735101611744
+          }
+        }
+      },
+      "21": {
+        "n": 184,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 184,
+            "mae_vehicles_per_hour": 258.8589952702856,
+            "rmse_vehicles_per_hour": 370.7385561916562,
+            "mean_error_vehicles_per_hour": -46.83622024979798
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "mae_vehicles_per_hour": 300.12118267655876,
+            "rmse_vehicles_per_hour": 416.1806724965232,
+            "mean_error_vehicles_per_hour": -139.4544244279251
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 184,
+            "covered": 156,
+            "coverage": 0.8478260869565217,
+            "below_lower": 5,
+            "above_upper": 23,
+            "mean_width": 850.4665989963668,
+            "mean_interval_score": 1897.837601559412
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "covered": 160,
+            "coverage": 0.8695652173913043,
+            "below_lower": 2,
+            "above_upper": 22,
+            "mean_width": 1209.041666666667,
+            "mean_interval_score": 2033.268091186969
+          }
+        }
+      },
+      "22": {
+        "n": 184,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 184,
+            "mae_vehicles_per_hour": 313.7571910004963,
+            "rmse_vehicles_per_hour": 448.70961120495383,
+            "mean_error_vehicles_per_hour": -33.959764144105364
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "mae_vehicles_per_hour": 323.8173009923259,
+            "rmse_vehicles_per_hour": 468.31765773829034,
+            "mean_error_vehicles_per_hour": -134.0293931250166
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 184,
+            "covered": 141,
+            "coverage": 0.7663043478260869,
+            "below_lower": 16,
+            "above_upper": 27,
+            "mean_width": 850.4665989963668,
+            "mean_interval_score": 2491.270426737283
+          },
+          "weekday_hour_mean": {
+            "n": 184,
+            "covered": 159,
+            "coverage": 0.8641304347826086,
+            "below_lower": 0,
+            "above_upper": 25,
+            "mean_width": 1209.041666666667,
+            "mean_interval_score": 2399.0316176647525
+          }
+        }
+      },
+      "23": {
+        "n": 183,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 183,
+            "mae_vehicles_per_hour": 315.4942586875399,
+            "rmse_vehicles_per_hour": 494.01609578932994,
+            "mean_error_vehicles_per_hour": -63.792153085171286
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "mae_vehicles_per_hour": 310.6086995583031,
+            "rmse_vehicles_per_hour": 516.4855088210732,
+            "mean_error_vehicles_per_hour": -178.01780223621176
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 183,
+            "covered": 146,
+            "coverage": 0.7978142076502732,
+            "below_lower": 9,
+            "above_upper": 28,
+            "mean_width": 850.466598996367,
+            "mean_interval_score": 2769.9834751127755
+          },
+          "weekday_hour_mean": {
+            "n": 183,
+            "covered": 158,
+            "coverage": 0.8633879781420765,
+            "below_lower": 0,
+            "above_upper": 25,
+            "mean_width": 1209.041666666667,
+            "mean_interval_score": 2819.538079850984
+          }
+        }
+      }
+    },
+    "day_type": {
+      "weekday": {
+        "n": 3107,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 3107,
+            "mae_vehicles_per_hour": 182.8146206222476,
+            "rmse_vehicles_per_hour": 297.9750784680298,
+            "mean_error_vehicles_per_hour": -15.52198727391209
+          },
+          "weekday_hour_mean": {
+            "n": 3107,
+            "mae_vehicles_per_hour": 298.43916050583,
+            "rmse_vehicles_per_hour": 539.2196431627408,
+            "mean_error_vehicles_per_hour": -75.09984078522824
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 3107,
+            "covered": 2821,
+            "coverage": 0.9079497907949791,
+            "below_lower": 128,
+            "above_upper": 158,
+            "mean_width": 841.6641565369036,
+            "mean_interval_score": 1410.8125242014519
+          },
+          "weekday_hour_mean": {
+            "n": 3107,
+            "covered": 2760,
+            "coverage": 0.8883167042162858,
+            "below_lower": 144,
+            "above_upper": 203,
+            "mean_width": 1177.651852901183,
+            "mean_interval_score": 2468.476032076823
+          }
+        }
+      },
+      "weekend": {
+        "n": 1290,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 1290,
+            "mae_vehicles_per_hour": 207.13636981481466,
+            "rmse_vehicles_per_hour": 305.9167325182231,
+            "mean_error_vehicles_per_hour": -53.455088205480315
+          },
+          "weekday_hour_mean": {
+            "n": 1290,
+            "mae_vehicles_per_hour": 284.9885023297076,
+            "rmse_vehicles_per_hour": 412.86595604488883,
+            "mean_error_vehicles_per_hour": -176.6809342664535
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 1290,
+            "covered": 1149,
+            "coverage": 0.8906976744186047,
+            "below_lower": 36,
+            "above_upper": 105,
+            "mean_width": 846.6685698196203,
+            "mean_interval_score": 1434.0235762096086
+          },
+          "weekday_hour_mean": {
+            "n": 1290,
+            "covered": 1121,
+            "coverage": 0.8689922480620155,
+            "below_lower": 18,
+            "above_upper": 151,
+            "mean_width": 1188.2687303902571,
+            "mean_interval_score": 1960.7585420158434
+          }
+        }
+      }
+    },
+    "inputs": {
+      "complete": {
+        "n": 4096,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 4096,
+            "mae_vehicles_per_hour": 187.32438667354373,
+            "rmse_vehicles_per_hour": 296.1211321643328,
+            "mean_error_vehicles_per_hour": -29.047698534408124
+          },
+          "weekday_hour_mean": {
+            "n": 4096,
+            "mae_vehicles_per_hour": 293.6598811976563,
+            "rmse_vehicles_per_hour": 498.0035819417409,
+            "mean_error_vehicles_per_hour": -112.43223369124544
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 4096,
+            "covered": 3709,
+            "coverage": 0.905517578125,
+            "below_lower": 142,
+            "above_upper": 245,
+            "mean_width": 843.1247734819634,
+            "mean_interval_score": 1399.8885832277058
+          },
+          "weekday_hour_mean": {
+            "n": 4096,
+            "covered": 3611,
+            "coverage": 0.881591796875,
+            "below_lower": 147,
+            "above_upper": 338,
+            "mean_width": 1180.777414435497,
+            "mean_interval_score": 2302.88531903026
+          }
+        }
+      },
+      "incomplete": {
+        "n": 301,
+        "point_scores": {
+          "hist_leaves_31": {
+            "n": 301,
+            "mae_vehicles_per_hour": 225.681912025246,
+            "rmse_vehicles_per_hour": 352.60619906978985,
+            "mean_error_vehicles_per_hour": 5.965099507711661
+          },
+          "weekday_hour_mean": {
+            "n": 301,
+            "mae_vehicles_per_hour": 305.82978840975477,
+            "rmse_vehicles_per_hour": 597.4385102238402,
+            "mean_error_vehicles_per_hour": -2.4291738341788323
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 301,
+            "covered": 261,
+            "coverage": 0.867109634551495,
+            "below_lower": 22,
+            "above_upper": 18,
+            "mean_width": 843.2356054662711,
+            "mean_interval_score": 1658.9411598126999
+          },
+          "weekday_hour_mean": {
+            "n": 301,
+            "covered": 270,
+            "coverage": 0.8970099667774086,
+            "below_lower": 15,
+            "above_upper": 16,
+            "mean_width": 1180.6201981382444,
+            "mean_interval_score": 2545.8979538710378
+          }
+        }
+      }
+    },
+    "largest_tree_misses": [
+      {
+        "date_time": "2017-12-05 07:00:00",
+        "actual": 2334,
+        "prediction": 6055.855793044917,
+        "lower": 5630.6224935467335,
+        "upper": 6481.0890925431,
+        "distance_beyond_bound": 3296.6224935467335
+      },
+      {
+        "date_time": "2017-07-04 07:00:00",
+        "actual": 1091,
+        "prediction": 3507.184059437082,
+        "lower": 3081.9507599388985,
+        "upper": 3932.4173589352654,
+        "distance_beyond_bound": 1990.9507599388985
+      },
+      {
+        "date_time": "2017-07-03 06:00:00",
+        "actual": 3353,
+        "prediction": 5552.016298994074,
+        "lower": 5126.78299949589,
+        "upper": 5977.249598492257,
+        "distance_beyond_bound": 1773.7829994958902
+      },
+      {
+        "date_time": "2017-12-05 08:00:00",
+        "actual": 2160,
+        "prediction": 4200.036364782381,
+        "lower": 3774.803065284197,
+        "upper": 4625.269664280564,
+        "distance_beyond_bound": 1614.8030652841971
+      },
+      {
+        "date_time": "2017-07-26 23:00:00",
+        "actual": 3420,
+        "prediction": 1439.7785725304034,
+        "lower": 1014.5452730322199,
+        "upper": 1865.0118720285868,
+        "distance_beyond_bound": 1554.9881279714132
+      }
+    ]
+  },
+  "fixed_origin_reference": {
+    "hist_leaves_31": {
+      "n": 8713,
+      "mae_vehicles_per_hour": 190.1608088200647,
+      "rmse_vehicles_per_hour": 298.7543246737755,
+      "mean_error_vehicles_per_hour": -24.627415433183888
+    },
+    "weekday_hour_mean": {
+      "n": 8713,
+      "mae_vehicles_per_hour": 278.65935824331905,
+      "rmse_vehicles_per_hour": 460.9943739297771,
+      "mean_error_vehicles_per_hour": -105.80358154424621
+    }
+  },
+  "input_sha256": {
+    "train": "6e2ad85a84d6b9f6eb1a0c5ed54bf1fc6d789748c897d5f57be2b2453a82f817",
+    "validation": "836c7aac6c9b300ef2aea0cef52f6011e3593580545f4b7da0fbfa3b84cd012e"
+  },
+  "part05_report_sha256": "192881d68762e56e190db85a7d9657ce2e5f319de0d779a6b21aa76248ffe2d9",
+  "interval_plan_sha256": "cf6b384b2bdeccb646dea9c1c7de5300270ca4ac484ec89423296586620bd53d",
+  "prediction_csv_sha256": "62a1ce9021cecadab2fed9dd83ff84e605e2650dd598e885f12173030c25ff32",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "sklearn": "1.7.2"
+  }
+}
