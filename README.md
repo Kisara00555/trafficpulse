@@ -2,7 +2,7 @@
 
 **Hourly traffic forecasting with honest evaluation and uncertainty.**
 
-Status: **Part 7 complete - prediction intervals with chronological calibration.** Final holdout evaluation and operational decision analysis are still planned.
+Status: **Part 8 complete - hypothetical decision-cost sensitivity study.** Final holdout evaluation and the small demo are still planned.
 
 [![Data contract tests](https://github.com/Kisara00555/trafficpulse/actions/workflows/tests.yml/badge.svg)](https://github.com/Kisara00555/trafficpulse/actions/workflows/tests.yml)
 
@@ -10,7 +10,7 @@ Status: **Part 7 complete - prediction intervals with chronological calibration.
 
 Can we forecast the next hour's reported westbound I-94 traffic volume more reliably than simple historical baselines, using only information available before that hour starts?
 
-This is a historical research prototype for a hypothetical traffic-operations analyst. A later, explicitly simulated staffing exercise will test the cost of under- and over-predicting demand. The data do not contain staffing, costs, speed, incidents, or travel time. Traffic volume is not a direct measure of congestion, and this project cannot demonstrate reduced congestion or real savings.
+This is a historical research prototype for a hypothetical traffic-operations analyst. An explicitly hypothetical capacity-planning exercise now compares shortfall and unused-capacity penalties across nine scenarios. The data do not contain staffing, costs, speed, incidents, or travel time. Traffic volume is not a direct measure of congestion, and this project cannot demonstrate reduced congestion or real savings.
 
 ## What makes the planned project useful in an interview
 
@@ -57,7 +57,7 @@ The weekday-and-hour average beat repeating last week's exact count on this vali
 
 Run `python -m trafficpulse.features` after Part 2. This verifies the training/validation fingerprints and creates 15 calendar, exact-time lag and rolling-history inputs in ignored local CSVs. Missing readings remain missing. All observed inputs stop at least two hours before the forecast target; the final holdout is not loaded.
 
-Of 8,713 observed validation targets, 8,148 have every feature (93.5%). Part 5 now handles missing inputs and compares learned models. See the [feature contract](docs/FEATURE_CONTRACT.md), [coverage report](reports/part04_features.json), and [daily explanation](docs/daily/2026-10-18.md).
+Of 8,713 observed validation targets, 8,148 have every feature (93.5%). Part 5 now handles missing inputs and compares learned models. See the [feature contract](docs/FEATURE_CONTRACT.md), [coverage report](reports/part04_features.json), and [daily explanation](docs/daily/2026-10-21.md).
 
 ## Part 5 model comparison
 
@@ -76,6 +76,12 @@ Run `python -m trafficpulse.backtest` after Part 5. See the [fixed backtest plan
 Using January-June calibration errors, nominal 90% tree ranges covered **90.3% of 4,397 observed July-December 2017 targets**, with mean width **843.1 vehicles/hour**. The baseline covered 88.3% with wider ranges. Coverage fell to **76.6% at 22:00** and **86.2% in December**: the overall rate does not guarantee reliability for every hour. These are previously inspected development data; the final holdout is still sealed.
 
 Run `python -m trafficpulse.intervals` after Part 5. See the [interval specification](docs/INTERVAL_PLAN.md), [coverage and limitations](docs/INTERVAL_RESULTS.md), and [full evidence](reports/part07_intervals.json).
+
+## Part 8 hypothetical decisions
+
+Across 4,397 observed July-December 2017 hours, planning from the tree's upper bound reduced shortfall from **19.1% to 2.7% of hours** under an assumed 500 vehicle-equivalents per resource block. Mean unused capacity rose from **254.3 to 653.4 per hour**. More conservative planning was not always cheaper, and the simpler baseline beat the tree's point rule in one of nine assumed cost/capacity scenarios despite worse forecast MAE. These are simulated tradeoffs, not real staffing savings or congestion improvements.
+
+Run `python -m trafficpulse.decisions` after Part 7. See the [scenario specification](docs/DECISION_PLAN.md), [all comparisons and caveats](docs/DECISION_RESULTS.md), and [full results](reports/part08_decisions.json). Models and intervals were unchanged; the final holdout remains sealed.
 
 ## Run Part 1
 
@@ -97,7 +103,7 @@ The download is about 396 KB. Repeated runs reuse the local archive and verify i
 
 ## Repository guide
 
-Part 2: run `python -m trafficpulse.prepare` after Part 1. This creates ignored local CSVs in `data/processed/` and a reproducible [manifest](reports/part02_manifest.json). Part 3: run `python -m trafficpulse.baselines`; this reads only the training and validation CSVs and writes the [baseline report](reports/part03_baselines.json) and charts in `reports/`. The executed notebook is [03_training_baselines.ipynb](notebooks/03_training_baselines.ipynb). For notebook execution use Python 3.12+ with `nbformat nbclient ipykernel nbconvert`; from the repository root set `PYTHONPATH` to `src` (PowerShell: `$env:PYTHONPATH='src'`; macOS/Linux: `export PYTHONPATH=src`), then run `python -m nbconvert --execute --to notebook --inplace notebooks/03_training_baselines.ipynb`. The standard-library pipeline supports Python 3.10+. Missing targets remain blank; weather is retained only in the raw source. See the [latest learning note](docs/daily/2026-10-18.md).
+Part 2: run `python -m trafficpulse.prepare` after Part 1. This creates ignored local CSVs in `data/processed/` and a reproducible [manifest](reports/part02_manifest.json). Part 3: run `python -m trafficpulse.baselines`; this reads only the training and validation CSVs and writes the [baseline report](reports/part03_baselines.json) and charts in `reports/`. The executed notebook is [03_training_baselines.ipynb](notebooks/03_training_baselines.ipynb). For notebook execution use Python 3.12+ with `nbformat nbclient ipykernel nbconvert`; from the repository root set `PYTHONPATH` to `src` (PowerShell: `$env:PYTHONPATH='src'`; macOS/Linux: `export PYTHONPATH=src`), then run `python -m nbconvert --execute --to notebook --inplace notebooks/03_training_baselines.ipynb`. The standard-library pipeline supports Python 3.10+. Missing targets remain blank; weather is retained only in the raw source. See the [latest learning note](docs/daily/2026-10-21.md).
 
 - `src/trafficpulse/data.py`: download, source verification, structural audit.
 - `src/trafficpulse/baselines.py`: training-only summaries and identical-population validation scores.
@@ -106,7 +112,7 @@ Part 2: run `python -m trafficpulse.prepare` after Part 1. This creates ignored 
 - `docs/PROJECT_BRIEF.md`: forecasting contract and evaluation plan.
 - `docs/DATA_CARD.md`: field meanings, source, license, and limits.
 - `docs/ROADMAP.md`: one learning milestone per session.
-- `docs/daily/2026-10-18.md`: latest plain-language explanation and interview practice.
+- `docs/daily/2026-10-21.md`: latest plain-language explanation and interview practice.
 - `.github/workflows/tests.yml`: automated tests on each push and pull request. [Initial GitHub verification passed](https://github.com/Kisara00555/trafficpulse/actions/runs/37206079243).
 
 ## Source and license

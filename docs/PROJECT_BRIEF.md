@@ -2,7 +2,7 @@
 
 ## Intended decision
 
-A hypothetical traffic-operations analyst needs an hourly demand forecast and uncertainty range. Later, compare simple staffing rules under assumed costs. This is decision-support research, not an operational traffic-control system.
+A hypothetical traffic-operations analyst needs an hourly demand forecast and uncertainty range. Part 8 compares hypothetical capacity-allocation rules under assumed costs. This is decision-support research, not an operational traffic-control system.
 
 ## Forecasting contract, version 0.1
 
@@ -36,6 +36,8 @@ A hypothetical traffic-operations analyst needs an hourly demand forecast and un
 - Provide a small demo and a reproducible run path. Deployment is optional and cannot be claimed unless verified.
 
 ## Current decisions and open questions
+
+Part 8 completed on 21 October 2026. Four fixed forecast-based allocation rules were compared across nine explicitly hypothetical capacity/cost scenarios on the same 4,397 July-December 2017 targets. Upper-bound planning reduced shortfall but increased unused capacity; a lower forecast MAE did not guarantee lower decision loss in every scenario. No real staffing or savings claim is supported. The models, intervals and final holdout remain unchanged; see [DECISION_RESULTS.md](DECISION_RESULTS.md). Parts 9 and 10 now target 22 and 23 October, with review/corrections on 24-25 October and final acceptance on 26 October.
 
 Part 7 completed on 18 October 2026. Separate January-June calibration and July-December evaluation produced tree interval coverage 90.3% at mean width 843.1 vehicles/hour across 4,397 observed targets. Nominal coverage is 90%, but hour-22 coverage was only 76.6% and December coverage 86.2%. The fixed model and radii were not adjusted using interval evaluation outcomes. These reused development data and time dependence do not support a formal coverage guarantee. See [INTERVAL_RESULTS.md](INTERVAL_RESULTS.md). Final holdout remains sealed.
 

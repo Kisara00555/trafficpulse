@@ -1,0 +1,434 @@
+{
+  "protocol": {
+    "hypothetical": true,
+    "currency": false,
+    "final_holdout_read": false,
+    "validation_previously_inspected": true,
+    "policy_optimized": false,
+    "models_refitted": false,
+    "unused_penalty": 1,
+    "evaluation_start": "2017-07-01 00:00:00",
+    "evaluation_end_exclusive": "2018-01-01 00:00:00"
+  },
+  "n": 4397,
+  "missing_targets": 19,
+  "prediction_csv_sha256": "62a1ce9021cecadab2fed9dd83ff84e605e2650dd598e885f12173030c25ff32",
+  "part07_report_sha256": "f13e7b63487563f5817331be643cafb3df1d021c8f17924b8d2d27ce306a6743",
+  "decision_plan_sha256": "b8d85f32c9a04bf432c2b945d2a91c4821d75cf9c12cc7f76b4ee4aac30d5a84",
+  "scenarios": [
+    {
+      "block_size": 250,
+      "shortfall_penalty": 1,
+      "policies": {
+        "hist_leaves_31__point": {
+          "n": 4397,
+          "mean_loss": 228.9426881964976,
+          "total_loss": 1006661.0,
+          "shortfall_hours": 1274,
+          "shortfall_rate": 0.28974300659540597,
+          "mean_shortfall": 65.26586308846942,
+          "mean_unused_capacity": 163.6768251080282,
+          "mean_blocks": 13.884921537411872
+        },
+        "hist_leaves_31__upper": {
+          "n": 4397,
+          "mean_loss": 553.2947464180123,
+          "total_loss": 2432837.0,
+          "shortfall_hours": 164,
+          "shortfall_rate": 0.03729815783488742,
+          "mean_shortfall": 12.693199909028884,
+          "mean_unused_capacity": 540.6015465089833,
+          "mean_blocks": 15.602911075733454
+        },
+        "weekday_hour_mean__point": {
+          "n": 4397,
+          "mean_loss": 288.9913577439163,
+          "total_loss": 1270695.0,
+          "shortfall_hours": 2020,
+          "shortfall_rate": 0.4594041391858085,
+          "mean_shortfall": 132.4746418012281,
+          "mean_unused_capacity": 156.5167159426882,
+          "mean_blocks": 13.587445985899476
+        },
+        "weekday_hour_mean__upper": {
+          "n": 4397,
+          "mean_loss": 639.198771889925,
+          "total_loss": 2810557.0,
+          "shortfall_hours": 205,
+          "shortfall_rate": 0.04662269729360928,
+          "mean_shortfall": 12.775073914032294,
+          "mean_unused_capacity": 626.4236979758927,
+          "mean_blocks": 15.945872185581077
+        }
+      }
+    },
+    {
+      "block_size": 250,
+      "shortfall_penalty": 3,
+      "policies": {
+        "hist_leaves_31__point": {
+          "n": 4397,
+          "mean_loss": 359.47441437343645,
+          "total_loss": 1580609.0,
+          "shortfall_hours": 1274,
+          "shortfall_rate": 0.28974300659540597,
+          "mean_shortfall": 65.26586308846942,
+          "mean_unused_capacity": 163.6768251080282,
+          "mean_blocks": 13.884921537411872
+        },
+        "hist_leaves_31__upper": {
+          "n": 4397,
+          "mean_loss": 578.68114623607,
+          "total_loss": 2544461.0,
+          "shortfall_hours": 164,
+          "shortfall_rate": 0.03729815783488742,
+          "mean_shortfall": 12.693199909028884,
+          "mean_unused_capacity": 540.6015465089833,
+          "mean_blocks": 15.602911075733454
+        },
+        "weekday_hour_mean__point": {
+          "n": 4397,
+          "mean_loss": 553.9406413463726,
+          "total_loss": 2435677.0,
+          "shortfall_hours": 2020,
+          "shortfall_rate": 0.4594041391858085,
+          "mean_shortfall": 132.4746418012281,
+          "mean_unused_capacity": 156.5167159426882,
+          "mean_blocks": 13.587445985899476
+        },
+        "weekday_hour_mean__upper": {
+          "n": 4397,
+          "mean_loss": 664.7489197179896,
+          "total_loss": 2922901.0,
+          "shortfall_hours": 205,
+          "shortfall_rate": 0.04662269729360928,
+          "mean_shortfall": 12.775073914032294,
+          "mean_unused_capacity": 626.4236979758927,
+          "mean_blocks": 15.945872185581077
+        }
+      }
+    },
+    {
+      "block_size": 250,
+      "shortfall_penalty": 10,
+      "policies": {
+        "hist_leaves_31__point": {
+          "n": 4397,
+          "mean_loss": 816.3354559927224,
+          "total_loss": 3589427.0,
+          "shortfall_hours": 1274,
+          "shortfall_rate": 0.28974300659540597,
+          "mean_shortfall": 65.26586308846942,
+          "mean_unused_capacity": 163.6768251080282,
+          "mean_blocks": 13.884921537411872
+        },
+        "hist_leaves_31__upper": {
+          "n": 4397,
+          "mean_loss": 667.5335455992722,
+          "total_loss": 2935145.0,
+          "shortfall_hours": 164,
+          "shortfall_rate": 0.03729815783488742,
+          "mean_shortfall": 12.693199909028884,
+          "mean_unused_capacity": 540.6015465089833,
+          "mean_blocks": 15.602911075733454
+        },
+        "weekday_hour_mean__point": {
+          "n": 4397,
+          "mean_loss": 1481.2631339549694,
+          "total_loss": 6513114.0,
+          "shortfall_hours": 2020,
+          "shortfall_rate": 0.4594041391858085,
+          "mean_shortfall": 132.4746418012281,
+          "mean_unused_capacity": 156.5167159426882,
+          "mean_blocks": 13.587445985899476
+        },
+        "weekday_hour_mean__upper": {
+          "n": 4397,
+          "mean_loss": 754.1744371162156,
+          "total_loss": 3316105.0,
+          "shortfall_hours": 205,
+          "shortfall_rate": 0.04662269729360928,
+          "mean_shortfall": 12.775073914032294,
+          "mean_unused_capacity": 626.4236979758927,
+          "mean_blocks": 15.945872185581077
+        }
+      }
+    },
+    {
+      "block_size": 500,
+      "shortfall_penalty": 1,
+      "policies": {
+        "hist_leaves_31__point": {
+          "n": 4397,
+          "mean_loss": 297.8323857175347,
+          "total_loss": 1309569.0,
+          "shortfall_hours": 840,
+          "shortfall_rate": 0.19103934500795997,
+          "mean_shortfall": 43.53604730498067,
+          "mean_unused_capacity": 254.296338412554,
+          "mean_blocks": 7.167159426881965
+        },
+        "hist_leaves_31__upper": {
+          "n": 4397,
+          "mean_loss": 662.9404139185808,
+          "total_loss": 2914949.0,
+          "shortfall_hours": 118,
+          "shortfall_rate": 0.026836479417784852,
+          "mean_shortfall": 9.521946781896748,
+          "mean_unused_capacity": 653.4184671366841,
+          "mean_blocks": 8.033431885376393
+        },
+        "weekday_hour_mean__point": {
+          "n": 4397,
+          "mean_loss": 315.60313850352514,
+          "total_loss": 1387707.0,
+          "shortfall_hours": 1469,
+          "shortfall_rate": 0.33409142597225383,
+          "mean_shortfall": 93.69956788719581,
+          "mean_unused_capacity": 221.90357061632932,
+          "mean_blocks": 7.002046850125085
+        },
+        "weekday_hour_mean__upper": {
+          "n": 4397,
+          "mean_loss": 748.1230384352968,
+          "total_loss": 3289497.0,
+          "shortfall_hours": 124,
+          "shortfall_rate": 0.02820104616784171,
+          "mean_shortfall": 9.18626336138276,
+          "mean_unused_capacity": 738.9367750739141,
+          "mean_blocks": 8.20513986809188
+        }
+      }
+    },
+    {
+      "block_size": 500,
+      "shortfall_penalty": 3,
+      "policies": {
+        "hist_leaves_31__point": {
+          "n": 4397,
+          "mean_loss": 384.904480327496,
+          "total_loss": 1692425.0,
+          "shortfall_hours": 840,
+          "shortfall_rate": 0.19103934500795997,
+          "mean_shortfall": 43.53604730498067,
+          "mean_unused_capacity": 254.296338412554,
+          "mean_blocks": 7.167159426881965
+        },
+        "hist_leaves_31__upper": {
+          "n": 4397,
+          "mean_loss": 681.9843074823743,
+          "total_loss": 2998685.0,
+          "shortfall_hours": 118,
+          "shortfall_rate": 0.026836479417784852,
+          "mean_shortfall": 9.521946781896748,
+          "mean_unused_capacity": 653.4184671366841,
+          "mean_blocks": 8.033431885376393
+        },
+        "weekday_hour_mean__point": {
+          "n": 4397,
+          "mean_loss": 503.00227427791674,
+          "total_loss": 2211701.0,
+          "shortfall_hours": 1469,
+          "shortfall_rate": 0.33409142597225383,
+          "mean_shortfall": 93.69956788719581,
+          "mean_unused_capacity": 221.90357061632932,
+          "mean_blocks": 7.002046850125085
+        },
+        "weekday_hour_mean__upper": {
+          "n": 4397,
+          "mean_loss": 766.4955651580623,
+          "total_loss": 3370281.0,
+          "shortfall_hours": 124,
+          "shortfall_rate": 0.02820104616784171,
+          "mean_shortfall": 9.18626336138276,
+          "mean_unused_capacity": 738.9367750739141,
+          "mean_blocks": 8.20513986809188
+        }
+      }
+    },
+    {
+      "block_size": 500,
+      "shortfall_penalty": 10,
+      "policies": {
+        "hist_leaves_31__point": {
+          "n": 4397,
+          "mean_loss": 689.6568114623607,
+          "total_loss": 3032421.0,
+          "shortfall_hours": 840,
+          "shortfall_rate": 0.19103934500795997,
+          "mean_shortfall": 43.53604730498067,
+          "mean_unused_capacity": 254.296338412554,
+          "mean_blocks": 7.167159426881965
+        },
+        "hist_leaves_31__upper": {
+          "n": 4397,
+          "mean_loss": 748.6379349556515,
+          "total_loss": 3291761.0,
+          "shortfall_hours": 118,
+          "shortfall_rate": 0.026836479417784852,
+          "mean_shortfall": 9.521946781896748,
+          "mean_unused_capacity": 653.4184671366841,
+          "mean_blocks": 8.033431885376393
+        },
+        "weekday_hour_mean__point": {
+          "n": 4397,
+          "mean_loss": 1158.8992494882875,
+          "total_loss": 5095680.0,
+          "shortfall_hours": 1469,
+          "shortfall_rate": 0.33409142597225383,
+          "mean_shortfall": 93.69956788719581,
+          "mean_unused_capacity": 221.90357061632932,
+          "mean_blocks": 7.002046850125085
+        },
+        "weekday_hour_mean__upper": {
+          "n": 4397,
+          "mean_loss": 830.7994086877417,
+          "total_loss": 3653025.0,
+          "shortfall_hours": 124,
+          "shortfall_rate": 0.02820104616784171,
+          "mean_shortfall": 9.18626336138276,
+          "mean_unused_capacity": 738.9367750739141,
+          "mean_blocks": 8.20513986809188
+        }
+      }
+    },
+    {
+      "block_size": 1000,
+      "shortfall_penalty": 1,
+      "policies": {
+        "hist_leaves_31__point": {
+          "n": 4397,
+          "mean_loss": 512.7325449169889,
+          "total_loss": 2254485.0,
+          "shortfall_hours": 434,
+          "shortfall_rate": 0.09870366158744599,
+          "mean_shortfall": 24.19513304525813,
+          "mean_unused_capacity": 488.53741187173074,
+          "mean_blocks": 3.8371617011598818
+        },
+        "hist_leaves_31__upper": {
+          "n": 4397,
+          "mean_loss": 901.0127359563338,
+          "total_loss": 3961753.0,
+          "shortfall_hours": 72,
+          "shortfall_rate": 0.016374801000682282,
+          "mean_shortfall": 5.462815556060951,
+          "mean_unused_capacity": 895.5499204002729,
+          "mean_blocks": 4.262906527177621
+        },
+        "weekday_hour_mean__point": {
+          "n": 4397,
+          "mean_loss": 478.2622242438026,
+          "total_loss": 2102919.0,
+          "shortfall_hours": 890,
+          "shortfall_rate": 0.20241073459176712,
+          "mean_shortfall": 58.813509210825565,
+          "mean_unused_capacity": 419.448715032977,
+          "mean_blocks": 3.7334546281555605
+        },
+        "weekday_hour_mean__upper": {
+          "n": 4397,
+          "mean_loss": 985.7700705026155,
+          "total_loss": 4334431.0,
+          "shortfall_hours": 80,
+          "shortfall_rate": 0.018194223334091427,
+          "mean_shortfall": 5.994769160791448,
+          "mean_unused_capacity": 979.7753013418239,
+          "mean_blocks": 4.346599954514442
+        }
+      }
+    },
+    {
+      "block_size": 1000,
+      "shortfall_penalty": 3,
+      "policies": {
+        "hist_leaves_31__point": {
+          "n": 4397,
+          "mean_loss": 561.1228110075051,
+          "total_loss": 2467257.0,
+          "shortfall_hours": 434,
+          "shortfall_rate": 0.09870366158744599,
+          "mean_shortfall": 24.19513304525813,
+          "mean_unused_capacity": 488.53741187173074,
+          "mean_blocks": 3.8371617011598818
+        },
+        "hist_leaves_31__upper": {
+          "n": 4397,
+          "mean_loss": 911.9383670684558,
+          "total_loss": 4009793.0,
+          "shortfall_hours": 72,
+          "shortfall_rate": 0.016374801000682282,
+          "mean_shortfall": 5.462815556060951,
+          "mean_unused_capacity": 895.5499204002729,
+          "mean_blocks": 4.262906527177621
+        },
+        "weekday_hour_mean__point": {
+          "n": 4397,
+          "mean_loss": 595.8892426654537,
+          "total_loss": 2620125.0,
+          "shortfall_hours": 890,
+          "shortfall_rate": 0.20241073459176712,
+          "mean_shortfall": 58.813509210825565,
+          "mean_unused_capacity": 419.448715032977,
+          "mean_blocks": 3.7334546281555605
+        },
+        "weekday_hour_mean__upper": {
+          "n": 4397,
+          "mean_loss": 997.7596088241983,
+          "total_loss": 4387149.0,
+          "shortfall_hours": 80,
+          "shortfall_rate": 0.018194223334091427,
+          "mean_shortfall": 5.994769160791448,
+          "mean_unused_capacity": 979.7753013418239,
+          "mean_blocks": 4.346599954514442
+        }
+      }
+    },
+    {
+      "block_size": 1000,
+      "shortfall_penalty": 10,
+      "policies": {
+        "hist_leaves_31__point": {
+          "n": 4397,
+          "mean_loss": 730.488742324312,
+          "total_loss": 3211959.0,
+          "shortfall_hours": 434,
+          "shortfall_rate": 0.09870366158744599,
+          "mean_shortfall": 24.19513304525813,
+          "mean_unused_capacity": 488.53741187173074,
+          "mean_blocks": 3.8371617011598818
+        },
+        "hist_leaves_31__upper": {
+          "n": 4397,
+          "mean_loss": 950.1780759608824,
+          "total_loss": 4177933.0,
+          "shortfall_hours": 72,
+          "shortfall_rate": 0.016374801000682282,
+          "mean_shortfall": 5.462815556060951,
+          "mean_unused_capacity": 895.5499204002729,
+          "mean_blocks": 4.262906527177621
+        },
+        "weekday_hour_mean__point": {
+          "n": 4397,
+          "mean_loss": 1007.5838071412327,
+          "total_loss": 4430346.0,
+          "shortfall_hours": 890,
+          "shortfall_rate": 0.20241073459176712,
+          "mean_shortfall": 58.813509210825565,
+          "mean_unused_capacity": 419.448715032977,
+          "mean_blocks": 3.7334546281555605
+        },
+        "weekday_hour_mean__upper": {
+          "n": 4397,
+          "mean_loss": 1039.7229929497385,
+          "total_loss": 4571662.0,
+          "shortfall_hours": 80,
+          "shortfall_rate": 0.018194223334091427,
+          "mean_shortfall": 5.994769160791448,
+          "mean_unused_capacity": 979.7753013418239,
+          "mean_blocks": 4.346599954514442
+        }
+      }
+    }
+  ]
+}

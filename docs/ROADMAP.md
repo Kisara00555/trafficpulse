@@ -11,8 +11,8 @@ Autonomous daily development was authorized on 6 October 2026. Complete at most 
 | 5 | Regularized and tree-based models | Why this model and how was it tuned? | Complete, 2026-10-15 |
 | 6 | Temporal backtesting and error analysis | Does it work across seasons? | Complete, 2026-10-17 |
 | 7 | Uncertainty and interval evaluation | How do you communicate unreliable forecasts? | Complete, 2026-10-18 |
-| 8 | Simulated operational decision study | How does predictive accuracy affect a decision? | Next |
-| 9 | Final holdout evaluation and small demo | What happens on unseen data? | Planned |
+| 8 | Simulated operational decision study | How does predictive accuracy affect a decision? | Complete, 2026-10-21 |
+| 9 | Final holdout evaluation and small demo | What happens on unseen data? | Next |
 | 10 | GitHub presentation, resume evidence, mock interview | What did you personally decide and learn? | Planned |
 
 ## Delivery timeline agreed 12 October 2026
@@ -26,11 +26,10 @@ Deadline: **26 October 2026, Asia/Colombo**. Continue daily at 19:00, at most on
 | 15 October | Part 5: regularized and tree models with bounded, documented tuning; compare with baselines on identical validation hours |
 | 17 October | Part 6: chronological backtests and seasonal/error breakdowns; document coverage and failure cases |
 | 18 October | Part 7: intervals with a distinct calibration period; report coverage and width without using final holdout outcomes |
-| 19 October | Part 8: explicitly hypothetical decision-cost study with sensitivity analysis; no real savings claims |
-| 20 October | Part 9: freeze model, features, fallback, calibration and evaluation specification before opening holdout; evaluate once and build a small demo |
-| 21 October | Part 10: evidence-based README, resume bullets, limitations and interview guide; verify profile claims |
-| 22–23 October | Reproducibility and presentation review of completed parts; fix defects and verify setup, demo, links and CI |
-| 24–25 October | Buffer for incomplete work or failed checks; no new scientific scope and no tuning against holdout results |
+| 21 October | Part 8: explicitly hypothetical decision-cost study with sensitivity analysis; no real savings claims |
+| 22 October | Part 9: freeze model, features, fallback, calibration and evaluation specification before opening holdout; evaluate once and build a small demo |
+| 23 October | Part 10: evidence-based README, resume bullets, limitations and interview guide; verify profile claims |
+| 24–25 October | Reproducibility, presentation review and corrections; verify setup, demo, links and CI; no new scientific scope or tuning against holdout results |
 | 26 October | Final acceptance review and handoff; report completed deliverables and any remaining limitations honestly |
 
 The final review must reconcile the brief's acceptance criteria with saved evidence: reproducible data and features, leakage checks, fair comparisons, untouched holdout until specification freeze, interval and decision-study caveats, a working demo, clean Git status and verified publication. Once complete, switch to warranted maintenance only. Empty days do not require commits.
@@ -42,6 +41,10 @@ Part 4 was still unfinished at the first 14 October run and is now complete. Its
 ### Schedule revision on 17 October
 
 Part 6 had no completion evidence on 16 October and was resumed and completed on 17 October. The user reported a scheduled-chat routing failure; this project run accessed the workspace successfully and cannot independently establish the cause of the missed run. Parts 7-10 now target 18-21 October, leaving 22-23 October for review and 24-25 October for corrections. The 26 October deadline is unchanged, with one less review day. Further missed runs would reduce that buffer; report any new blocker promptly. Do not start Part 7 on another 17 October run.
+
+### Schedule revision on 21 October
+
+Part 8 had no completion evidence for its 19 October target and was completed on 21 October. There are no intervening milestone commits; this run does not establish why earlier runs were missed. Part 9 now targets 22 October and Part 10 targets 23 October. Review and corrections share 24-25 October, with final acceptance still on 26 October. This consumes the separate review buffer: further delays or failed checks now threaten the deadline. No checks are waived and no work is backdated. Do not start Part 9 on another 21 October run.
 
 ## Session format
 
