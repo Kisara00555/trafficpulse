@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "created_date": "2026-10-23",
+  "holdout_outcomes_read": false,
+  "text_hash_convention": "SHA-256 of UTF-8 bytes with CRLF normalized to LF; input CSV hashes use raw bytes",
+  "text_sha256": {
+    "docs/HOLDOUT_PLAN.md": "9354c7fa25a6c6cbae04142099d802ca2f80a45f90d6d5af7a680af4dd4f4ef6",
+    "src/trafficpulse/features.py": "ce77cd523a1cae3c6ce1ec83684878cc370c79a306117cb128721b72f830419c",
+    "src/trafficpulse/models.py": "0a295c35cf670878bcb350760d3091fa9a52daa964f8122099a1ede52bd7c8fc",
+    "src/trafficpulse/intervals.py": "e84c42cf07df018318ae6d868ab828cfa9d9cfdb768365a4d2153662b53b3490",
+    "src/trafficpulse/baselines.py": "6121dd8295fbb36e5d3be5a4d840039227b3f034a4c5fef7b4c032c6be9cf3f1"
+  },
+  "input_sha256": {
+    "train": "6e2ad85a84d6b9f6eb1a0c5ed54bf1fc6d789748c897d5f57be2b2453a82f817",
+    "validation": "836c7aac6c9b300ef2aea0cef52f6011e3593580545f4b7da0fbfa3b84cd012e",
+    "test": "4f95aa88707284f6a84ad85b011a75b91e6618ff76379c93879258f11e44bb0c"
+  },
+  "feature_columns": [
+    "hour",
+    "weekday",
+    "month",
+    "is_weekend",
+    "hour_sin",
+    "hour_cos",
+    "weekday_sin",
+    "weekday_cos",
+    "lag_2h",
+    "lag_3h",
+    "lag_24h",
+    "lag_48h",
+    "lag_168h",
+    "rolling_mean_24h",
+    "rolling_count_24h"
+  ],
+  "model": "hist_leaves_31",
+  "fit_issue_time": "2017-01-01 00:00:00",
+  "fit_label_cutoff": "2016-12-31 22:00:00",
+  "fit_n": 25328,
+  "refit": false,
+  "radii": {
+    "hist_leaves_31": 425.23329949818344,
+    "weekday_hour_mean": 604.5208333333335
+  },
+  "start": "2018-01-01 00:00:00",
+  "end_exclusive": "2018-10-01 00:00:00",
+  "slots": 6552,
+  "observed": 6533,
+  "demo_hours": 48,
+  "versions": {
+    "python": "3.12",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "sklearn": "1.7.2"
+  }
+}
