@@ -1,0 +1,2119 @@
+{
+  "freeze_commit": "d6101a1b824ec91d223d750a01fe3df65d90b782",
+  "fit_n": 25328,
+  "fit_label_cutoff": "2016-12-31 22:00:00",
+  "refitting": false,
+  "holdout_used_for_selection": false,
+  "interval_radii": {
+    "hist_leaves_31": 425.23329949818344,
+    "weekday_hour_mean": 604.5208333333335
+  },
+  "evaluation": {
+    "n": 6533,
+    "point_scores": {
+      "global_mean": {
+        "n": 6533,
+        "mae_vehicles_per_hour": 1730.255462294591,
+        "rmse_vehicles_per_hour": 1975.732985279528,
+        "mean_error_vehicles_per_hour": -71.33423004341905
+      },
+      "weekday_hour_mean": {
+        "n": 6533,
+        "mae_vehicles_per_hour": 272.8956158060891,
+        "rmse_vehicles_per_hour": 473.13134569670297,
+        "mean_error_vehicles_per_hour": -45.683906718986776
+      },
+      "weekly_with_fallback": {
+        "n": 6533,
+        "mae_vehicles_per_hour": 337.4330732696749,
+        "rmse_vehicles_per_hour": 645.908836688226,
+        "mean_error_vehicles_per_hour": -19.45524918155602
+      },
+      "hist_leaves_31": {
+        "n": 6533,
+        "mae_vehicles_per_hour": 185.60588613813314,
+        "rmse_vehicles_per_hour": 291.1977530465214,
+        "mean_error_vehicles_per_hour": -6.880185204169278
+      }
+    },
+    "intervals": {
+      "hist_leaves_31": {
+        "n": 6533,
+        "covered": 5922,
+        "coverage": 0.9064748201438849,
+        "below_lower": 293,
+        "above_upper": 318,
+        "mean_width": 842.5179618772713,
+        "mean_interval_score": 1390.4871921308477
+      },
+      "weekday_hour_mean": {
+        "n": 6533,
+        "covered": 5904,
+        "coverage": 0.9037195775294657,
+        "below_lower": 296,
+        "above_upper": 333,
+        "mean_width": 1180.8150957937764,
+        "mean_interval_score": 2179.3717480426926
+      }
+    },
+    "hourly_slots": 6552,
+    "missing_targets": 19,
+    "predicted_slots": 6552,
+    "incomplete_feature_targets": 322,
+    "weekly_fallback_count": 19
+  },
+  "diagnostics": {
+    "month": {
+      "1": {
+        "n": 742,
+        "point_scores": {
+          "global_mean": {
+            "n": 742,
+            "mae_vehicles_per_hour": 1648.0165339106716,
+            "rmse_vehicles_per_hour": 1893.4873485297687,
+            "mean_error_vehicles_per_hour": 140.81501886622195
+          },
+          "weekday_hour_mean": {
+            "n": 742,
+            "mae_vehicles_per_hour": 374.01389266688363,
+            "rmse_vehicles_per_hour": 693.7147615996456,
+            "mean_error_vehicles_per_hour": 190.52705476825952
+          },
+          "weekly_with_fallback": {
+            "n": 742,
+            "mae_vehicles_per_hour": 546.2525641474429,
+            "rmse_vehicles_per_hour": 892.935192408091,
+            "mean_error_vehicles_per_hour": -178.28921482829838
+          },
+          "hist_leaves_31": {
+            "n": 742,
+            "mae_vehicles_per_hour": 227.40074602466868,
+            "rmse_vehicles_per_hour": 355.8141131638264,
+            "mean_error_vehicles_per_hour": -23.35937327966761
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 742,
+            "covered": 628,
+            "coverage": 0.8463611859838275,
+            "below_lower": 59,
+            "above_upper": 55,
+            "mean_width": 840.0214218822199,
+            "mean_interval_score": 1809.9309509976254
+          },
+          "weekday_hour_mean": {
+            "n": 742,
+            "covered": 621,
+            "coverage": 0.8369272237196765,
+            "below_lower": 93,
+            "above_upper": 28,
+            "mean_width": 1180.8587670969366,
+            "mean_interval_score": 3710.911120180777
+          }
+        },
+        "hourly_slots": 744,
+        "missing_targets": 2,
+        "predicted_slots": 744,
+        "incomplete_feature_targets": 46,
+        "weekly_fallback_count": 1
+      },
+      "2": {
+        "n": 672,
+        "point_scores": {
+          "global_mean": {
+            "n": 672,
+            "mae_vehicles_per_hour": 1724.980837601149,
+            "rmse_vehicles_per_hour": 1968.0763043726504,
+            "mean_error_vehicles_per_hour": -8.663614332340504
+          },
+          "weekday_hour_mean": {
+            "n": 672,
+            "mae_vehicles_per_hour": 255.91371418116572,
+            "rmse_vehicles_per_hour": 404.8043129567856,
+            "mean_error_vehicles_per_hour": 11.521771138851324
+          },
+          "weekly_with_fallback": {
+            "n": 672,
+            "mae_vehicles_per_hour": 370.949821807704,
+            "rmse_vehicles_per_hour": 599.8700166010212,
+            "mean_error_vehicles_per_hour": 45.464702760084926
+          },
+          "hist_leaves_31": {
+            "n": 672,
+            "mae_vehicles_per_hour": 204.94776075675097,
+            "rmse_vehicles_per_hour": 321.7498229115981,
+            "mean_error_vehicles_per_hour": -6.307459844019865
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 672,
+            "covered": 587,
+            "coverage": 0.8735119047619048,
+            "below_lower": 39,
+            "above_upper": 46,
+            "mean_width": 841.4574302048621,
+            "mean_interval_score": 1627.793467555838
+          },
+          "weekday_hour_mean": {
+            "n": 672,
+            "covered": 595,
+            "coverage": 0.8854166666666666,
+            "below_lower": 49,
+            "above_upper": 28,
+            "mean_width": 1180.5746251763803,
+            "mean_interval_score": 2059.998314556319
+          }
+        },
+        "hourly_slots": 672,
+        "missing_targets": 0,
+        "predicted_slots": 672,
+        "incomplete_feature_targets": 6,
+        "weekly_fallback_count": 1
+      },
+      "3": {
+        "n": 733,
+        "point_scores": {
+          "global_mean": {
+            "n": 733,
+            "mae_vehicles_per_hour": 1790.3758982288798,
+            "rmse_vehicles_per_hour": 2030.043511412142,
+            "mean_error_vehicles_per_hour": -194.3551969510633
+          },
+          "weekday_hour_mean": {
+            "n": 733,
+            "mae_vehicles_per_hour": 281.57206568003676,
+            "rmse_vehicles_per_hour": 442.160567375694,
+            "mean_error_vehicles_per_hour": -128.10432081183293
+          },
+          "weekly_with_fallback": {
+            "n": 733,
+            "mae_vehicles_per_hour": 318.69147674865684,
+            "rmse_vehicles_per_hour": 577.5685683064853,
+            "mean_error_vehicles_per_hour": -28.55754126135992
+          },
+          "hist_leaves_31": {
+            "n": 733,
+            "mae_vehicles_per_hour": 203.20353285601178,
+            "rmse_vehicles_per_hour": 321.20296653504107,
+            "mean_error_vehicles_per_hour": -18.388739489125307
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 733,
+            "covered": 655,
+            "coverage": 0.8935879945429741,
+            "below_lower": 30,
+            "above_upper": 48,
+            "mean_width": 843.2057224779055,
+            "mean_interval_score": 1584.3361769536361
+          },
+          "weekday_hour_mean": {
+            "n": 733,
+            "covered": 649,
+            "coverage": 0.8854024556616644,
+            "below_lower": 24,
+            "above_upper": 60,
+            "mean_width": 1182.10519647561,
+            "mean_interval_score": 2053.2315720518136
+          }
+        },
+        "hourly_slots": 744,
+        "missing_targets": 11,
+        "predicted_slots": 744,
+        "incomplete_feature_targets": 160,
+        "weekly_fallback_count": 10
+      },
+      "4": {
+        "n": 720,
+        "point_scores": {
+          "global_mean": {
+            "n": 720,
+            "mae_vehicles_per_hour": 1865.9694288709902,
+            "rmse_vehicles_per_hour": 2092.4484669831145,
+            "mean_error_vehicles_per_hour": -44.667681792657966
+          },
+          "weekday_hour_mean": {
+            "n": 720,
+            "mae_vehicles_per_hour": 388.20836625855674,
+            "rmse_vehicles_per_hour": 603.1802335769092,
+            "mean_error_vehicles_per_hour": -52.236314979381014
+          },
+          "weekly_with_fallback": {
+            "n": 720,
+            "mae_vehicles_per_hour": 519.5005591630592,
+            "rmse_vehicles_per_hour": 912.4390696856959,
+            "mean_error_vehicles_per_hour": -44.66888528138528
+          },
+          "hist_leaves_31": {
+            "n": 720,
+            "mae_vehicles_per_hour": 234.39407797430422,
+            "rmse_vehicles_per_hour": 351.3881955996373,
+            "mean_error_vehicles_per_hour": -7.243652845260762
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 720,
+            "covered": 600,
+            "coverage": 0.8333333333333334,
+            "below_lower": 54,
+            "above_upper": 66,
+            "mean_width": 841.3150005024853,
+            "mean_interval_score": 1783.7365957901752
+          },
+          "weekday_hour_mean": {
+            "n": 720,
+            "covered": 576,
+            "coverage": 0.8,
+            "below_lower": 59,
+            "above_upper": 85,
+            "mean_width": 1180.5023090631748,
+            "mean_interval_score": 3140.9404972813372
+          }
+        },
+        "hourly_slots": 720,
+        "missing_targets": 0,
+        "predicted_slots": 720,
+        "incomplete_feature_targets": 1,
+        "weekly_fallback_count": 1
+      },
+      "5": {
+        "n": 743,
+        "point_scores": {
+          "global_mean": {
+            "n": 743,
+            "mae_vehicles_per_hour": 1786.3608087995858,
+            "rmse_vehicles_per_hour": 2045.9584754516727,
+            "mean_error_vehicles_per_hour": -141.96189631336978
+          },
+          "weekday_hour_mean": {
+            "n": 743,
+            "mae_vehicles_per_hour": 261.2700472386862,
+            "rmse_vehicles_per_hour": 460.6731261912767,
+            "mean_error_vehicles_per_hour": -87.30846470154678
+          },
+          "weekly_with_fallback": {
+            "n": 743,
+            "mae_vehicles_per_hour": 238.30386836278385,
+            "rmse_vehicles_per_hour": 505.5645103521252,
+            "mean_error_vehicles_per_hour": 98.18273781096688
+          },
+          "hist_leaves_31": {
+            "n": 743,
+            "mae_vehicles_per_hour": 167.37980785888922,
+            "rmse_vehicles_per_hour": 276.0145873084655,
+            "mean_error_vehicles_per_hour": 13.088554897801922
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 743,
+            "covered": 697,
+            "coverage": 0.9380888290713324,
+            "below_lower": 30,
+            "above_upper": 16,
+            "mean_width": 842.1594249176853,
+            "mean_interval_score": 1226.9438438427278
+          },
+          "weekday_hour_mean": {
+            "n": 743,
+            "covered": 695,
+            "coverage": 0.9353970390309556,
+            "below_lower": 18,
+            "above_upper": 30,
+            "mean_width": 1180.15311297954,
+            "mean_interval_score": 1933.90769225208
+          }
+        },
+        "hourly_slots": 744,
+        "missing_targets": 1,
+        "predicted_slots": 744,
+        "incomplete_feature_targets": 26,
+        "weekly_fallback_count": 1
+      },
+      "6": {
+        "n": 719,
+        "point_scores": {
+          "global_mean": {
+            "n": 719,
+            "mae_vehicles_per_hour": 1720.085309995721,
+            "rmse_vehicles_per_hour": 1972.7708689885037,
+            "mean_error_vehicles_per_hour": -169.95451728948998
+          },
+          "weekday_hour_mean": {
+            "n": 719,
+            "mae_vehicles_per_hour": 205.61431490607256,
+            "rmse_vehicles_per_hour": 283.0306400489257,
+            "mean_error_vehicles_per_hour": -150.15148005763822
+          },
+          "weekly_with_fallback": {
+            "n": 719,
+            "mae_vehicles_per_hour": 260.8779218448562,
+            "rmse_vehicles_per_hour": 506.12755533935933,
+            "mean_error_vehicles_per_hour": -69.30073130243618
+          },
+          "hist_leaves_31": {
+            "n": 719,
+            "mae_vehicles_per_hour": 151.88642453606116,
+            "rmse_vehicles_per_hour": 216.96824967930417,
+            "mean_error_vehicles_per_hour": -5.115903886745186
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 719,
+            "covered": 686,
+            "coverage": 0.9541029207232267,
+            "below_lower": 12,
+            "above_upper": 21,
+            "mean_width": 844.052497247011,
+            "mean_interval_score": 1027.0355465853008
+          },
+          "weekday_hour_mean": {
+            "n": 719,
+            "covered": 690,
+            "coverage": 0.9596662030598053,
+            "below_lower": 3,
+            "above_upper": 26,
+            "mean_width": 1181.024987290914,
+            "mean_interval_score": 1314.1943114248718
+          }
+        },
+        "hourly_slots": 720,
+        "missing_targets": 1,
+        "predicted_slots": 720,
+        "incomplete_feature_targets": 26,
+        "weekly_fallback_count": 1
+      },
+      "7": {
+        "n": 744,
+        "point_scores": {
+          "global_mean": {
+            "n": 744,
+            "mae_vehicles_per_hour": 1614.6937135322205,
+            "rmse_vehicles_per_hour": 1866.6495758264762,
+            "mean_error_vehicles_per_hour": 0.10736301020941967
+          },
+          "weekday_hour_mean": {
+            "n": 744,
+            "mae_vehicles_per_hour": 243.1791442643855,
+            "rmse_vehicles_per_hour": 501.6360987951203,
+            "mean_error_vehicles_per_hour": 2.388324338480135
+          },
+          "weekly_with_fallback": {
+            "n": 744,
+            "mae_vehicles_per_hour": 327.3306451612903,
+            "rmse_vehicles_per_hour": 701.9413708936403,
+            "mean_error_vehicles_per_hour": 14.10483870967742
+          },
+          "hist_leaves_31": {
+            "n": 744,
+            "mae_vehicles_per_hour": 154.43589497456531,
+            "rmse_vehicles_per_hour": 258.70840529176445,
+            "mean_error_vehicles_per_hour": 2.7637457151201423
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 744,
+            "covered": 705,
+            "coverage": 0.9475806451612904,
+            "below_lower": 23,
+            "above_upper": 16,
+            "mean_width": 843.9641381403511,
+            "mean_interval_score": 1197.3996029145435
+          },
+          "weekday_hour_mean": {
+            "n": 744,
+            "covered": 703,
+            "coverage": 0.9448924731182796,
+            "below_lower": 31,
+            "above_upper": 10,
+            "mean_width": 1180.3184583748384,
+            "mean_interval_score": 2193.908490100601
+          }
+        },
+        "hourly_slots": 744,
+        "missing_targets": 0,
+        "predicted_slots": 744,
+        "incomplete_feature_targets": 0,
+        "weekly_fallback_count": 0
+      },
+      "8": {
+        "n": 740,
+        "point_scores": {
+          "global_mean": {
+            "n": 740,
+            "mae_vehicles_per_hour": 1727.5018494647522,
+            "rmse_vehicles_per_hour": 1962.5297091181665,
+            "mean_error_vehicles_per_hour": -183.853229840706
+          },
+          "weekday_hour_mean": {
+            "n": 740,
+            "mae_vehicles_per_hour": 195.87385622465112,
+            "rmse_vehicles_per_hour": 273.7144202723928,
+            "mean_error_vehicles_per_hour": -134.8907353013706
+          },
+          "weekly_with_fallback": {
+            "n": 740,
+            "mae_vehicles_per_hour": 178.2072023843763,
+            "rmse_vehicles_per_hour": 273.6200294926084,
+            "mean_error_vehicles_per_hour": -26.13526891244282
+          },
+          "hist_leaves_31": {
+            "n": 740,
+            "mae_vehicles_per_hour": 145.04361589105923,
+            "rmse_vehicles_per_hour": 203.91315493933692,
+            "mean_error_vehicles_per_hour": -13.010791279448366
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 740,
+            "covered": 712,
+            "coverage": 0.9621621621621622,
+            "below_lower": 12,
+            "above_upper": 16,
+            "mean_width": 843.8506796836003,
+            "mean_interval_score": 992.0883385057385
+          },
+          "weekday_hour_mean": {
+            "n": 740,
+            "covered": 710,
+            "coverage": 0.9594594594594594,
+            "below_lower": 1,
+            "above_upper": 29,
+            "mean_width": 1180.710006390651,
+            "mean_interval_score": 1309.3242829240057
+          }
+        },
+        "hourly_slots": 744,
+        "missing_targets": 4,
+        "predicted_slots": 744,
+        "incomplete_feature_targets": 57,
+        "weekly_fallback_count": 4
+      },
+      "9": {
+        "n": 720,
+        "point_scores": {
+          "global_mean": {
+            "n": 720,
+            "mae_vehicles_per_hour": 1697.5126550765074,
+            "rmse_vehicles_per_hour": 1941.6840672982114,
+            "mean_error_vehicles_per_hour": -36.694070681546854
+          },
+          "weekday_hour_mean": {
+            "n": 720,
+            "mae_vehicles_per_hour": 249.4445992614262,
+            "rmse_vehicles_per_hour": 428.2369547146663,
+            "mean_error_vehicles_per_hour": -62.75655451165726
+          },
+          "weekly_with_fallback": {
+            "n": 720,
+            "mae_vehicles_per_hour": 280.79583333333335,
+            "rmse_vehicles_per_hour": 591.7155108946641,
+            "mean_error_vehicles_per_hour": 18.6875
+          },
+          "hist_leaves_31": {
+            "n": 720,
+            "mae_vehicles_per_hour": 184.15689102164467,
+            "rmse_vehicles_per_hour": 276.19117798409707,
+            "mean_error_vehicles_per_hour": -4.385150716362791
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 720,
+            "covered": 652,
+            "coverage": 0.9055555555555556,
+            "below_lower": 34,
+            "above_upper": 34,
+            "mean_width": 842.5568637432194,
+            "mean_interval_score": 1286.846631450668
+          },
+          "weekday_hour_mean": {
+            "n": 720,
+            "covered": 665,
+            "coverage": 0.9236111111111112,
+            "below_lower": 18,
+            "above_upper": 37,
+            "mean_width": 1181.0886519559053,
+            "mean_interval_score": 1875.774721936103
+          }
+        },
+        "hourly_slots": 720,
+        "missing_targets": 0,
+        "predicted_slots": 720,
+        "incomplete_feature_targets": 0,
+        "weekly_fallback_count": 0
+      }
+    },
+    "hour": {
+      "0": {
+        "n": 273,
+        "point_scores": {
+          "global_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 2421.95165581418,
+            "rmse_vehicles_per_hour": 2446.585678253034,
+            "mean_error_vehicles_per_hour": 2421.95165581418
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 110.72194381173315,
+            "rmse_vehicles_per_hour": 166.66208662525082,
+            "mean_error_vehicles_per_hour": -5.022157509197141
+          },
+          "weekly_with_fallback": {
+            "n": 273,
+            "mae_vehicles_per_hour": 138.17948717948718,
+            "rmse_vehicles_per_hour": 218.31226585156733,
+            "mean_error_vehicles_per_hour": -2.597069597069597
+          },
+          "hist_leaves_31": {
+            "n": 273,
+            "mae_vehicles_per_hour": 111.30831956648245,
+            "rmse_vehicles_per_hour": 153.80425206997188,
+            "mean_error_vehicles_per_hour": 19.694846363383213
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 273,
+            "covered": 267,
+            "coverage": 0.978021978021978,
+            "below_lower": 2,
+            "above_upper": 4,
+            "mean_width": 850.3779660101759,
+            "mean_interval_score": 893.7210448200568
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "covered": 271,
+            "coverage": 0.9926739926739927,
+            "below_lower": 1,
+            "above_upper": 1,
+            "mean_width": 1206.9497503840248,
+            "mean_interval_score": 1253.4004899398276
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 0,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 12,
+        "weekly_fallback_count": 0
+      },
+      "1": {
+        "n": 273,
+        "point_scores": {
+          "global_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 2746.5963444588683,
+            "rmse_vehicles_per_hour": 2755.060692603347,
+            "mean_error_vehicles_per_hour": 2746.5963444588683
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 69.00865320917576,
+            "rmse_vehicles_per_hour": 115.30324638575996,
+            "mean_error_vehicles_per_hour": 5.374700466370991
+          },
+          "weekly_with_fallback": {
+            "n": 273,
+            "mae_vehicles_per_hour": 85.97435897435898,
+            "rmse_vehicles_per_hour": 151.7942143709157,
+            "mean_error_vehicles_per_hour": -0.28205128205128205
+          },
+          "hist_leaves_31": {
+            "n": 273,
+            "mae_vehicles_per_hour": 67.67912958457288,
+            "rmse_vehicles_per_hour": 113.85494743425132,
+            "mean_error_vehicles_per_hour": 24.326445240069607
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 273,
+            "covered": 271,
+            "coverage": 0.9926739926739927,
+            "below_lower": 1,
+            "above_upper": 1,
+            "mean_width": 824.237411503783,
+            "mean_interval_score": 862.6071210273025
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "covered": 272,
+            "coverage": 0.9963369963369964,
+            "below_lower": 0,
+            "above_upper": 1,
+            "mean_width": 1060.481542562184,
+            "mean_interval_score": 1091.853273925526
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 0,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 12,
+        "weekly_fallback_count": 0
+      },
+      "2": {
+        "n": 264,
+        "point_scores": {
+          "global_mean": {
+            "n": 264,
+            "mae_vehicles_per_hour": 2872.2526464901703,
+            "rmse_vehicles_per_hour": 2876.757863737884,
+            "mean_error_vehicles_per_hour": 2872.2526464901703
+          },
+          "weekday_hour_mean": {
+            "n": 264,
+            "mae_vehicles_per_hour": 52.95039653393887,
+            "rmse_vehicles_per_hour": 88.34712213550492,
+            "mean_error_vehicles_per_hour": 8.170340052512362
+          },
+          "weekly_with_fallback": {
+            "n": 264,
+            "mae_vehicles_per_hour": 62.7651376513166,
+            "rmse_vehicles_per_hour": 114.75992557178768,
+            "mean_error_vehicles_per_hour": 2.328862577679052
+          },
+          "hist_leaves_31": {
+            "n": 264,
+            "mae_vehicles_per_hour": 53.417833987492635,
+            "rmse_vehicles_per_hour": 89.55396999864558,
+            "mean_error_vehicles_per_hour": 8.951394271661412
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 264,
+            "covered": 260,
+            "coverage": 0.9848484848484849,
+            "below_lower": 2,
+            "above_upper": 2,
+            "mean_width": 767.5668492897805,
+            "mean_interval_score": 789.0688676157175
+          },
+          "weekday_hour_mean": {
+            "n": 264,
+            "covered": 262,
+            "coverage": 0.9924242424242424,
+            "below_lower": 0,
+            "above_upper": 2,
+            "mean_width": 989.4482396440657,
+            "mean_interval_score": 992.9162463237658
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 9,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 26,
+        "weekly_fallback_count": 9
+      },
+      "3": {
+        "n": 270,
+        "point_scores": {
+          "global_mean": {
+            "n": 270,
+            "mae_vehicles_per_hour": 2880.9929663554904,
+            "rmse_vehicles_per_hour": 2881.40628314625,
+            "mean_error_vehicles_per_hour": 2880.9929663554904
+          },
+          "weekday_hour_mean": {
+            "n": 270,
+            "mae_vehicles_per_hour": 31.139107084244635,
+            "rmse_vehicles_per_hour": 47.4064631562906,
+            "mean_error_vehicles_per_hour": -2.611655210809968
+          },
+          "weekly_with_fallback": {
+            "n": 270,
+            "mae_vehicles_per_hour": 41.2806080271079,
+            "rmse_vehicles_per_hour": 64.39359791759347,
+            "mean_error_vehicles_per_hour": -0.48976234326247065
+          },
+          "hist_leaves_31": {
+            "n": 270,
+            "mae_vehicles_per_hour": 34.19779426806351,
+            "rmse_vehicles_per_hour": 52.26046955469813,
+            "mean_error_vehicles_per_hour": -12.73846047177415
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 270,
+            "covered": 270,
+            "coverage": 1.0,
+            "below_lower": 0,
+            "above_upper": 0,
+            "mean_width": 781.3444686161871,
+            "mean_interval_score": 781.3444686161871
+          },
+          "weekday_hour_mean": {
+            "n": 270,
+            "covered": 270,
+            "coverage": 1.0,
+            "below_lower": 0,
+            "above_upper": 0,
+            "mean_width": 973.4832521965975,
+            "mean_interval_score": 973.4832521965975
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 3,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 16,
+        "weekly_fallback_count": 3
+      },
+      "4": {
+        "n": 272,
+        "point_scores": {
+          "global_mean": {
+            "n": 272,
+            "mae_vehicles_per_hour": 2517.140569841329,
+            "rmse_vehicles_per_hour": 2528.487986104686,
+            "mean_error_vehicles_per_hour": 2517.140569841329
+          },
+          "weekday_hour_mean": {
+            "n": 272,
+            "mae_vehicles_per_hour": 77.22089980849249,
+            "rmse_vehicles_per_hour": 100.62158337718661,
+            "mean_error_vehicles_per_hour": -50.25028284936551
+          },
+          "weekly_with_fallback": {
+            "n": 272,
+            "mae_vehicles_per_hour": 62.41556132256824,
+            "rmse_vehicles_per_hour": 111.4484007920487,
+            "mean_error_vehicles_per_hour": -5.760909265667051
+          },
+          "hist_leaves_31": {
+            "n": 272,
+            "mae_vehicles_per_hour": 70.20029062611289,
+            "rmse_vehicles_per_hour": 97.8465342459304,
+            "mean_error_vehicles_per_hour": -32.34804809029297
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 272,
+            "covered": 269,
+            "coverage": 0.9889705882352942,
+            "below_lower": 3,
+            "above_upper": 0,
+            "mean_width": 835.0431718524015,
+            "mean_interval_score": 840.8088182149723
+          },
+          "weekday_hour_mean": {
+            "n": 272,
+            "covered": 272,
+            "coverage": 1.0,
+            "below_lower": 0,
+            "above_upper": 0,
+            "mean_width": 1141.8732699937154,
+            "mean_interval_score": 1141.8732699937154
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 1,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 14,
+        "weekly_fallback_count": 1
+      },
+      "5": {
+        "n": 272,
+        "point_scores": {
+          "global_mean": {
+            "n": 272,
+            "mae_vehicles_per_hour": 1041.2618933707406,
+            "rmse_vehicles_per_hour": 1476.1515664152228,
+            "mean_error_vehicles_per_hour": 1041.2618933707406
+          },
+          "weekday_hour_mean": {
+            "n": 272,
+            "mae_vehicles_per_hour": 240.61525335576428,
+            "rmse_vehicles_per_hour": 357.0855566932368,
+            "mean_error_vehicles_per_hour": -135.68690824063265
+          },
+          "weekly_with_fallback": {
+            "n": 272,
+            "mae_vehicles_per_hour": 177.92031130634072,
+            "rmse_vehicles_per_hour": 433.91275762727645,
+            "mean_error_vehicles_per_hour": -21.623806340718108
+          },
+          "hist_leaves_31": {
+            "n": 272,
+            "mae_vehicles_per_hour": 166.01356961873304,
+            "rmse_vehicles_per_hour": 280.64212101484594,
+            "mean_error_vehicles_per_hour": -4.683470781495294
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 272,
+            "covered": 258,
+            "coverage": 0.9485294117647058,
+            "below_lower": 8,
+            "above_upper": 6,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 1365.9149876652148
+          },
+          "weekday_hour_mean": {
+            "n": 272,
+            "covered": 267,
+            "coverage": 0.9816176470588235,
+            "below_lower": 5,
+            "above_upper": 0,
+            "mean_width": 1196.4205639057095,
+            "mean_interval_score": 1628.9250745559195
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 1,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 14,
+        "weekly_fallback_count": 1
+      },
+      "6": {
+        "n": 272,
+        "point_scores": {
+          "global_mean": {
+            "n": 272,
+            "mae_vehicles_per_hour": 2184.013329238044,
+            "rmse_vehicles_per_hour": 2216.909453050406,
+            "mean_error_vehicles_per_hour": -914.1903125116123
+          },
+          "weekday_hour_mean": {
+            "n": 272,
+            "mae_vehicles_per_hour": 328.2097240332532,
+            "rmse_vehicles_per_hour": 633.5196700239447,
+            "mean_error_vehicles_per_hour": -25.36227158347521
+          },
+          "weekly_with_fallback": {
+            "n": 272,
+            "mae_vehicles_per_hour": 387.1387738193869,
+            "rmse_vehicles_per_hour": 861.6254245511699,
+            "mean_error_vehicles_per_hour": -47.71416735708368
+          },
+          "hist_leaves_31": {
+            "n": 272,
+            "mae_vehicles_per_hour": 188.52930736698482,
+            "rmse_vehicles_per_hour": 294.1134843280989,
+            "mean_error_vehicles_per_hour": 41.85275513543886
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 272,
+            "covered": 246,
+            "coverage": 0.9044117647058824,
+            "below_lower": 21,
+            "above_upper": 5,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 1469.8612304214475
+          },
+          "weekday_hour_mean": {
+            "n": 272,
+            "covered": 249,
+            "coverage": 0.9154411764705882,
+            "below_lower": 18,
+            "above_upper": 5,
+            "mean_width": 1209.0416666666667,
+            "mean_interval_score": 2692.8351383449008
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 1,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 14,
+        "weekly_fallback_count": 1
+      },
+      "7": {
+        "n": 271,
+        "point_scores": {
+          "global_mean": {
+            "n": 271,
+            "mae_vehicles_per_hour": 2543.912149790323,
+            "rmse_vehicles_per_hour": 2659.7607320902275,
+            "mean_error_vehicles_per_hour": -1560.724472485565
+          },
+          "weekday_hour_mean": {
+            "n": 271,
+            "mae_vehicles_per_hour": 422.45657822761103,
+            "rmse_vehicles_per_hour": 762.1114482327256,
+            "mean_error_vehicles_per_hour": -39.509004786941965
+          },
+          "weekly_with_fallback": {
+            "n": 271,
+            "mae_vehicles_per_hour": 552.9164552529116,
+            "rmse_vehicles_per_hour": 1070.8443147821629,
+            "mean_error_vehicles_per_hour": -60.52035955001906
+          },
+          "hist_leaves_31": {
+            "n": 271,
+            "mae_vehicles_per_hour": 276.518718639829,
+            "rmse_vehicles_per_hour": 417.5996152282948,
+            "mean_error_vehicles_per_hour": -30.405635956172734
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 271,
+            "covered": 220,
+            "coverage": 0.8118081180811808,
+            "below_lower": 22,
+            "above_upper": 29,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 2008.7889530986288
+          },
+          "weekday_hour_mean": {
+            "n": 271,
+            "covered": 225,
+            "coverage": 0.8302583025830258,
+            "below_lower": 21,
+            "above_upper": 25,
+            "mean_width": 1209.0416666666672,
+            "mean_interval_score": 3416.570104799289
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 2,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 16,
+        "weekly_fallback_count": 2
+      },
+      "8": {
+        "n": 272,
+        "point_scores": {
+          "global_mean": {
+            "n": 272,
+            "mae_vehicles_per_hour": 1916.9630703987218,
+            "rmse_vehicles_per_hour": 2097.132111731324,
+            "mean_error_vehicles_per_hour": -1377.2197242763182
+          },
+          "weekday_hour_mean": {
+            "n": 272,
+            "mae_vehicles_per_hour": 434.41152334426096,
+            "rmse_vehicles_per_hour": 693.2262784527996,
+            "mean_error_vehicles_per_hour": -60.734601151390386
+          },
+          "weekly_with_fallback": {
+            "n": 272,
+            "mae_vehicles_per_hour": 535.2515756302521,
+            "rmse_vehicles_per_hour": 943.9727669318028,
+            "mean_error_vehicles_per_hour": -63.244222689075634
+          },
+          "hist_leaves_31": {
+            "n": 272,
+            "mae_vehicles_per_hour": 239.77466517791245,
+            "rmse_vehicles_per_hour": 320.2764016471059,
+            "mean_error_vehicles_per_hour": -3.9235649221864652
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 272,
+            "covered": 231,
+            "coverage": 0.8492647058823529,
+            "below_lower": 23,
+            "above_upper": 18,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 1486.5507922388008
+          },
+          "weekday_hour_mean": {
+            "n": 272,
+            "covered": 215,
+            "coverage": 0.7904411764705882,
+            "below_lower": 26,
+            "above_upper": 31,
+            "mean_width": 1209.0416666666672,
+            "mean_interval_score": 3180.798155201429
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 1,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 15,
+        "weekly_fallback_count": 1
+      },
+      "9": {
+        "n": 272,
+        "point_scores": {
+          "global_mean": {
+            "n": 272,
+            "mae_vehicles_per_hour": 1377.1816044089776,
+            "rmse_vehicles_per_hour": 1536.0202800022,
+            "mean_error_vehicles_per_hour": -1181.6020772174945
+          },
+          "weekday_hour_mean": {
+            "n": 272,
+            "mae_vehicles_per_hour": 345.736100897759,
+            "rmse_vehicles_per_hour": 543.4938128581554,
+            "mean_error_vehicles_per_hour": -82.71934240201429
+          },
+          "weekly_with_fallback": {
+            "n": 272,
+            "mae_vehicles_per_hour": 417.8846153846154,
+            "rmse_vehicles_per_hour": 726.3063855968696,
+            "mean_error_vehicles_per_hour": -40.31391402714932
+          },
+          "hist_leaves_31": {
+            "n": 272,
+            "mae_vehicles_per_hour": 200.80817464557367,
+            "rmse_vehicles_per_hour": 274.1400100150482,
+            "mean_error_vehicles_per_hour": -3.7980764432413046
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 272,
+            "covered": 243,
+            "coverage": 0.8933823529411765,
+            "below_lower": 13,
+            "above_upper": 16,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 1262.1215373055409
+          },
+          "weekday_hour_mean": {
+            "n": 272,
+            "covered": 235,
+            "coverage": 0.8639705882352942,
+            "below_lower": 18,
+            "above_upper": 19,
+            "mean_width": 1209.0416666666667,
+            "mean_interval_score": 2517.9752918652457
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 1,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 14,
+        "weekly_fallback_count": 1
+      },
+      "10": {
+        "n": 273,
+        "point_scores": {
+          "global_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 1041.2859893580833,
+            "rmse_vehicles_per_hour": 1131.2384452917995,
+            "mean_error_vehicles_per_hour": -982.1948643323406
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 274.4631328815242,
+            "rmse_vehicles_per_hour": 433.7955398879904,
+            "mean_error_vehicles_per_hour": -62.89442291555021
+          },
+          "weekly_with_fallback": {
+            "n": 273,
+            "mae_vehicles_per_hour": 351.28205128205127,
+            "rmse_vehicles_per_hour": 585.670017982285,
+            "mean_error_vehicles_per_hour": -22.652014652014653
+          },
+          "hist_leaves_31": {
+            "n": 273,
+            "mae_vehicles_per_hour": 166.823752349824,
+            "rmse_vehicles_per_hour": 249.0065057247261,
+            "mean_error_vehicles_per_hour": -16.081782410431096
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 273,
+            "covered": 255,
+            "coverage": 0.9340659340659341,
+            "below_lower": 10,
+            "above_upper": 8,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 1242.6351217944336
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "covered": 248,
+            "coverage": 0.9084249084249084,
+            "below_lower": 14,
+            "above_upper": 11,
+            "mean_width": 1209.0416666666672,
+            "mean_interval_score": 2103.681351081541
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 0,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 13,
+        "weekly_fallback_count": 0
+      },
+      "11": {
+        "n": 273,
+        "point_scores": {
+          "global_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 1285.3929326359048,
+            "rmse_vehicles_per_hour": 1362.7962077449092,
+            "mean_error_vehicles_per_hour": -1252.715010852487
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 282.5601591024425,
+            "rmse_vehicles_per_hour": 431.6023654712626,
+            "mean_error_vehicles_per_hour": -40.153561228845525
+          },
+          "weekly_with_fallback": {
+            "n": 273,
+            "mae_vehicles_per_hour": 355.24542124542126,
+            "rmse_vehicles_per_hour": 582.8164847917867,
+            "mean_error_vehicles_per_hour": -20.776556776556777
+          },
+          "hist_leaves_31": {
+            "n": 273,
+            "mae_vehicles_per_hour": 171.36412924057254,
+            "rmse_vehicles_per_hour": 244.3113927280982,
+            "mean_error_vehicles_per_hour": -26.853228496115804
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 273,
+            "covered": 254,
+            "coverage": 0.9304029304029304,
+            "below_lower": 9,
+            "above_upper": 10,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 1160.6585791288599
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "covered": 244,
+            "coverage": 0.8937728937728938,
+            "below_lower": 16,
+            "above_upper": 13,
+            "mean_width": 1209.041666666667,
+            "mean_interval_score": 2100.140361823171
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 0,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 12,
+        "weekly_fallback_count": 0
+      },
+      "12": {
+        "n": 273,
+        "point_scores": {
+          "global_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 1517.4097742381853,
+            "rmse_vehicles_per_hour": 1583.9918318538676,
+            "mean_error_vehicles_per_hour": -1493.4769156143918
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 277.28468111024785,
+            "rmse_vehicles_per_hour": 440.63322893214576,
+            "mean_error_vehicles_per_hour": -33.543239874003305
+          },
+          "weekly_with_fallback": {
+            "n": 273,
+            "mae_vehicles_per_hour": 366.5164835164835,
+            "rmse_vehicles_per_hour": 609.9703859982645,
+            "mean_error_vehicles_per_hour": -17.98901098901099
+          },
+          "hist_leaves_31": {
+            "n": 273,
+            "mae_vehicles_per_hour": 166.51769340119102,
+            "rmse_vehicles_per_hour": 232.16313428848545,
+            "mean_error_vehicles_per_hour": -10.106627039208002
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 273,
+            "covered": 256,
+            "coverage": 0.9377289377289377,
+            "below_lower": 8,
+            "above_upper": 9,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 1103.7628309638962
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "covered": 246,
+            "coverage": 0.9010989010989011,
+            "below_lower": 14,
+            "above_upper": 13,
+            "mean_width": 1209.041666666667,
+            "mean_interval_score": 2202.3025514046585
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 0,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 12,
+        "weekly_fallback_count": 0
+      },
+      "13": {
+        "n": 273,
+        "point_scores": {
+          "global_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 1501.2051371717353,
+            "rmse_vehicles_per_hour": 1559.7158927048588,
+            "mean_error_vehicles_per_hour": -1469.678380815857
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 268.4097457832751,
+            "rmse_vehicles_per_hour": 444.9993949253398,
+            "mean_error_vehicles_per_hour": 4.46709868959267
+          },
+          "weekly_with_fallback": {
+            "n": 273,
+            "mae_vehicles_per_hour": 356.9304029304029,
+            "rmse_vehicles_per_hour": 608.1704804849816,
+            "mean_error_vehicles_per_hour": -16.256410256410255
+          },
+          "hist_leaves_31": {
+            "n": 273,
+            "mae_vehicles_per_hour": 167.97462842424832,
+            "rmse_vehicles_per_hour": 270.3660591650791,
+            "mean_error_vehicles_per_hour": 36.69120456674336
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 273,
+            "covered": 258,
+            "coverage": 0.945054945054945,
+            "below_lower": 8,
+            "above_upper": 7,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 1202.52548314934
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "covered": 249,
+            "coverage": 0.9120879120879121,
+            "below_lower": 14,
+            "above_upper": 10,
+            "mean_width": 1209.0416666666665,
+            "mean_interval_score": 2221.9674883248827
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 0,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 12,
+        "weekly_fallback_count": 0
+      },
+      "14": {
+        "n": 273,
+        "point_scores": {
+          "global_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 1673.105253795478,
+            "rmse_vehicles_per_hour": 1746.9939399532416,
+            "mean_error_vehicles_per_hour": -1653.1618972993735
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 283.75460580032643,
+            "rmse_vehicles_per_hour": 445.74365133911886,
+            "mean_error_vehicles_per_hour": 46.29166957807454
+          },
+          "weekly_with_fallback": {
+            "n": 273,
+            "mae_vehicles_per_hour": 368.1758241758242,
+            "rmse_vehicles_per_hour": 604.4511511604508,
+            "mean_error_vehicles_per_hour": -16.307692307692307
+          },
+          "hist_leaves_31": {
+            "n": 273,
+            "mae_vehicles_per_hour": 168.76451892707186,
+            "rmse_vehicles_per_hour": 225.46082708987285,
+            "mean_error_vehicles_per_hour": 46.76385906406498
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 273,
+            "covered": 257,
+            "coverage": 0.9413919413919414,
+            "below_lower": 13,
+            "above_upper": 3,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 1026.2765984650273
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "covered": 246,
+            "coverage": 0.9010989010989011,
+            "below_lower": 15,
+            "above_upper": 12,
+            "mean_width": 1209.0416666666665,
+            "mean_interval_score": 2173.1030893442517
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 0,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 12,
+        "weekly_fallback_count": 0
+      },
+      "15": {
+        "n": 273,
+        "point_scores": {
+          "global_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 2062.259099949324,
+            "rmse_vehicles_per_hour": 2195.191943199755,
+            "mean_error_vehicles_per_hour": -2034.740651878128
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 342.03878288471947,
+            "rmse_vehicles_per_hour": 545.670052247189,
+            "mean_error_vehicles_per_hour": -44.88809520817131
+          },
+          "weekly_with_fallback": {
+            "n": 273,
+            "mae_vehicles_per_hour": 448.2564102564103,
+            "rmse_vehicles_per_hour": 754.5843966857595,
+            "mean_error_vehicles_per_hour": -27.216117216117215
+          },
+          "hist_leaves_31": {
+            "n": 273,
+            "mae_vehicles_per_hour": 212.23050052407507,
+            "rmse_vehicles_per_hour": 345.05762499316864,
+            "mean_error_vehicles_per_hour": -13.22438398183499
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 273,
+            "covered": 237,
+            "coverage": 0.8681318681318682,
+            "below_lower": 17,
+            "above_upper": 19,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 1605.8739143042446
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "covered": 239,
+            "coverage": 0.8754578754578755,
+            "below_lower": 21,
+            "above_upper": 13,
+            "mean_width": 1209.0416666666667,
+            "mean_interval_score": 2635.6459918934406
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 0,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 12,
+        "weekly_fallback_count": 0
+      },
+      "16": {
+        "n": 273,
+        "point_scores": {
+          "global_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 2579.4725364391343,
+            "rmse_vehicles_per_hour": 2786.744440170096,
+            "mean_error_vehicles_per_hour": -2541.2498093872855
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 485.323352866517,
+            "rmse_vehicles_per_hour": 711.0473765605936,
+            "mean_error_vehicles_per_hour": -154.4464412743856
+          },
+          "weekly_with_fallback": {
+            "n": 273,
+            "mae_vehicles_per_hour": 568.4358974358975,
+            "rmse_vehicles_per_hour": 980.9804451158207,
+            "mean_error_vehicles_per_hour": -31.065934065934066
+          },
+          "hist_leaves_31": {
+            "n": 273,
+            "mae_vehicles_per_hour": 311.1535637986428,
+            "rmse_vehicles_per_hour": 449.12247838822975,
+            "mean_error_vehicles_per_hour": -101.6464676978823
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 273,
+            "covered": 219,
+            "coverage": 0.8021978021978022,
+            "below_lower": 19,
+            "above_upper": 35,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 2372.1363123148653
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "covered": 204,
+            "coverage": 0.7472527472527473,
+            "below_lower": 22,
+            "above_upper": 47,
+            "mean_width": 1209.0416666666672,
+            "mean_interval_score": 3589.8894213662084
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 0,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 12,
+        "weekly_fallback_count": 0
+      },
+      "17": {
+        "n": 273,
+        "point_scores": {
+          "global_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 2138.759724140883,
+            "rmse_vehicles_per_hour": 2311.191134338719,
+            "mean_error_vehicles_per_hour": -2076.861530999007
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 422.6408686493458,
+            "rmse_vehicles_per_hour": 672.6687075476661,
+            "mean_error_vehicles_per_hour": -9.553209317700553
+          },
+          "weekly_with_fallback": {
+            "n": 273,
+            "mae_vehicles_per_hour": 551.2747252747253,
+            "rmse_vehicles_per_hour": 937.4506580421906,
+            "mean_error_vehicles_per_hour": -28.783882783882785
+          },
+          "hist_leaves_31": {
+            "n": 273,
+            "mae_vehicles_per_hour": 248.97148762187155,
+            "rmse_vehicles_per_hour": 358.04180736230035,
+            "mean_error_vehicles_per_hour": 0.29723470432652455
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 273,
+            "covered": 230,
+            "coverage": 0.8424908424908425,
+            "below_lower": 25,
+            "above_upper": 18,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 1692.6018425334598
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "covered": 223,
+            "coverage": 0.8168498168498168,
+            "below_lower": 26,
+            "above_upper": 24,
+            "mean_width": 1209.0416666666672,
+            "mean_interval_score": 3354.9298632906575
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 0,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 12,
+        "weekly_fallback_count": 0
+      },
+      "18": {
+        "n": 273,
+        "point_scores": {
+          "global_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 1136.1880705365384,
+            "rmse_vehicles_per_hour": 1221.9799472501822,
+            "mean_error_vehicles_per_hour": -1033.2278313653076
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 327.25060984201394,
+            "rmse_vehicles_per_hour": 531.948673818236,
+            "mean_error_vehicles_per_hour": -18.36863674097666
+          },
+          "weekly_with_fallback": {
+            "n": 273,
+            "mae_vehicles_per_hour": 431.7142857142857,
+            "rmse_vehicles_per_hour": 733.3363170102473,
+            "mean_error_vehicles_per_hour": -17.01098901098901
+          },
+          "hist_leaves_31": {
+            "n": 273,
+            "mae_vehicles_per_hour": 203.03540296242653,
+            "rmse_vehicles_per_hour": 289.32724158457114,
+            "mean_error_vehicles_per_hour": 25.38692977190333
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 273,
+            "covered": 247,
+            "coverage": 0.9047619047619048,
+            "below_lower": 18,
+            "above_upper": 8,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 1380.8695920997045
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "covered": 242,
+            "coverage": 0.8864468864468864,
+            "below_lower": 19,
+            "above_upper": 12,
+            "mean_width": 1209.0416666666672,
+            "mean_interval_score": 2597.8571630840784
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 0,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 12,
+        "weekly_fallback_count": 0
+      },
+      "19": {
+        "n": 273,
+        "point_scores": {
+          "global_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 344.21757993007196,
+            "rmse_vehicles_per_hour": 486.92760715950965,
+            "mean_error_vehicles_per_hour": -93.26812440560057
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 295.67559870487406,
+            "rmse_vehicles_per_hour": 427.34755635600857,
+            "mean_error_vehicles_per_hour": -83.9355391582965
+          },
+          "weekly_with_fallback": {
+            "n": 273,
+            "mae_vehicles_per_hour": 324.72161172161174,
+            "rmse_vehicles_per_hour": 543.0034876000223,
+            "mean_error_vehicles_per_hour": -14.245421245421245
+          },
+          "hist_leaves_31": {
+            "n": 273,
+            "mae_vehicles_per_hour": 189.95197392033538,
+            "rmse_vehicles_per_hour": 271.5611779912878,
+            "mean_error_vehicles_per_hour": -47.502983730652126
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 273,
+            "covered": 252,
+            "coverage": 0.9230769230769231,
+            "below_lower": 11,
+            "above_upper": 10,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 1326.0005117417923
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "covered": 248,
+            "coverage": 0.9084249084249084,
+            "below_lower": 15,
+            "above_upper": 10,
+            "mean_width": 1209.041666666667,
+            "mean_interval_score": 2035.7726406734637
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 0,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 12,
+        "weekly_fallback_count": 0
+      },
+      "20": {
+        "n": 273,
+        "point_scores": {
+          "global_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 371.6718959341354,
+            "rmse_vehicles_per_hour": 530.424392575785,
+            "mean_error_vehicles_per_hour": 313.4315092940331
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 298.7079752058618,
+            "rmse_vehicles_per_hour": 400.38760589555966,
+            "mean_error_vehicles_per_hour": -124.18516832932207
+          },
+          "weekly_with_fallback": {
+            "n": 273,
+            "mae_vehicles_per_hour": 306.75824175824175,
+            "rmse_vehicles_per_hour": 485.58028802373775,
+            "mean_error_vehicles_per_hour": -11.761904761904763
+          },
+          "hist_leaves_31": {
+            "n": 273,
+            "mae_vehicles_per_hour": 188.87182944855167,
+            "rmse_vehicles_per_hour": 258.06974312937854,
+            "mean_error_vehicles_per_hour": -56.638538261229485
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 273,
+            "covered": 247,
+            "coverage": 0.9047619047619048,
+            "below_lower": 9,
+            "above_upper": 17,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 1204.4859441810945
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "covered": 252,
+            "coverage": 0.9230769230769231,
+            "below_lower": 12,
+            "above_upper": 9,
+            "mean_width": 1209.041666666667,
+            "mean_interval_score": 1735.546205768525
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 0,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 12,
+        "weekly_fallback_count": 0
+      },
+      "21": {
+        "n": 273,
+        "point_scores": {
+          "global_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 603.6990514486567,
+            "rmse_vehicles_per_hour": 725.3981521406328,
+            "mean_error_vehicles_per_hour": 519.7721686346924
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 290.31430220355435,
+            "rmse_vehicles_per_hour": 416.0550664638591,
+            "mean_error_vehicles_per_hour": -72.96215281453995
+          },
+          "weekly_with_fallback": {
+            "n": 273,
+            "mae_vehicles_per_hour": 394.05494505494505,
+            "rmse_vehicles_per_hour": 595.8645425879552,
+            "mean_error_vehicles_per_hour": -6.457875457875458
+          },
+          "hist_leaves_31": {
+            "n": 273,
+            "mae_vehicles_per_hour": 264.58431659525786,
+            "rmse_vehicles_per_hour": 371.04162555634997,
+            "mean_error_vehicles_per_hour": -26.44765456921491
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 273,
+            "covered": 222,
+            "coverage": 0.8131868131868132,
+            "below_lower": 19,
+            "above_upper": 32,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 1899.0914816914756
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "covered": 242,
+            "coverage": 0.8864468864468864,
+            "below_lower": 10,
+            "above_upper": 21,
+            "mean_width": 1209.041666666667,
+            "mean_interval_score": 1968.4276479637756
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 0,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 12,
+        "weekly_fallback_count": 0
+      },
+      "22": {
+        "n": 273,
+        "point_scores": {
+          "global_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 1075.0720027235348,
+            "rmse_vehicles_per_hour": 1203.0629334842904,
+            "mean_error_vehicles_per_hour": 1018.8527547152785
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 323.8319847518466,
+            "rmse_vehicles_per_hour": 463.7415869179292,
+            "mean_error_vehicles_per_hour": -53.52734108207989
+          },
+          "weekly_with_fallback": {
+            "n": 273,
+            "mae_vehicles_per_hour": 442.8241758241758,
+            "rmse_vehicles_per_hour": 668.498533564053,
+            "mean_error_vehicles_per_hour": 11.27838827838828
+          },
+          "hist_leaves_31": {
+            "n": 273,
+            "mae_vehicles_per_hour": 317.5634925203721,
+            "rmse_vehicles_per_hour": 430.0981576252192,
+            "mean_error_vehicles_per_hour": 17.823296549815744
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 273,
+            "covered": 214,
+            "coverage": 0.7838827838827839,
+            "below_lower": 24,
+            "above_upper": 35,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 2286.0475605891143
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "covered": 238,
+            "coverage": 0.8717948717948718,
+            "below_lower": 6,
+            "above_upper": 29,
+            "mean_width": 1209.041666666667,
+            "mean_interval_score": 2323.123347324755
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 0,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 12,
+        "weekly_fallback_count": 0
+      },
+      "23": {
+        "n": 273,
+        "point_scores": {
+          "global_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 1751.79169096328,
+            "rmse_vehicles_per_hour": 1840.5357741753712,
+            "mean_error_vehicles_per_hour": 1740.2300440925678
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "mae_vehicles_per_hour": 256.1829415523941,
+            "rmse_vehicles_per_hour": 429.1447518602198,
+            "mean_error_vehicles_per_hour": -58.53232625207985
+          },
+          "weekly_with_fallback": {
+            "n": 273,
+            "mae_vehicles_per_hour": 359.35531135531136,
+            "rmse_vehicles_per_hour": 577.875146533994,
+            "mean_error_vehicles_per_hour": -7.135531135531136
+          },
+          "hist_leaves_31": {
+            "n": 273,
+            "mae_vehicles_per_hour": 262.70084624838216,
+            "rmse_vehicles_per_hour": 403.16160008947327,
+            "mean_error_vehicles_per_hour": -0.11290526557423042
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 273,
+            "covered": 239,
+            "coverage": 0.8754578754578755,
+            "below_lower": 8,
+            "above_upper": 26,
+            "mean_width": 850.4665989963669,
+            "mean_interval_score": 2084.016789452015
+          },
+          "weekday_hour_mean": {
+            "n": 273,
+            "covered": 245,
+            "coverage": 0.8974358974358975,
+            "below_lower": 3,
+            "above_upper": 25,
+            "mean_width": 1209.041666666667,
+            "mean_interval_score": 2329.5755211806045
+          }
+        },
+        "hourly_slots": 273,
+        "missing_targets": 0,
+        "predicted_slots": 273,
+        "incomplete_feature_targets": 12,
+        "weekly_fallback_count": 0
+      }
+    },
+    "day_type": {
+      "weekday": {
+        "n": 4671,
+        "point_scores": {
+          "global_mean": {
+            "n": 4671,
+            "mae_vehicles_per_hour": 1855.6916374951263,
+            "rmse_vehicles_per_hour": 2086.7343968773466,
+            "mean_error_vehicles_per_hour": -334.2803155969825
+          },
+          "weekday_hour_mean": {
+            "n": 4671,
+            "mae_vehicles_per_hour": 265.24278157022263,
+            "rmse_vehicles_per_hour": 478.2805298555071,
+            "mean_error_vehicles_per_hour": -33.75637437869531
+          },
+          "weekly_with_fallback": {
+            "n": 4671,
+            "mae_vehicles_per_hour": 318.7552936584537,
+            "rmse_vehicles_per_hour": 641.6364445861474,
+            "mean_error_vehicles_per_hour": -22.799711428175762
+          },
+          "hist_leaves_31": {
+            "n": 4671,
+            "mae_vehicles_per_hour": 174.67771380312223,
+            "rmse_vehicles_per_hour": 283.87552952869186,
+            "mean_error_vehicles_per_hour": -4.525130178627991
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 4671,
+            "covered": 4284,
+            "coverage": 0.9171483622350675,
+            "below_lower": 200,
+            "above_upper": 187,
+            "mean_width": 841.1112875152734,
+            "mean_interval_score": 1360.5129171020096
+          },
+          "weekday_hour_mean": {
+            "n": 4671,
+            "covered": 4273,
+            "coverage": 0.9147934061228858,
+            "below_lower": 228,
+            "above_upper": 170,
+            "mean_width": 1177.7917093437802,
+            "mean_interval_score": 2173.113013534996
+          }
+        },
+        "hourly_slots": 4680,
+        "missing_targets": 9,
+        "predicted_slots": 4680,
+        "incomplete_feature_targets": 189,
+        "weekly_fallback_count": 9
+      },
+      "weekend": {
+        "n": 1862,
+        "point_scores": {
+          "global_mean": {
+            "n": 1862,
+            "mae_vehicles_per_hour": 1415.5871624225713,
+            "rmse_vehicles_per_hour": 1665.0215945286402,
+            "mean_error_vehicles_per_hour": 588.2904561116266
+          },
+          "weekday_hour_mean": {
+            "n": 1862,
+            "mae_vehicles_per_hour": 292.0934615180829,
+            "rmse_vehicles_per_hour": 459.960526848361,
+            "mean_error_vehicles_per_hour": -75.60522979175877
+          },
+          "weekly_with_fallback": {
+            "n": 1862,
+            "mae_vehicles_per_hour": 384.2880187927761,
+            "rmse_vehicles_per_hour": 656.5041810738908,
+            "mean_error_vehicles_per_hour": -11.065354899085111
+          },
+          "hist_leaves_31": {
+            "n": 1862,
+            "mae_vehicles_per_hour": 213.02022178627277,
+            "rmse_vehicles_per_hour": 308.80309636334226,
+            "mean_error_vehicles_per_hour": -12.788059545900397
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 1862,
+            "covered": 1638,
+            "coverage": 0.8796992481203008,
+            "below_lower": 93,
+            "above_upper": 131,
+            "mean_width": 846.0467352096517,
+            "mean_interval_score": 1465.6804459760153
+          },
+          "weekday_hour_mean": {
+            "n": 1862,
+            "covered": 1631,
+            "coverage": 0.8759398496240601,
+            "below_lower": 68,
+            "above_upper": 163,
+            "mean_width": 1188.3995416089924,
+            "mean_interval_score": 2195.0723650595833
+          }
+        },
+        "hourly_slots": 1872,
+        "missing_targets": 10,
+        "predicted_slots": 1872,
+        "incomplete_feature_targets": 133,
+        "weekly_fallback_count": 10
+      }
+    },
+    "inputs": {
+      "complete": {
+        "n": 6211,
+        "point_scores": {
+          "global_mean": {
+            "n": 6211,
+            "mae_vehicles_per_hour": 1724.943284439819,
+            "rmse_vehicles_per_hour": 1971.2767644496466,
+            "mean_error_vehicles_per_hour": -76.14910833875003
+          },
+          "weekday_hour_mean": {
+            "n": 6211,
+            "mae_vehicles_per_hour": 275.54640465957465,
+            "rmse_vehicles_per_hour": 479.1159798358314,
+            "mean_error_vehicles_per_hour": -40.92450714613272
+          },
+          "weekly_with_fallback": {
+            "n": 6211,
+            "mae_vehicles_per_hour": 340.5978103364998,
+            "rmse_vehicles_per_hour": 655.064633426004,
+            "mean_error_vehicles_per_hour": -17.591531154403476
+          },
+          "hist_leaves_31": {
+            "n": 6211,
+            "mae_vehicles_per_hour": 186.04222078586923,
+            "rmse_vehicles_per_hour": 292.4633795155626,
+            "mean_error_vehicles_per_hour": -6.599385892184636
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 6211,
+            "covered": 5623,
+            "coverage": 0.9053292545483819,
+            "below_lower": 284,
+            "above_upper": 304,
+            "mean_width": 842.5457692784595,
+            "mean_interval_score": 1398.9894075149202
+          },
+          "weekday_hour_mean": {
+            "n": 6211,
+            "covered": 5604,
+            "coverage": 0.9022701658348092,
+            "below_lower": 295,
+            "above_upper": 312,
+            "mean_width": 1181.188931669326,
+            "mean_interval_score": 2210.062268226143
+          }
+        },
+        "hourly_slots": 6223,
+        "missing_targets": 12,
+        "predicted_slots": 6223,
+        "incomplete_feature_targets": 0,
+        "weekly_fallback_count": 0
+      },
+      "incomplete": {
+        "n": 322,
+        "point_scores": {
+          "global_mean": {
+            "n": 322,
+            "mae_vehicles_per_hour": 1832.7211040833702,
+            "rmse_vehicles_per_hour": 2059.802661191238,
+            "mean_error_vehicles_per_hour": 21.53909011900525
+          },
+          "weekday_hour_mean": {
+            "n": 322,
+            "mae_vehicles_per_hour": 221.76502708249186,
+            "rmse_vehicles_per_hour": 337.53391442076264,
+            "mean_error_vehicles_per_hour": -137.48710779661596
+          },
+          "weekly_with_fallback": {
+            "n": 322,
+            "mae_vehicles_per_hour": 276.3890300334975,
+            "rmse_vehicles_per_hour": 432.943919893721,
+            "mean_error_vehicles_per_hour": -55.40417050653873
+          },
+          "hist_leaves_31": {
+            "n": 322,
+            "mae_vehicles_per_hour": 177.1895057123915,
+            "rmse_vehicles_per_hour": 265.6078658882789,
+            "mean_error_vehicles_per_hour": -12.296472554282971
+          }
+        },
+        "intervals": {
+          "hist_leaves_31": {
+            "n": 322,
+            "covered": 299,
+            "coverage": 0.9285714285714286,
+            "below_lower": 9,
+            "above_upper": 14,
+            "mean_width": 841.9815899245376,
+            "mean_interval_score": 1226.4894910424168
+          },
+          "weekday_hour_mean": {
+            "n": 322,
+            "covered": 300,
+            "coverage": 0.9316770186335404,
+            "below_lower": 1,
+            "above_upper": 21,
+            "mean_width": 1173.604242927196,
+            "mean_interval_score": 1587.3878323302372
+          }
+        },
+        "hourly_slots": 329,
+        "missing_targets": 7,
+        "predicted_slots": 329,
+        "incomplete_feature_targets": 322,
+        "weekly_fallback_count": 19
+      }
+    }
+  },
+  "largest_tree_errors": [
+    {
+      "date_time": "2018-07-04 07:00:00",
+      "actual": 1128,
+      "prediction": 4166.930832855318,
+      "absolute_error": 3038.930832855318
+    },
+    {
+      "date_time": "2018-05-21 13:00:00",
+      "actual": 2040,
+      "prediction": 4741.387074909916,
+      "absolute_error": 2701.387074909916
+    },
+    {
+      "date_time": "2018-01-17 15:00:00",
+      "actual": 3271,
+      "prediction": 5737.363485979627,
+      "absolute_error": 2466.3634859796266
+    },
+    {
+      "date_time": "2018-05-21 15:00:00",
+      "actual": 5895,
+      "prediction": 3589.223039046841,
+      "absolute_error": 2305.776960953159
+    },
+    {
+      "date_time": "2018-04-03 07:00:00",
+      "actual": 4096,
+      "prediction": 6347.251920870177,
+      "absolute_error": 2251.251920870177
+    }
+  ],
+  "input_sha256": {
+    "train": "6e2ad85a84d6b9f6eb1a0c5ed54bf1fc6d789748c897d5f57be2b2453a82f817",
+    "validation": "836c7aac6c9b300ef2aea0cef52f6011e3593580545f4b7da0fbfa3b84cd012e",
+    "test": "4f95aa88707284f6a84ad85b011a75b91e6618ff76379c93879258f11e44bb0c"
+  },
+  "freeze_sha256": "9c8d06466c1334436e96d2b30e2880c7125de9d92d4f193800dc4ef7191c0530",
+  "runner_sha256": "036311e9a8834a9400eb9650b71efc74dc2f8b03673a51829247c9faa9a034ce",
+  "prediction_csv_sha256": "03215889bd6e3dfe9588cc58327b6a0c2d50616d1f2c11f85ad72f804b824cc5",
+  "versions": {
+    "python": "3.12",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "sklearn": "1.7.2"
+  }
+}

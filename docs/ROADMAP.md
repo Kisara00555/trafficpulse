@@ -12,8 +12,8 @@ Autonomous daily development was authorized on 6 October 2026. Complete at most 
 | 6 | Temporal backtesting and error analysis | Does it work across seasons? | Complete, 2026-10-17 |
 | 7 | Uncertainty and interval evaluation | How do you communicate unreliable forecasts? | Complete, 2026-10-18 |
 | 8 | Simulated operational decision study | How does predictive accuracy affect a decision? | Complete, 2026-10-21 |
-| 9 | Final holdout evaluation and small demo | What happens on unseen data? | Next |
-| 10 | GitHub presentation, resume evidence, mock interview | What did you personally decide and learn? | Planned |
+| 9 | Final holdout evaluation and small demo | What happens on unseen data? | Complete, 2026-10-24 |
+| 10 | GitHub presentation, resume evidence, mock interview | What did you personally decide and learn? | Next |
 
 ## Delivery timeline agreed 12 October 2026
 
@@ -27,9 +27,9 @@ Deadline: **26 October 2026, Asia/Colombo**. Continue daily at 19:00, at most on
 | 17 October | Part 6: chronological backtests and seasonal/error breakdowns; document coverage and failure cases |
 | 18 October | Part 7: intervals with a distinct calibration period; report coverage and width without using final holdout outcomes |
 | 21 October | Part 8: explicitly hypothetical decision-cost study with sensitivity analysis; no real savings claims |
-| 22 October | Part 9: freeze model, features, fallback, calibration and evaluation specification before opening holdout; evaluate once and build a small demo |
-| 23 October | Part 10: evidence-based README, resume bullets, limitations and interview guide; verify profile claims |
-| 24–25 October | Reproducibility, presentation review and corrections; verify setup, demo, links and CI; no new scientific scope or tuning against holdout results |
+| 24 October | Part 9: freeze model, features, fallback, calibration and evaluation specification before opening holdout; evaluate once and build a small demo |
+| 25 October | Part 10: evidence-based README, resume bullets, limitations and interview guide; verify profile claims |
+| 25–26 October | Reproducibility, presentation review and necessary corrections alongside Part 10 and acceptance; no spare buffer and no tuning against holdout results |
 | 26 October | Final acceptance review and handoff; report completed deliverables and any remaining limitations honestly |
 
 The final review must reconcile the brief's acceptance criteria with saved evidence: reproducible data and features, leakage checks, fair comparisons, untouched holdout until specification freeze, interval and decision-study caveats, a working demo, clean Git status and verified publication. Once complete, switch to warranted maintenance only. Empty days do not require commits.
@@ -45,6 +45,10 @@ Part 6 had no completion evidence on 16 October and was resumed and completed on
 ### Schedule revision on 21 October
 
 Part 8 had no completion evidence for its 19 October target and was completed on 21 October. There are no intervening milestone commits; this run does not establish why earlier runs were missed. Part 9 now targets 22 October and Part 10 targets 23 October. Review and corrections share 24-25 October, with final acceptance still on 26 October. This consumes the separate review buffer: further delays or failed checks now threaten the deadline. No checks are waived and no work is backdated. Do not start Part 9 on another 21 October run.
+
+### Schedule revision on 24 October
+
+Part 9's specification was frozen and published on 23 October, followed by its first holdout evaluation. The session stopped before demo review and publication were complete; this run resumed that unfinished work on 24 October. The result was preserved and no model or interval was retuned. Part 9 is complete on 24 October, not backdated. Part 10 now targets 25 October, with final acceptance on 26 October. Review and corrections must fit alongside those remaining tasks; there is no spare day. Any new blocker can threaten the deadline and must be reported rather than skipping checks. Do not start Part 10 on another 24 October run.
 
 ## Session format
 

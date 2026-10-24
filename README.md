@@ -2,7 +2,7 @@
 
 **Hourly traffic forecasting with honest evaluation and uncertainty.**
 
-Status: **Part 8 complete - hypothetical decision-cost sensitivity study.** Final holdout evaluation and the small demo are still planned.
+Status: **Part 9 complete - frozen final evaluation and offline historical demo.** Final portfolio presentation and acceptance review remain.
 
 [![Data contract tests](https://github.com/Kisara00555/trafficpulse/actions/workflows/tests.yml/badge.svg)](https://github.com/Kisara00555/trafficpulse/actions/workflows/tests.yml)
 
@@ -57,23 +57,23 @@ The weekday-and-hour average beat repeating last week's exact count on this vali
 
 Run `python -m trafficpulse.features` after Part 2. This verifies the training/validation fingerprints and creates 15 calendar, exact-time lag and rolling-history inputs in ignored local CSVs. Missing readings remain missing. All observed inputs stop at least two hours before the forecast target; the final holdout is not loaded.
 
-Of 8,713 observed validation targets, 8,148 have every feature (93.5%). Part 5 now handles missing inputs and compares learned models. See the [feature contract](docs/FEATURE_CONTRACT.md), [coverage report](reports/part04_features.json), and [daily explanation](docs/daily/2026-10-21.md).
+Of 8,713 observed validation targets, 8,148 have every feature (93.5%). Part 5 now handles missing inputs and compares learned models. See the [feature contract](docs/FEATURE_CONTRACT.md), [coverage report](reports/part04_features.json), and [daily explanation](docs/daily/2026-10-14.md).
 
 ## Part 5 model comparison
 
-Using settings selected on 2016 data, the tree model achieved **MAE 190.2 vehicles/hour**, compared with **278.7** for the weekday/hour baseline and **381.1** for Ridge, on the same **8,713 observed 2017 validation targets**. All targets were predicted, including 565 with incomplete historical inputs. These are validation results for one historical station; the final holdout remains sealed.
+Using settings selected on 2016 data, the tree model achieved **MAE 190.2 vehicles/hour**, compared with **278.7** for the weekday/hour baseline and **381.1** for Ridge, on the same **8,713 observed 2017 validation targets**. All targets were predicted, including 565 with incomplete historical inputs. These are validation results for one historical station; the final holdout was evaluated later in Part 9.
 
 See the [experiment plan](docs/MODELING_PLAN.md), [full comparisons and limitations](docs/MODEL_RESULTS.md), and [machine-readable results](reports/part05_models.json). After data preparation, install the modeling dependencies with `python -m pip install -e ".[model]"`, then run `python -m trafficpulse.models`.
 
 ## Part 6 performance across time
 
-The tree beat all three baselines and Ridge in each 2017 quarter under both fixed-origin and quarterly-refit policies. Quarterly tree MAE ranged from **175.3 to 206.4 vehicles/hour**. Refitting changed annual tree MAE only from 190.16 to 189.98; this does not establish a reliable improvement. Error varies substantially by month and hour, and complete inputs still permit large failures. The final holdout remains sealed.
+The tree beat all three baselines and Ridge in each 2017 quarter under both fixed-origin and quarterly-refit policies. Quarterly tree MAE ranged from **175.3 to 206.4 vehicles/hour**. Refitting changed annual tree MAE only from 190.16 to 189.98; this does not establish a reliable improvement. Error varies substantially by month and hour, and complete inputs still permit large failures. Final holdout results are reported in Part 9.
 
 Run `python -m trafficpulse.backtest` after Part 5. See the [fixed backtest plan](docs/BACKTEST_PLAN.md), [comparisons and failure cases](docs/BACKTEST_RESULTS.md), and [full results](reports/part06_backtest.json).
 
 ## Part 7 uncertainty ranges
 
-Using January-June calibration errors, nominal 90% tree ranges covered **90.3% of 4,397 observed July-December 2017 targets**, with mean width **843.1 vehicles/hour**. The baseline covered 88.3% with wider ranges. Coverage fell to **76.6% at 22:00** and **86.2% in December**: the overall rate does not guarantee reliability for every hour. These are previously inspected development data; the final holdout is still sealed.
+Using January-June calibration errors, nominal 90% tree ranges covered **90.3% of 4,397 observed July-December 2017 targets**, with mean width **843.1 vehicles/hour**. The baseline covered 88.3% with wider ranges. Coverage fell to **76.6% at 22:00** and **86.2% in December**: the overall rate does not guarantee reliability for every hour. These are previously inspected development data; final holdout results are reported in Part 9.
 
 Run `python -m trafficpulse.intervals` after Part 5. See the [interval specification](docs/INTERVAL_PLAN.md), [coverage and limitations](docs/INTERVAL_RESULTS.md), and [full evidence](reports/part07_intervals.json).
 
@@ -81,7 +81,13 @@ Run `python -m trafficpulse.intervals` after Part 5. See the [interval specifica
 
 Across 4,397 observed July-December 2017 hours, planning from the tree's upper bound reduced shortfall from **19.1% to 2.7% of hours** under an assumed 500 vehicle-equivalents per resource block. Mean unused capacity rose from **254.3 to 653.4 per hour**. More conservative planning was not always cheaper, and the simpler baseline beat the tree's point rule in one of nine assumed cost/capacity scenarios despite worse forecast MAE. These are simulated tradeoffs, not real staffing savings or congestion improvements.
 
-Run `python -m trafficpulse.decisions` after Part 7. See the [scenario specification](docs/DECISION_PLAN.md), [all comparisons and caveats](docs/DECISION_RESULTS.md), and [full results](reports/part08_decisions.json). Models and intervals were unchanged; the final holdout remains sealed.
+Run `python -m trafficpulse.decisions` after Part 7. See the [scenario specification](docs/DECISION_PLAN.md), [all comparisons and caveats](docs/DECISION_RESULTS.md), and [full results](reports/part08_decisions.json). Models and intervals were unchanged; the final holdout was evaluated later in Part 9.
+
+## Part 9 final holdout and demo
+
+On the same **6,533 observed January-September 2018 targets**, the frozen tree scored **MAE 185.6 vehicles/hour**, versus **272.9** for the weekday/hour baseline: **32.0% lower average absolute error**, not an accuracy percentage. Its nominal 90% ranges covered **90.6%** overall, but only **78.4% at 22:00**. The specification was published before the final assessment; no settings were changed using these outcomes. The holdout is now consumed and must not become a tuning set.
+
+Open the self-contained [historical replay demo](demo/index.html) locally in a browser (GitHub shows its HTML source). It covers the first 48 hours chosen before evaluation, with an hour selector, visible input cutoff and optional actual-count reveal. It is saved forecast replay, not live inference or a deployed service. See [final results, limitations and reproduction steps](docs/HOLDOUT_RESULTS.md), [the frozen specification](docs/HOLDOUT_PLAN.md), and [the full report](reports/part09_holdout.json).
 
 ## Run Part 1
 
@@ -103,7 +109,7 @@ The download is about 396 KB. Repeated runs reuse the local archive and verify i
 
 ## Repository guide
 
-Part 2: run `python -m trafficpulse.prepare` after Part 1. This creates ignored local CSVs in `data/processed/` and a reproducible [manifest](reports/part02_manifest.json). Part 3: run `python -m trafficpulse.baselines`; this reads only the training and validation CSVs and writes the [baseline report](reports/part03_baselines.json) and charts in `reports/`. The executed notebook is [03_training_baselines.ipynb](notebooks/03_training_baselines.ipynb). For notebook execution use Python 3.12+ with `nbformat nbclient ipykernel nbconvert`; from the repository root set `PYTHONPATH` to `src` (PowerShell: `$env:PYTHONPATH='src'`; macOS/Linux: `export PYTHONPATH=src`), then run `python -m nbconvert --execute --to notebook --inplace notebooks/03_training_baselines.ipynb`. The standard-library pipeline supports Python 3.10+. Missing targets remain blank; weather is retained only in the raw source. See the [latest learning note](docs/daily/2026-10-21.md).
+Part 2: run `python -m trafficpulse.prepare` after Part 1. This creates ignored local CSVs in `data/processed/` and a reproducible [manifest](reports/part02_manifest.json). Part 3: run `python -m trafficpulse.baselines`; this reads only the training and validation CSVs and writes the [baseline report](reports/part03_baselines.json) and charts in `reports/`. The executed notebook is [03_training_baselines.ipynb](notebooks/03_training_baselines.ipynb). For notebook execution use Python 3.12+ with `nbformat nbclient ipykernel nbconvert`; from the repository root set `PYTHONPATH` to `src` (PowerShell: `$env:PYTHONPATH='src'`; macOS/Linux: `export PYTHONPATH=src`), then run `python -m nbconvert --execute --to notebook --inplace notebooks/03_training_baselines.ipynb`. The standard-library pipeline supports Python 3.10+. Missing targets remain blank; weather is retained only in the raw source. See the [latest learning note](docs/daily/2026-10-24.md).
 
 - `src/trafficpulse/data.py`: download, source verification, structural audit.
 - `src/trafficpulse/baselines.py`: training-only summaries and identical-population validation scores.
@@ -112,7 +118,7 @@ Part 2: run `python -m trafficpulse.prepare` after Part 1. This creates ignored 
 - `docs/PROJECT_BRIEF.md`: forecasting contract and evaluation plan.
 - `docs/DATA_CARD.md`: field meanings, source, license, and limits.
 - `docs/ROADMAP.md`: one learning milestone per session.
-- `docs/daily/2026-10-21.md`: latest plain-language explanation and interview practice.
+- `docs/daily/2026-10-24.md`: latest plain-language explanation and interview practice.
 - `.github/workflows/tests.yml`: automated tests on each push and pull request. [Initial GitHub verification passed](https://github.com/Kisara00555/trafficpulse/actions/runs/37206079243).
 
 ## Source and license

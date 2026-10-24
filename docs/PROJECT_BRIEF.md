@@ -37,6 +37,10 @@ A hypothetical traffic-operations analyst needs an hourly demand forecast and un
 
 ## Current decisions and open questions
 
+Part 9 completed on 24 October 2026 after the specification freeze and first evaluation on 23 October. The tree achieved holdout MAE 185.6 versus 272.9 for the weekday/hour baseline across 6,533 identical observed targets; its nominal 90% ranges covered 90.6% overall but only 78.4% at hour 22. A local 48-hour historical replay demo is provided. No settings were changed using holdout outcomes. The final holdout is now consumed, not available for model selection. See [HOLDOUT_RESULTS.md](HOLDOUT_RESULTS.md). Part 10 now targets 25 October, with final review/handoff on 26 October; there is no spare day for further delays.
+
+The dated entries below describe their status at the time; their references to a sealed holdout are historical.
+
 Part 8 completed on 21 October 2026. Four fixed forecast-based allocation rules were compared across nine explicitly hypothetical capacity/cost scenarios on the same 4,397 July-December 2017 targets. Upper-bound planning reduced shortfall but increased unused capacity; a lower forecast MAE did not guarantee lower decision loss in every scenario. No real staffing or savings claim is supported. The models, intervals and final holdout remain unchanged; see [DECISION_RESULTS.md](DECISION_RESULTS.md). Parts 9 and 10 now target 22 and 23 October, with review/corrections on 24-25 October and final acceptance on 26 October.
 
 Part 7 completed on 18 October 2026. Separate January-June calibration and July-December evaluation produced tree interval coverage 90.3% at mean width 843.1 vehicles/hour across 4,397 observed targets. Nominal coverage is 90%, but hour-22 coverage was only 76.6% and December coverage 86.2%. The fixed model and radii were not adjusted using interval evaluation outcomes. These reused development data and time dependence do not support a formal coverage guarantee. See [INTERVAL_RESULTS.md](INTERVAL_RESULTS.md). Final holdout remains sealed.
